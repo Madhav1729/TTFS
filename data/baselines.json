@@ -1,0 +1,76 @@
+{
+ "rows": [
+  {
+   "workload": "w_0.6",
+   "label": "~40 % (density 0.56)",
+   "design": "Eyeriss INT4",
+   "cycles": 7063664.0,
+   "clock_ns": 5.0,
+   "latency_us": 35318.32,
+   "logic_uJ": 2171.669298619827,
+   "mem_uJ": 161.1205071271529,
+   "energy_uJ": 2332.7898057469797,
+   "area_mm2": 1.7784428539248
+  },
+  {
+   "workload": "w_0.6",
+   "label": "~40 % (density 0.56)",
+   "design": "APEX (T=15, 16 INT4)",
+   "cycles": 7132476.0,
+   "clock_ns": 5.38,
+   "latency_us": 38372.72088,
+   "logic_uJ": 934.7468132532687,
+   "mem_uJ": 500.40075405371306,
+   "energy_uJ": 1435.1475673069817,
+   "area_mm2": 0.56681038797488
+  },
+  {
+   "workload": "w_0.3",
+   "label": "70 % (0.30)",
+   "design": "Eyeriss INT4",
+   "cycles": 7063664.0,
+   "clock_ns": 5.0,
+   "latency_us": 35318.32,
+   "logic_uJ": 2102.5615287108476,
+   "mem_uJ": 159.7383517289736,
+   "energy_uJ": 2262.299880439821,
+   "area_mm2": 1.7784428539248
+  },
+  {
+   "workload": "w_0.3",
+   "label": "70 % (0.30)",
+   "design": "APEX (T=15, 16 INT4)",
+   "cycles": 4851019.0,
+   "clock_ns": 5.38,
+   "latency_us": 26098.482219999998,
+   "logic_uJ": 627.5297135584076,
+   "mem_uJ": 453.89700854986995,
+   "energy_uJ": 1081.4267221082775,
+   "area_mm2": 0.56681038797488
+  },
+  {
+   "workload": "w_loas",
+   "label": "98 % LoAS (0.018)",
+   "design": "Eyeriss INT4",
+   "cycles": 7063664.0,
+   "clock_ns": 5.0,
+   "latency_us": 35318.32,
+   "logic_uJ": 1912.1892719868038,
+   "mem_uJ": 155.93090659449263,
+   "energy_uJ": 2068.1201785812964,
+   "area_mm2": 1.7784428539248
+  },
+  {
+   "workload": "w_loas",
+   "label": "98 % LoAS (0.018)",
+   "design": "APEX (T=15, 16 INT4)",
+   "cycles": 2259307.0,
+   "clock_ns": 5.38,
+   "latency_us": 12155.07166,
+   "logic_uJ": 297.4188508993459,
+   "mem_uJ": 336.0512526231149,
+   "energy_uJ": 633.4701035224608,
+   "area_mm2": 0.56681038797488
+  }
+ ]
+}

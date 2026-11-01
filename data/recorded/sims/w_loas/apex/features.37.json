@@ -1,0 +1,10 @@
+{
+ "P": 4, "n": 4608, "m": 512, "T": 15, "tppes": 16, "idle_rows": 12,
+ "cycles": 19834, "chunks": 4421, "skipped_chunks": 14011, "outputs": 2048, "mismatches": 0,
+ "matches": 1241, "corrections": 1241, "da_row_reads": 1631,
+ "b_mask_beats": 8842, "b_data_beats": 3608, "param_beats": 512,
+ "a_mask_beats": 28864, "a_data_beats": 1983, "gc_read_beats": 104695, "gc_write_beats": 528,
+ "chunk_tppe_matches": 1241, "sum_chunk_max_matches": 1046, "skipped_data_a": 69506,
+ "go_wait_b": 14531, "go_wait_a": 1, "go_wait_ready": 820,
+ "fiber_beats_checked": 528, "fiber_errors": 0
+}

@@ -1,0 +1,1 @@
+{"F": 2, "p": 16, "q": 4, "rows": 2, "passes": 12, "cycles": 12480, "model_cycles": 12288, "outputs": 768, "macs": 9216, "zero_macs": 5600, "errors": 0, "stall": 0, "pin": 1, "vcd_cycles": 12496}

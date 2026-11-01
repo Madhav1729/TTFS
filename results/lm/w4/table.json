@@ -1,0 +1,69 @@
+{
+ "attention_uJ": 178.4376158737395,
+ "rows": {
+  "TTFS offset unipolar": {
+   "cycles": 10424040.0,
+   "latency_us": 55872.854400000004,
+   "logic_uJ": 1392.9530093390747,
+   "mem_uJ": 388.6689468451999,
+   "energy_uJ": 1781.6219561842745,
+   "ops": 504500248.0
+  },
+  "TTFS bipolar": {
+   "cycles": 8051712.0,
+   "latency_us": 43157.17632,
+   "logic_uJ": 1072.1152498526292,
+   "mem_uJ": 320.57916569096,
+   "energy_uJ": 1392.6944155435892,
+   "ops": 387280072.0
+  },
+  "TTFS two-rail unipolar": {
+   "cycles": 8051712.0,
+   "latency_us": 43157.17632,
+   "logic_uJ": 1072.1152498526292,
+   "mem_uJ": 338.62767351375993,
+   "energy_uJ": 1410.7429233663893,
+   "ops": 387280072.0
+  },
+  "Bit-serial, one event per non-zero bit (same lanes)": {
+   "cycles": 9183928.0,
+   "latency_us": 49225.854080000005,
+   "logic_uJ": 1251.6372641237251,
+   "mem_uJ": 401.82607833857594,
+   "energy_uJ": 1653.4633424623012,
+   "ops": 459741580.0
+  },
+  "Rate / count spikes (same lanes)": {
+   "cycles": 13615840.0,
+   "latency_us": 72980.9024,
+   "logic_uJ": 1954.386490398567,
+   "mem_uJ": 578.009066436368,
+   "energy_uJ": 2532.395556834935,
+   "ops": 743383820.0
+  },
+  "SparTen W4A4, zero-skipping QNN": {
+   "cycles": 14485308.0,
+   "latency_us": 76192.72008,
+   "logic_uJ": 2005.275976201875,
+   "mem_uJ": 740.7232298281039,
+   "energy_uJ": 2745.9992060299787,
+   "ops": 387280072.0
+  },
+  "SparTen W4A4, no zeros to skip (offset inputs)": {
+   "cycles": 17798168.0,
+   "latency_us": 93618.36368,
+   "logic_uJ": 2535.363109663965,
+   "mem_uJ": 900.7217578524719,
+   "energy_uJ": 3436.084867516437,
+   "ops": 504500248.0
+  },
+  "QNN twin: same dataflow, MAC lanes": {
+   "cycles": 8051712.0,
+   "latency_us": 43157.17632,
+   "logic_uJ": 1153.8313450446292,
+   "mem_uJ": 320.57916569096,
+   "energy_uJ": 1474.4105107355892,
+   "ops": 387280072.0
+  }
+ }
+}
