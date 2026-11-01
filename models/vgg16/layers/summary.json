@@ -1,0 +1,183 @@
+{
+ "checkpoint": "/lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/src/logQuant/checkpoints/vgg16_qat_2550934.hn1/hw_w4_uniform_a4/last.pt",
+ "weight_bits": 4,
+ "test_accuracy": 0.7141,
+ "images": [
+  0,
+  1
+ ],
+ "labels": [
+  49,
+  33
+ ],
+ "layers": [
+  {
+   "name": "features.3",
+   "cin": 64,
+   "cout": 64,
+   "h": 32,
+   "w": 32,
+   "T": 15,
+   "weight_density": 0.4963921440972222,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.4210357666015625,
+    0.3496551513671875
+   ]
+  },
+  {
+   "name": "features.7",
+   "cin": 64,
+   "cout": 128,
+   "h": 16,
+   "w": 16,
+   "T": 15,
+   "weight_density": 0.7334662543402778,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.463623046875,
+    0.53338623046875
+   ]
+  },
+  {
+   "name": "features.10",
+   "cin": 128,
+   "cout": 128,
+   "h": 16,
+   "w": 16,
+   "T": 15,
+   "weight_density": 0.7557508680555555,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.48651123046875,
+    0.476959228515625
+   ]
+  },
+  {
+   "name": "features.14",
+   "cin": 128,
+   "cout": 256,
+   "h": 8,
+   "w": 8,
+   "T": 15,
+   "weight_density": 0.7480570475260416,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.3843994140625,
+    0.4539794921875
+   ]
+  },
+  {
+   "name": "features.17",
+   "cin": 256,
+   "cout": 256,
+   "h": 8,
+   "w": 8,
+   "T": 15,
+   "weight_density": 0.7448357476128472,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.23614501953125,
+    0.23809814453125
+   ]
+  },
+  {
+   "name": "features.20",
+   "cin": 256,
+   "cout": 256,
+   "h": 8,
+   "w": 8,
+   "T": 15,
+   "weight_density": 0.7095167371961805,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.2056884765625,
+    0.2354736328125
+   ]
+  },
+  {
+   "name": "features.24",
+   "cin": 256,
+   "cout": 512,
+   "h": 4,
+   "w": 4,
+   "T": 15,
+   "weight_density": 0.7419221666124132,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.2763671875,
+    0.28955078125
+   ]
+  },
+  {
+   "name": "features.27",
+   "cin": 512,
+   "cout": 512,
+   "h": 4,
+   "w": 4,
+   "T": 15,
+   "weight_density": 0.6916885375976562,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.1529541015625,
+    0.1412353515625
+   ]
+  },
+  {
+   "name": "features.30",
+   "cin": 512,
+   "cout": 512,
+   "h": 4,
+   "w": 4,
+   "T": 15,
+   "weight_density": 0.6814829508463541,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.09375,
+    0.0631103515625
+   ]
+  },
+  {
+   "name": "features.34",
+   "cin": 512,
+   "cout": 512,
+   "h": 2,
+   "w": 2,
+   "T": 15,
+   "weight_density": 0.6487909952799479,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.19091796875,
+    0.23291015625
+   ]
+  },
+  {
+   "name": "features.37",
+   "cin": 512,
+   "cout": 512,
+   "h": 2,
+   "w": 2,
+   "T": 15,
+   "weight_density": 0.630570305718316,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.078125,
+    0.1240234375
+   ]
+  },
+  {
+   "name": "features.40",
+   "cin": 512,
+   "cout": 512,
+   "h": 2,
+   "w": 2,
+   "T": 15,
+   "weight_density": 0.3793665568033854,
+   "model_agreement": 1.0,
+   "input_density": [
+    0.61669921875,
+    0.34619140625
+   ]
+  }
+ ]
+}

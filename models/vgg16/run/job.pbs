@@ -1,0 +1,42 @@
+#!/bin/bash
+#PBS -S /bin/bash
+#PBS -q gpuq
+#PBS -l select=1:ncpus=2:ngpus=1:mem=8gb
+#PBS -l walltime=00:02:00
+#PBS -r n
+
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?Submit from the ANN-SNN workspace}"
+source ./env.sh
+task=${ANN_SNN_TASK:-probe}
+case "$task" in
+    probe|logquant|logquant_weights|vision_cifar100|threshold_rule|vgg_qat|threshold_rule_qat|cnn_export) ;;
+    *) echo "Unknown task: $task" >&2; exit 2 ;;
+esac
+if [[ "$task" == logquant_weights || "$task" == vision_cifar100 || "$task" == threshold_rule || "$task" == vgg_qat || "$task" == threshold_rule_qat || "$task" == cnn_export ]]; then
+    placement=$(qstat -f "$PBS_JOBID" | awk '$1 == "Resource_List.place" {print $3}')
+    if [[ "$placement" != *exclhost* ]]; then
+        echo "$task requires place=exclhost because Aqua does not isolate GPU indices" >&2
+        exit 2
+    fi
+    export CUDA_VISIBLE_DEVICES=0
+fi
+
+export RUN_DIR="$ANN_SNN_ROOT/runs/${task}_${PBS_JOBID:?}"
+# Refuse to reuse an existing run, even if a job is restarted manually.
+mkdir "$RUN_DIR"
+exec > >(tee "$RUN_DIR/stdout.log") 2> >(tee "$RUN_DIR/stderr.log" >&2)
+trap 'status=$?; printf "%s\n" "$status" > "$RUN_DIR/exit_code.txt"; date -u +%FT%TZ > "$RUN_DIR/finished_utc.txt"' EXIT
+export TMPDIR="$ANN_SNN_ROOT/tmp/$PBS_JOBID"
+mkdir -p "$TMPDIR"
+export OMP_NUM_THREADS="${PBS_NCPUS:-2}"
+{
+    printf 'job_id=%s\ntask=%s\nhost=%s\nstarted_utc=%s\n' \
+        "$PBS_JOBID" "$task" "$(hostname)" "$(date -u +%FT%TZ)"
+    printf 'workspace=%s\nenvironment=%s\ntmpdir=%s\nCUDA_VISIBLE_DEVICES=%s\n' \
+        "$ANN_SNN_ROOT" "$ANN_SNN_ENV" "$TMPDIR" "${CUDA_VISIBLE_DEVICES:-unset}"
+    cat "${PBS_NODEFILE:?}"
+} | tee "$RUN_DIR/job.txt"
+cp "$ANN_SNN_ROOT/jobs/gpu.pbs" "$RUN_DIR/job.pbs"
+cp "$ANN_SNN_ROOT/jobs/tasks/$task.sh" "$RUN_DIR/task.sh"
+bash "$RUN_DIR/task.sh"

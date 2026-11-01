@@ -1,0 +1,64 @@
+{
+ "name": "features.3",
+ "index": 1,
+ "cin": 64,
+ "cout": 64,
+ "h": 32,
+ "w": 32,
+ "T": 15,
+ "mode": "uniform",
+ "bits": 4,
+ "input_e_max": 2,
+ "output_e_max": 1,
+ "weight_density": 0.4963921440972222,
+ "down_channels": 0,
+ "model_agreement": 1.0,
+ "images": [
+  {
+   "image": 0,
+   "input_density": 0.4210357666015625,
+   "output_density": 0.256683349609375,
+   "tick_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    24,
+    26,
+    113,
+    266,
+    1348,
+    4748,
+    21061,
+    37943
+   ]
+  },
+  {
+   "image": 1,
+   "input_density": 0.3496551513671875,
+   "output_density": 0.2866058349609375,
+   "tick_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    7,
+    44,
+    147,
+    966,
+    4679,
+    17068,
+    42621
+   ]
+  }
+ ]
+}

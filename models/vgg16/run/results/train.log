@@ -1,0 +1,73 @@
+teacher: dev 0.9996 test 0.7400
+[hw_w4_uniform_a4] PTQ start: dev 0.8380 test 0.6068
+[hw_w4_uniform_a4] epoch 1: loss 0.4291 dev 0.9794 (13 s)
+[hw_w4_uniform_a4] epoch 2: loss 0.2030 dev 0.9850 (13 s)
+[hw_w4_uniform_a4] epoch 3: loss 0.1523 dev 0.9886 (13 s)
+[hw_w4_uniform_a4] epoch 4: loss 0.1386 dev 0.9856 (13 s)
+[hw_w4_uniform_a4] epoch 5: loss 0.1166 dev 0.9898 (13 s)
+[hw_w4_uniform_a4] epoch 6: loss 0.1092 dev 0.9890 (13 s)
+[hw_w4_uniform_a4] epoch 7: loss 0.0998 dev 0.9902 (13 s)
+[hw_w4_uniform_a4] epoch 8: loss 0.0962 dev 0.9882 (13 s)
+[hw_w4_uniform_a4] epoch 9: loss 0.0880 dev 0.9886 (13 s)
+[hw_w4_uniform_a4] epoch 10: loss 0.0904 dev 0.9894 (13 s)
+[hw_w4_uniform_a4] epoch 11: loss 0.0838 dev 0.9904 (13 s)
+[hw_w4_uniform_a4] epoch 12: loss 0.0816 dev 0.9912 (13 s)
+[hw_w4_uniform_a4] epoch 13: loss 0.0764 dev 0.9916 (13 s)
+[hw_w4_uniform_a4] epoch 14: loss 0.0732 dev 0.9918 (13 s)
+[hw_w4_uniform_a4] epoch 15: loss 0.0725 dev 0.9924 (13 s)
+[hw_w4_uniform_a4] epoch 16: loss 0.0727 dev 0.9902 (13 s)
+[hw_w4_uniform_a4] epoch 17: loss 0.0701 dev 0.9910 (13 s)
+[hw_w4_uniform_a4] epoch 18: loss 0.0683 dev 0.9910 (13 s)
+[hw_w4_uniform_a4] epoch 19: loss 0.0684 dev 0.9910 (13 s)
+[hw_w4_uniform_a4] epoch 20: loss 0.0652 dev 0.9932 (13 s)
+[hw_w4_uniform_a4] epoch 21: loss 0.0656 dev 0.9930 (13 s)
+[hw_w4_uniform_a4] epoch 22: loss 0.0629 dev 0.9920 (13 s)
+[hw_w4_uniform_a4] epoch 23: loss 0.0581 dev 0.9930 (13 s)
+[hw_w4_uniform_a4] epoch 24: loss 0.0610 dev 0.9922 (13 s)
+[hw_w4_uniform_a4] epoch 25: loss 0.0591 dev 0.9930 (13 s)
+[hw_w4_uniform_a4] epoch 26: loss 0.0624 dev 0.9922 (13 s)
+[hw_w4_uniform_a4] epoch 27: loss 0.0601 dev 0.9938 (13 s)
+[hw_w4_uniform_a4] epoch 28: loss 0.0603 dev 0.9914 (13 s)
+[hw_w4_uniform_a4] epoch 29: loss 0.0573 dev 0.9918 (13 s)
+[hw_w4_uniform_a4] epoch 30: loss 0.0583 dev 0.9926 (13 s)
+[hw_w4_uniform_a4] final epoch test 0.7141; best-dev epoch 27 (dev 0.9938) test 0.7147
+[hw_w4_log3] PTQ start: dev 0.4064 test 0.3254
+[hw_w4_log3] epoch 1: loss 5.1664 dev 0.6736 (16 s)
+[hw_w4_log3] epoch 2: loss 3.3595 dev 0.7336 (16 s)
+[hw_w4_log3] epoch 3: loss 2.6862 dev 0.7688 (16 s)
+[hw_w4_log3] epoch 4: loss 2.3316 dev 0.7936 (16 s)
+[hw_w4_log3] epoch 5: loss 2.1113 dev 0.8136 (16 s)
+[hw_w4_log3] epoch 6: loss 1.9412 dev 0.8256 (16 s)
+[hw_w4_log3] epoch 7: loss 1.8127 dev 0.8292 (16 s)
+[hw_w4_log3] epoch 8: loss 1.6981 dev 0.8368 (16 s)
+[hw_w4_log3] epoch 9: loss 1.6220 dev 0.8422 (16 s)
+[hw_w4_log3] epoch 10: loss 1.5857 dev 0.8508 (16 s)
+[hw_w4_log3] epoch 11: loss 1.5266 dev 0.8492 (16 s)
+[hw_w4_log3] epoch 12: loss 1.4767 dev 0.8560 (16 s)
+[hw_w4_log3] epoch 13: loss 1.4231 dev 0.8568 (16 s)
+[hw_w4_log3] epoch 14: loss 1.4067 dev 0.8606 (16 s)
+[hw_w4_log3] epoch 15: loss 1.3646 dev 0.8526 (16 s)
+[hw_w4_log3] epoch 16: loss 1.3473 dev 0.8640 (16 s)
+[hw_w4_log3] epoch 17: loss 1.3430 dev 0.8592 (16 s)
+[hw_w4_log3] epoch 18: loss 1.3067 dev 0.8624 (16 s)
+[hw_w4_log3] epoch 19: loss 1.2829 dev 0.8618 (16 s)
+[hw_w4_log3] epoch 20: loss 1.2539 dev 0.8634 (16 s)
+[hw_w4_log3] epoch 21: loss 1.2451 dev 0.8658 (16 s)
+[hw_w4_log3] epoch 22: loss 1.2207 dev 0.8648 (16 s)
+[hw_w4_log3] epoch 23: loss 1.2288 dev 0.8678 (16 s)
+[hw_w4_log3] epoch 24: loss 1.2200 dev 0.8672 (16 s)
+[hw_w4_log3] epoch 25: loss 1.1876 dev 0.8662 (16 s)
+[hw_w4_log3] epoch 26: loss 1.1793 dev 0.8668 (16 s)
+[hw_w4_log3] epoch 27: loss 1.1959 dev 0.8678 (16 s)
+[hw_w4_log3] epoch 28: loss 1.1997 dev 0.8688 (16 s)
+[hw_w4_log3] epoch 29: loss 1.2005 dev 0.8704 (16 s)
+[hw_w4_log3] epoch 30: loss 1.1932 dev 0.8734 (16 s)
+[hw_w4_log3] final epoch test 0.6283; best-dev epoch 30 (dev 0.8734) test 0.6283
+Teacher (FP32): dev 99.96%, test 74.00%
+
+Dev = 5,000 held-out training images, which the pretrained teacher saw in training.
+
+| Config | PTQ test | QAT test (final epoch) | QAT test (best-dev epoch) | PTQ dev | best dev (epoch) |
+|---|---:|---:|---:|---:|---:|
+| hw_w4_uniform_a4 | 60.68% | **71.41%** | 71.47% | 83.80% | 99.38% (27) |
+| hw_w4_log3 | 32.54% | **62.83%** | 62.83% | 40.64% | 87.34% (30) |

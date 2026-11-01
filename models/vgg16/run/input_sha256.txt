@@ -1,0 +1,4 @@
+7d8c4031aee657cfa20039610394e2381bc6d907e9b9a35190d51bceb172d30b  /lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/checkpoints/vgg16-cifar100/cifar100_vgg16_bn-7d8c4031.pt
+85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7  /lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/data/CIFAR100/cifar-100-python-mirror.tar.gz
+baae83593f5b4fb718c7cfc71eb517957a1781e34f9045515b1dc639db9c2b5e  /lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/data/finetuning/seed42/data_manifest.json
+417713f41e9d81cc46e4042bd97f5ac716f805a9f33991d56ed430557f601254  /lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/src/logQuant/checkpoints/vgg16_qat_2549758.hn1/hw_w4_log7/last.pt

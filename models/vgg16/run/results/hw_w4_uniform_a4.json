@@ -1,0 +1,427 @@
+{
+ "config": {
+  "weight_bits": 4,
+  "scheme": "uniform",
+  "bits": [
+   4,
+   4
+  ]
+ },
+ "sites": {
+  "features.0.input": {
+   "signed": true,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 7,
+   "e_max": 1,
+   "e_min_log": -5,
+   "calibration_mse": 0.006789063569158316,
+   "fitted_calibration_mse": 0.006789063569158316,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.3.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 2,
+   "e_min_log": -12,
+   "calibration_mse": 0.003677398432046175,
+   "fitted_calibration_mse": 0.003677398432046175,
+   "calibration_samples": 8192,
+   "fitted_e_max": 2,
+   "range_offset": 0
+  },
+  "features.7.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.0017864432884380221,
+   "fitted_calibration_mse": 0.0017864432884380221,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.10.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.0007625315920449793,
+   "fitted_calibration_mse": 0.0007625315920449793,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.14.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.001029066857881844,
+   "fitted_calibration_mse": 0.001029066857881844,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.17.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.0004698646371252835,
+   "fitted_calibration_mse": 0.0004698646371252835,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.20.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.0004144591512158513,
+   "fitted_calibration_mse": 0.0004144591512158513,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.24.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.0005155226099304855,
+   "fitted_calibration_mse": 0.0005155226099304855,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.27.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 0,
+   "e_min_log": -14,
+   "calibration_mse": 0.00019682967104017735,
+   "fitted_calibration_mse": 0.00019682967104017735,
+   "calibration_samples": 8192,
+   "fitted_e_max": 0,
+   "range_offset": 0
+  },
+  "features.30.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.00019162290845997632,
+   "fitted_calibration_mse": 0.00019162290845997632,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "features.34.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 0,
+   "e_min_log": -14,
+   "calibration_mse": 0.0001604245335329324,
+   "fitted_calibration_mse": 0.0001604245335329324,
+   "calibration_samples": 8192,
+   "fitted_e_max": 0,
+   "range_offset": 0
+  },
+  "features.37.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 0,
+   "e_min_log": -14,
+   "calibration_mse": 7.734252722002566e-05,
+   "fitted_calibration_mse": 7.734252722002566e-05,
+   "calibration_samples": 8192,
+   "fitted_e_max": 0,
+   "range_offset": 0
+  },
+  "features.40.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": -1,
+   "e_min_log": -15,
+   "calibration_mse": 2.390994268353097e-05,
+   "fitted_calibration_mse": 2.390994268353097e-05,
+   "calibration_samples": 8192,
+   "fitted_e_max": -1,
+   "range_offset": 0
+  },
+  "classifier.0.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 2,
+   "e_min_log": -12,
+   "calibration_mse": 0.0038314461708068848,
+   "fitted_calibration_mse": 0.0038314461708068848,
+   "calibration_samples": 8192,
+   "fitted_e_max": 2,
+   "range_offset": 0
+  },
+  "classifier.3.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 1,
+   "e_min_log": -13,
+   "calibration_mse": 0.002567084738984704,
+   "fitted_calibration_mse": 0.002567084738984704,
+   "calibration_samples": 8192,
+   "fitted_e_max": 1,
+   "range_offset": 0
+  },
+  "classifier.6.input": {
+   "signed": false,
+   "total_bits": 4,
+   "nonzero_magnitude_levels": 15,
+   "e_max": 2,
+   "e_min_log": -12,
+   "calibration_mse": 0.004762531258165836,
+   "fitted_calibration_mse": 0.004762531258165836,
+   "calibration_samples": 8192,
+   "fitted_e_max": 2,
+   "range_offset": 0
+  }
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "loss": 0.4290891099611918,
+   "dev_accuracy": 0.9794,
+   "lr": 0.00016269347001344494,
+   "seconds": 13.033615827560425
+  },
+  {
+   "epoch": 2,
+   "loss": 0.20297942616144815,
+   "dev_accuracy": 0.985,
+   "lr": 0.0003878866073100356,
+   "seconds": 12.635349035263062
+  },
+  {
+   "epoch": 3,
+   "loss": 0.1523045210123062,
+   "dev_accuracy": 0.9886,
+   "lr": 0.0004999999863553504,
+   "seconds": 12.637932300567627
+  },
+  {
+   "epoch": 4,
+   "loss": 0.13856942445635795,
+   "dev_accuracy": 0.9856,
+   "lr": 0.0004983016821206057,
+   "seconds": 12.632917404174805
+  },
+  {
+   "epoch": 5,
+   "loss": 0.1166324716978603,
+   "dev_accuracy": 0.9898,
+   "lr": 0.0004932489044138432,
+   "seconds": 12.629682779312134
+  },
+  {
+   "epoch": 6,
+   "loss": 0.10921799133221309,
+   "dev_accuracy": 0.989,
+   "lr": 0.00048490998338558857,
+   "seconds": 12.642122268676758
+  },
+  {
+   "epoch": 7,
+   "loss": 0.09984725154770745,
+   "dev_accuracy": 0.9902,
+   "lr": 0.00047339768863746386,
+   "seconds": 12.637754917144775
+  },
+  {
+   "epoch": 8,
+   "loss": 0.09620146592855454,
+   "dev_accuracy": 0.9882,
+   "lr": 0.0004588677042067816,
+   "seconds": 12.624931573867798
+  },
+  {
+   "epoch": 9,
+   "loss": 0.08798467687500848,
+   "dev_accuracy": 0.9886,
+   "lr": 0.0004415165232070124,
+   "seconds": 12.635051488876343
+  },
+  {
+   "epoch": 10,
+   "loss": 0.09041594582133823,
+   "dev_accuracy": 0.9894,
+   "lr": 0.00042157879059550696,
+   "seconds": 12.635390758514404
+  },
+  {
+   "epoch": 11,
+   "loss": 0.08381658218569225,
+   "dev_accuracy": 0.9904,
+   "lr": 0.0003993241300029767,
+   "seconds": 12.62658977508545
+  },
+  {
+   "epoch": 12,
+   "loss": 0.08162393271393246,
+   "dev_accuracy": 0.9912,
+   "lr": 0.00037505349753642404,
+   "seconds": 12.637204647064209
+  },
+  {
+   "epoch": 13,
+   "loss": 0.07644724118179745,
+   "dev_accuracy": 0.9916,
+   "lr": 0.0003490951118640802,
+   "seconds": 12.638447999954224
+  },
+  {
+   "epoch": 14,
+   "loss": 0.07324974010984103,
+   "dev_accuracy": 0.9918,
+   "lr": 0.00032180001562097117,
+   "seconds": 12.643357753753662
+  },
+  {
+   "epoch": 15,
+   "loss": 0.07254007046818733,
+   "dev_accuracy": 0.9924,
+   "lr": 0.0002935373281594874,
+   "seconds": 12.647710084915161
+  },
+  {
+   "epoch": 16,
+   "loss": 0.07274413794544007,
+   "dev_accuracy": 0.9902,
+   "lr": 0.00026468925384336053,
+   "seconds": 12.638454675674438
+  },
+  {
+   "epoch": 17,
+   "loss": 0.07013952702681224,
+   "dev_accuracy": 0.991,
+   "lr": 0.00023564591338930954,
+   "seconds": 12.63704776763916
+  },
+  {
+   "epoch": 18,
+   "loss": 0.06825410344070859,
+   "dev_accuracy": 0.991,
+   "lr": 0.00020680006815359278,
+   "seconds": 12.640693664550781
+  },
+  {
+   "epoch": 19,
+   "loss": 0.06836950070460637,
+   "dev_accuracy": 0.991,
+   "lr": 0.00017854180870844087,
+   "seconds": 12.64377236366272
+  },
+  {
+   "epoch": 20,
+   "loss": 0.06517852706975408,
+   "dev_accuracy": 0.9932,
+   "lr": 0.0001512532795362605,
+   "seconds": 12.634305000305176
+  },
+  {
+   "epoch": 21,
+   "loss": 0.06555322490400738,
+   "dev_accuracy": 0.993,
+   "lr": 0.00012530351118107357,
+   "seconds": 12.633579730987549
+  },
+  {
+   "epoch": 22,
+   "loss": 0.0628782041284773,
+   "dev_accuracy": 0.992,
+   "lr": 0.00010104342974347442,
+   "seconds": 12.642287015914917
+  },
+  {
+   "epoch": 23,
+   "loss": 0.058133615130682784,
+   "dev_accuracy": 0.993,
+   "lr": 7.880111120712792e-05,
+   "seconds": 12.639982223510742
+  },
+  {
+   "epoch": 24,
+   "loss": 0.06104534946812524,
+   "dev_accuracy": 0.9922,
+   "lr": 5.887734477389886e-05,
+   "seconds": 12.627690076828003
+  },
+  {
+   "epoch": 25,
+   "loss": 0.05910318655702803,
+   "dev_accuracy": 0.993,
+   "lr": 4.1541565205896714e-05,
+   "seconds": 12.62935209274292
+  },
+  {
+   "epoch": 26,
+   "loss": 0.06244823128912184,
+   "dev_accuracy": 0.9922,
+   "lr": 2.7028209182527907e-05,
+   "seconds": 12.650344848632812
+  },
+  {
+   "epoch": 27,
+   "loss": 0.060057450795835916,
+   "dev_accuracy": 0.9938,
+   "lr": 1.5533544946580383e-05,
+   "seconds": 12.62637448310852
+  },
+  {
+   "epoch": 28,
+   "loss": 0.060309036355548434,
+   "dev_accuracy": 0.9914,
+   "lr": 7.213018112933885e-06,
+   "seconds": 12.637117862701416
+  },
+  {
+   "epoch": 29,
+   "loss": 0.057293100077576105,
+   "dev_accuracy": 0.9918,
+   "lr": 2.1791495332838755e-06,
+   "seconds": 12.635337114334106
+  },
+  {
+   "epoch": 30,
+   "loss": 0.058333661970827316,
+   "dev_accuracy": 0.9926,
+   "lr": 5.000136446495934e-07,
+   "seconds": 12.623751640319824
+  }
+ ],
+ "ptq_dev": 0.838,
+ "ptq_test": 0.6068,
+ "last_epoch": 30,
+ "test_accuracy": 0.7141,
+ "best_epoch": 27,
+ "best_dev": 0.9938,
+ "best_dev_test_accuracy": 0.7147,
+ "last_checkpoint": "/lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/src/logQuant/checkpoints/vgg16_qat_2550934.hn1/hw_w4_uniform_a4/last.pt",
+ "last_sha256": "60eb2abe5ebfeac144d292427aeb07073ef6e8199ff4de5128a03d7f75c530c7",
+ "best_checkpoint": "/lfs/usrhome/btech/ee23b103/scratch/ANN-SNN/src/logQuant/checkpoints/vgg16_qat_2550934.hn1/hw_w4_uniform_a4/best.pt",
+ "best_sha256": "b5b70ede035e4abe4280be94a9426ddc1a04ed5c49c00d04ec610a0636511dca"
+}
