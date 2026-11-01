@@ -1,0 +1,17 @@
+build/
+results/activity/
+results/problems_p32/
+results/sims/
+results/power/
+results/resynth/
+results/lm/*/problems/
+results/lm/*/sims/
+results/*.out
+results/dc_runs.txt
+__pycache__/
+models/otters/checkpoint/*.bin
+models/**/*.pt
+results/problems/
+results/eyeriss_*.json
+results/final_rerun.*
+dc.env
