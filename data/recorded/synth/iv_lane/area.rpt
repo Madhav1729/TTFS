@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : area
+Design : ttfs_iv_lane
+Version: U-2022.12
+Date   : Sun Nov  1 19:08:15 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/runs/20261101T133717Z_synth_iv_lane/lib/ng45_typical.db)
+
+Number of ports:                          585
+Number of nets:                          1812
+Number of cells:                         1274
+Number of combinational cells:           1154
+Number of sequential cells:               108
+Number of macros/black boxes:               0
+Number of buf/inv:                        167
+Number of references:                      43
+
+Combinational area:               1448.104013
+Buf/Inv area:                       89.376001
+Noncombinational area:             477.735984
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1925.839997
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------------
+ttfs_iv_lane                      1925.8400    100.0  1124.3820   461.7760  0.0000  ttfs_iv_lane
+add_60_S2                          134.5960      7.0   134.5960     0.0000  0.0000  ttfs_iv_lane_DW01_add_1_DW01_add_29
+add_87                              70.7560      3.7    70.7560     0.0000  0.0000  ttfs_iv_lane_DW01_add_0_DW01_add_28
+clk_gate_pend_reg                    3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_1
+clk_gate_s_cur_reg                   3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_0
+clk_gate_tc_reg                      3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_3
+clk_gate_u_cur_reg                   3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_5
+clk_gate_uo_reg                      3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_4
+clk_gate_vreg_reg                    3.7240      0.2     1.0640     2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_lane_2
+r566                               111.9860      5.8   111.9860     0.0000  0.0000  ttfs_iv_lane_DW01_cmp6_0
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------------
+Total                                                 1448.1040   477.7360  0.0000
+
+1

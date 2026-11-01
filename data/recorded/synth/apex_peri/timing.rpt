@@ -1,0 +1,339 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : apex_periphery
+Version: U-2022.12
+Date   : Sun Nov  1 06:25:39 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: o_spikes[12]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rows_15__fifo_reg_3_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  apex_periphery     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  o_spikes[12] (in)                                       0.00       0.25 f
+  U73954/ZN (NOR4_X1)                                     0.09       0.34 r
+  U73955/ZN (NAND4_X1)                                    0.14       0.49 f
+  U59555/ZN (OAI21_X1)                                    0.10       0.58 r
+  U108454/ZN (NAND2_X1)                                   0.05       0.63 f
+  U108551/ZN (OAI222_X1)                                  0.07       0.70 r
+  U108634/ZN (INV_X1)                                     0.03       0.73 f
+  U108247/ZN (XNOR2_X2)                                   0.13       0.86 r
+  U108244/ZN (INV_X1)                                     0.11       0.98 f
+  U108724/ZN (NAND2_X1)                                   0.20       1.18 r
+  U41849/Z (BUF_X1)                                       0.12       1.30 r
+  U42204/ZN (INV_X1)                                      0.08       1.39 f
+  U38589/ZN (NOR2_X1)                                     0.17       1.56 r
+  U108696/ZN (NOR2_X1)                                    0.05       1.61 f
+  U44379/ZN (INV_X1)                                      0.05       1.67 r
+  U59281/ZN (AND3_X1)                                     0.20       1.87 r
+  U42581/Z (BUF_X1)                                       0.10       1.97 r
+  U44470/ZN (INV_X1)                                      0.08       2.04 f
+  U46535/ZN (AND4_X1)                                     0.13       2.18 f
+  U42288/Z (BUF_X1)                                       0.09       2.27 f
+  U43418/ZN (INV_X1)                                      0.10       2.37 r
+  U59507/ZN (AOI22_X1)                                    0.04       2.41 f
+  U59506/ZN (INV_X1)                                      0.03       2.44 r
+  clk_gate_rows_15__fifo_reg_3_/EN (SNPS_CLOCK_GATE_HIGH_apex_periphery_24)     0.00     2.44 r
+  clk_gate_rows_15__fifo_reg_3_/latch/D (DLL_X1)          0.01       2.44 r
+  data arrival time                                                  2.44
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_rows_15__fifo_reg_3_/latch/GN (DLL_X1)         0.00       2.45 f
+  time borrowed from endpoint                             0.00       2.45
+  data required time                                                 2.45
+  --------------------------------------------------------------------------
+  data required time                                                 2.45
+  data arrival time                                                 -2.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         2.47   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: o_spikes[222]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rows_1__fifo_reg_3_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  apex_periphery     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  o_spikes[222] (in)                                      0.00       0.25 f
+  U73959/ZN (NOR4_X1)                                     0.09       0.34 r
+  U73960/ZN (NAND4_X1)                                    0.14       0.49 f
+  U38614/ZN (OAI21_X1)                                    0.09       0.57 r
+  U108623/ZN (NAND2_X1)                                   0.05       0.62 f
+  U108624/ZN (OAI222_X1)                                  0.07       0.69 r
+  U108595/ZN (INV_X1)                                     0.04       0.72 f
+  U108701/ZN (XNOR2_X1)                                   0.07       0.79 f
+  U46674/ZN (INV_X1)                                      0.18       0.97 r
+  U44367/Z (BUF_X1)                                       0.12       1.09 r
+  U43329/Z (BUF_X1)                                       0.12       1.22 r
+  U42569/ZN (NAND2_X1)                                    0.10       1.32 f
+  U43322/ZN (INV_X1)                                      0.14       1.46 r
+  U59235/ZN (NOR2_X1)                                     0.09       1.55 f
+  U108493/ZN (NOR2_X1)                                    0.09       1.65 r
+  U44378/ZN (INV_X1)                                      0.04       1.69 f
+  U46531/ZN (AND2_X1)                                     0.05       1.74 f
+  U46644/ZN (AND2_X1)                                     0.07       1.81 f
+  U43381/ZN (INV_X1)                                      0.11       1.91 r
+  U46616/ZN (AND4_X1)                                     0.22       2.14 r
+  U42284/Z (BUF_X1)                                       0.10       2.24 r
+  U43432/ZN (INV_X1)                                      0.07       2.31 f
+  U59481/ZN (AOI22_X1)                                    0.06       2.37 r
+  U59480/ZN (INV_X1)                                      0.02       2.39 f
+  clk_gate_rows_1__fifo_reg_3_/EN (SNPS_CLOCK_GATE_HIGH_apex_periphery_178)     0.00     2.39 f
+  clk_gate_rows_1__fifo_reg_3_/latch/D (DLL_X1)           0.01       2.40 f
+  data arrival time                                                  2.40
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_rows_1__fifo_reg_3_/latch/GN (DLL_X1)          0.00       2.45 f
+  time borrowed from endpoint                             0.00       2.45
+  data required time                                                 2.45
+  --------------------------------------------------------------------------
+  data required time                                                 2.45
+  data arrival time                                                 -2.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         2.45   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: o_spikes[192]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rows_3__fifo_reg_3_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  apex_periphery     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  o_spikes[192] (in)                                      0.00       0.25 f
+  U74049/ZN (NOR4_X1)                                     0.09       0.34 r
+  U74050/ZN (NAND4_X1)                                    0.14       0.49 f
+  U59557/ZN (OAI21_X1)                                    0.10       0.58 r
+  U59558/ZN (NAND2_X1)                                    0.05       0.63 f
+  U108654/ZN (OAI222_X1)                                  0.07       0.70 r
+  U108710/ZN (INV_X1)                                     0.03       0.73 f
+  U46484/ZN (XNOR2_X1)                                    0.17       0.90 r
+  U108326/ZN (INV_X1)                                     0.11       1.00 f
+  U108346/ZN (NAND2_X1)                                   0.15       1.15 r
+  U43327/ZN (INV_X1)                                      0.12       1.27 f
+  U108335/ZN (NOR2_X1)                                    0.19       1.46 r
+  U108468/ZN (NOR2_X1)                                    0.05       1.51 f
+  U44373/ZN (INV_X1)                                      0.05       1.56 r
+  U46529/ZN (AND2_X1)                                     0.06       1.62 r
+  U46643/ZN (AND2_X1)                                     0.18       1.80 r
+  U42286/Z (BUF_X1)                                       0.10       1.90 r
+  U43380/ZN (INV_X1)                                      0.08       1.98 f
+  U46605/ZN (AND4_X1)                                     0.14       2.12 f
+  U42285/Z (BUF_X1)                                       0.09       2.22 f
+  U43430/ZN (INV_X1)                                      0.10       2.31 r
+  U59485/ZN (AOI22_X1)                                    0.04       2.36 f
+  U59484/ZN (INV_X1)                                      0.03       2.38 r
+  clk_gate_rows_3__fifo_reg_3_/EN (SNPS_CLOCK_GATE_HIGH_apex_periphery_156)     0.00     2.38 r
+  clk_gate_rows_3__fifo_reg_3_/latch/D (DLL_X1)           0.01       2.39 r
+  data arrival time                                                  2.39
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_rows_3__fifo_reg_3_/latch/GN (DLL_X1)          0.00       2.45 f
+  time borrowed from endpoint                             0.00       2.45
+  data required time                                                 2.45
+  --------------------------------------------------------------------------
+  data required time                                                 2.45
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         2.47   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: o_spikes[57]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rows_12__fifo_reg_3_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  apex_periphery     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  o_spikes[57] (in)                                       0.00       0.25 f
+  U74021/ZN (NOR4_X1)                                     0.09       0.34 r
+  U74022/ZN (NAND4_X1)                                    0.14       0.49 f
+  U59550/ZN (OAI21_X1)                                    0.10       0.58 r
+  U108520/ZN (NAND2_X1)                                   0.05       0.63 f
+  U108690/ZN (OAI222_X1)                                  0.07       0.70 r
+  U108590/ZN (INV_X1)                                     0.03       0.73 f
+  U108149/ZN (XNOR2_X1)                                   0.09       0.82 f
+  U108146/Z (BUF_X1)                                      0.10       0.92 f
+  U108465/ZN (INV_X1)                                     0.18       1.10 r
+  U108721/ZN (NAND2_X1)                                   0.13       1.23 f
+  U43320/ZN (INV_X1)                                      0.19       1.42 r
+  U38591/ZN (NOR2_X1)                                     0.10       1.52 f
+  U108303/ZN (NOR2_X1)                                    0.10       1.62 r
+  U44381/ZN (INV_X1)                                      0.04       1.66 f
+  U59289/ZN (AND3_X1)                                     0.12       1.79 f
+  U42625/Z (BUF_X1)                                       0.09       1.88 f
+  U44476/ZN (INV_X1)                                      0.10       1.98 r
+  U46539/ZN (AND4_X1)                                     0.21       2.19 r
+  U43421/ZN (INV_X1)                                      0.10       2.29 f
+  U59501/ZN (AOI22_X1)                                    0.07       2.36 r
+  U59500/ZN (INV_X1)                                      0.02       2.38 f
+  clk_gate_rows_12__fifo_reg_3_/EN (SNPS_CLOCK_GATE_HIGH_apex_periphery_57)     0.00     2.38 f
+  clk_gate_rows_12__fifo_reg_3_/latch/D (DLL_X1)          0.01       2.39 f
+  data arrival time                                                  2.39
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_rows_12__fifo_reg_3_/latch/GN (DLL_X1)         0.00       2.45 f
+  time borrowed from endpoint                             0.00       2.45
+  data required time                                                 2.45
+  --------------------------------------------------------------------------
+  data required time                                                 2.45
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         2.45   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: o_spikes[222]
+              (input port clocked by clk)
+  Endpoint: clk_gate_rows_1__fifo_reg_2_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  apex_periphery     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  o_spikes[222] (in)                                      0.00       0.25 f
+  U73959/ZN (NOR4_X1)                                     0.09       0.34 r
+  U73960/ZN (NAND4_X1)                                    0.14       0.49 f
+  U38614/ZN (OAI21_X1)                                    0.09       0.57 r
+  U108623/ZN (NAND2_X1)                                   0.05       0.62 f
+  U108624/ZN (OAI222_X1)                                  0.07       0.69 r
+  U108595/ZN (INV_X1)                                     0.04       0.72 f
+  U108701/ZN (XNOR2_X1)                                   0.07       0.79 f
+  U46674/ZN (INV_X1)                                      0.18       0.97 r
+  U44367/Z (BUF_X1)                                       0.12       1.09 r
+  U43329/Z (BUF_X1)                                       0.12       1.22 r
+  U42569/ZN (NAND2_X1)                                    0.10       1.32 f
+  U43322/ZN (INV_X1)                                      0.14       1.46 r
+  U59235/ZN (NOR2_X1)                                     0.09       1.55 f
+  U108493/ZN (NOR2_X1)                                    0.09       1.65 r
+  U73920/ZN (NOR2_X1)                                     0.04       1.69 f
+  U59358/ZN (AND3_X1)                                     0.12       1.81 f
+  U42579/Z (BUF_X1)                                       0.09       1.90 f
+  U44517/ZN (INV_X1)                                      0.10       2.00 r
+  U46617/ZN (AND4_X1)                                     0.21       2.21 r
+  U43412/Z (BUF_X1)                                       0.12       2.33 r
+  U59414/ZN (OAI22_X1)                                    0.05       2.38 f
+  clk_gate_rows_1__fifo_reg_2_/EN (SNPS_CLOCK_GATE_HIGH_apex_periphery_179)     0.00     2.38 f
+  clk_gate_rows_1__fifo_reg_2_/latch/D (DLL_X1)           0.01       2.38 f
+  data arrival time                                                  2.38
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_rows_1__fifo_reg_2_/latch/GN (DLL_X1)          0.00       2.45 f
+  time borrowed from endpoint                             0.00       2.45
+  data required time                                                 2.45
+  --------------------------------------------------------------------------
+  data required time                                                 2.45
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.06   
+  --------------------------------------------------------------
+  max time borrow                                         2.44   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+1

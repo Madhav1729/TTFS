@@ -1,0 +1,425 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : eyeriss_pe
+Version: U-2022.12
+Date   : Sun Nov  1 02:43:20 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: cfg_u[1] (input port clocked by clk)
+  Endpoint: clk_gate_ispad_reg_8_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eyeriss_pe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  cfg_u[1] (in)                                           0.00       0.25 f
+  mult_157/b[1] (eyeriss_pe_DW_mult_uns_3)                0.00       0.25 f
+  mult_157/U72/ZN (INV_X1)                                0.07       0.32 r
+  mult_157/U93/ZN (NOR2_X1)                               0.04       0.36 f
+  mult_157/U25/S (HA_X1)                                  0.08       0.43 f
+  mult_157/U10/CO (FA_X1)                                 0.09       0.53 f
+  mult_157/U9/S (FA_X1)                                   0.14       0.67 r
+  mult_157/product[3] (eyeriss_pe_DW_mult_uns_3)          0.00       0.67 r
+  add_1_root_add_0_root_add_157_2_U1_3/S (FA_X1)          0.12       0.79 f
+  add_0_root_add_0_root_add_157_2/B[3] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     0.79 f
+  add_0_root_add_0_root_add_157_2/U1_3/CO (FA_X1)         0.10       0.90 f
+  add_0_root_add_0_root_add_157_2/U1_4/CO (FA_X1)         0.09       0.99 f
+  add_0_root_add_0_root_add_157_2/U1_5/CO (FA_X1)         0.09       1.08 f
+  add_0_root_add_0_root_add_157_2/U1_6/CO (FA_X1)         0.09       1.17 f
+  add_0_root_add_0_root_add_157_2/U1_7/CO (FA_X1)         0.09       1.26 f
+  add_0_root_add_0_root_add_157_2/U1_8/CO (FA_X1)         0.09       1.35 f
+  add_0_root_add_0_root_add_157_2/U1_9/CO (FA_X1)         0.09       1.44 f
+  add_0_root_add_0_root_add_157_2/U1_10/CO (FA_X1)        0.09       1.53 f
+  add_0_root_add_0_root_add_157_2/U1_11/CO (FA_X1)        0.09       1.62 f
+  add_0_root_add_0_root_add_157_2/U1_12/S (FA_X1)         0.15       1.77 r
+  add_0_root_add_0_root_add_157_2/SUM[12] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     1.77 r
+  U3201/ZN (AND2_X1)                                      0.05       1.83 r
+  U3198/ZN (AND2_X1)                                      0.05       1.88 r
+  U2002/ZN (NAND2_X1)                                     0.03       1.91 f
+  U2001/ZN (XNOR2_X1)                                     0.05       1.96 r
+  U2260/ZN (AOI22_X1)                                     0.03       1.99 f
+  U2259/ZN (OAI221_X1)                                    0.05       2.04 r
+  U3385/ZN (NAND2_X1)                                     0.04       2.08 f
+  U3396/ZN (NAND3_X1)                                     0.03       2.11 r
+  U3397/ZN (OAI21_X1)                                     0.04       2.15 f
+  U3400/ZN (OAI22_X1)                                     0.06       2.20 r
+  U3401/ZN (OAI21_X1)                                     0.04       2.24 f
+  U3421/ZN (OAI22_X1)                                     0.06       2.30 r
+  U985/ZN (NAND3_X1)                                      0.06       2.37 f
+  U1859/ZN (INV_X1)                                       0.05       2.42 r
+  U946/ZN (NAND3_X1)                                      0.05       2.48 f
+  U1846/ZN (OAI21_X1)                                     0.07       2.55 r
+  clk_gate_ispad_reg_8_/EN (SNPS_CLOCK_GATE_HIGH_eyeriss_pe_7)     0.00     2.55 r
+  clk_gate_ispad_reg_8_/latch/D (DLL_X1)                  0.01       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_ispad_reg_8_/latch/GN (DLL_X1)                 0.00       2.45 f
+  time borrowed from endpoint                             0.11       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         2.46   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.05   
+  --------------------------------------------------------------
+  time given to startpoint                                0.06   
+  --------------------------------------------------------------
+
+
+  Startpoint: cfg_u[1] (input port clocked by clk)
+  Endpoint: clk_gate_ispad_reg_9_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eyeriss_pe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  cfg_u[1] (in)                                           0.00       0.25 f
+  mult_157/b[1] (eyeriss_pe_DW_mult_uns_3)                0.00       0.25 f
+  mult_157/U72/ZN (INV_X1)                                0.07       0.32 r
+  mult_157/U93/ZN (NOR2_X1)                               0.04       0.36 f
+  mult_157/U25/S (HA_X1)                                  0.08       0.43 f
+  mult_157/U10/CO (FA_X1)                                 0.09       0.53 f
+  mult_157/U9/S (FA_X1)                                   0.14       0.67 r
+  mult_157/product[3] (eyeriss_pe_DW_mult_uns_3)          0.00       0.67 r
+  add_1_root_add_0_root_add_157_2_U1_3/S (FA_X1)          0.12       0.79 f
+  add_0_root_add_0_root_add_157_2/B[3] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     0.79 f
+  add_0_root_add_0_root_add_157_2/U1_3/CO (FA_X1)         0.10       0.90 f
+  add_0_root_add_0_root_add_157_2/U1_4/CO (FA_X1)         0.09       0.99 f
+  add_0_root_add_0_root_add_157_2/U1_5/CO (FA_X1)         0.09       1.08 f
+  add_0_root_add_0_root_add_157_2/U1_6/CO (FA_X1)         0.09       1.17 f
+  add_0_root_add_0_root_add_157_2/U1_7/CO (FA_X1)         0.09       1.26 f
+  add_0_root_add_0_root_add_157_2/U1_8/CO (FA_X1)         0.09       1.35 f
+  add_0_root_add_0_root_add_157_2/U1_9/CO (FA_X1)         0.09       1.44 f
+  add_0_root_add_0_root_add_157_2/U1_10/CO (FA_X1)        0.09       1.53 f
+  add_0_root_add_0_root_add_157_2/U1_11/CO (FA_X1)        0.09       1.62 f
+  add_0_root_add_0_root_add_157_2/U1_12/S (FA_X1)         0.15       1.77 r
+  add_0_root_add_0_root_add_157_2/SUM[12] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     1.77 r
+  U3201/ZN (AND2_X1)                                      0.05       1.83 r
+  U3198/ZN (AND2_X1)                                      0.05       1.88 r
+  U2002/ZN (NAND2_X1)                                     0.03       1.91 f
+  U2001/ZN (XNOR2_X1)                                     0.05       1.96 r
+  U2260/ZN (AOI22_X1)                                     0.03       1.99 f
+  U2259/ZN (OAI221_X1)                                    0.05       2.04 r
+  U3385/ZN (NAND2_X1)                                     0.04       2.08 f
+  U3396/ZN (NAND3_X1)                                     0.03       2.11 r
+  U3397/ZN (OAI21_X1)                                     0.04       2.15 f
+  U3400/ZN (OAI22_X1)                                     0.06       2.20 r
+  U3401/ZN (OAI21_X1)                                     0.04       2.24 f
+  U3421/ZN (OAI22_X1)                                     0.06       2.30 r
+  U985/ZN (NAND3_X1)                                      0.06       2.37 f
+  U1859/ZN (INV_X1)                                       0.05       2.42 r
+  U946/ZN (NAND3_X1)                                      0.05       2.48 f
+  U1847/ZN (OAI21_X1)                                     0.07       2.55 r
+  clk_gate_ispad_reg_9_/EN (SNPS_CLOCK_GATE_HIGH_eyeriss_pe_6)     0.00     2.55 r
+  clk_gate_ispad_reg_9_/latch/D (DLL_X1)                  0.01       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_ispad_reg_9_/latch/GN (DLL_X1)                 0.00       2.45 f
+  time borrowed from endpoint                             0.11       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         2.46   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.05   
+  --------------------------------------------------------------
+  time given to startpoint                                0.06   
+  --------------------------------------------------------------
+
+
+  Startpoint: cfg_u[1] (input port clocked by clk)
+  Endpoint: clk_gate_ispad_reg_10_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eyeriss_pe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  cfg_u[1] (in)                                           0.00       0.25 f
+  mult_157/b[1] (eyeriss_pe_DW_mult_uns_3)                0.00       0.25 f
+  mult_157/U72/ZN (INV_X1)                                0.07       0.32 r
+  mult_157/U93/ZN (NOR2_X1)                               0.04       0.36 f
+  mult_157/U25/S (HA_X1)                                  0.08       0.43 f
+  mult_157/U10/CO (FA_X1)                                 0.09       0.53 f
+  mult_157/U9/S (FA_X1)                                   0.14       0.67 r
+  mult_157/product[3] (eyeriss_pe_DW_mult_uns_3)          0.00       0.67 r
+  add_1_root_add_0_root_add_157_2_U1_3/S (FA_X1)          0.12       0.79 f
+  add_0_root_add_0_root_add_157_2/B[3] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     0.79 f
+  add_0_root_add_0_root_add_157_2/U1_3/CO (FA_X1)         0.10       0.90 f
+  add_0_root_add_0_root_add_157_2/U1_4/CO (FA_X1)         0.09       0.99 f
+  add_0_root_add_0_root_add_157_2/U1_5/CO (FA_X1)         0.09       1.08 f
+  add_0_root_add_0_root_add_157_2/U1_6/CO (FA_X1)         0.09       1.17 f
+  add_0_root_add_0_root_add_157_2/U1_7/CO (FA_X1)         0.09       1.26 f
+  add_0_root_add_0_root_add_157_2/U1_8/CO (FA_X1)         0.09       1.35 f
+  add_0_root_add_0_root_add_157_2/U1_9/CO (FA_X1)         0.09       1.44 f
+  add_0_root_add_0_root_add_157_2/U1_10/CO (FA_X1)        0.09       1.53 f
+  add_0_root_add_0_root_add_157_2/U1_11/CO (FA_X1)        0.09       1.62 f
+  add_0_root_add_0_root_add_157_2/U1_12/S (FA_X1)         0.15       1.77 r
+  add_0_root_add_0_root_add_157_2/SUM[12] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     1.77 r
+  U3201/ZN (AND2_X1)                                      0.05       1.83 r
+  U3198/ZN (AND2_X1)                                      0.05       1.88 r
+  U2002/ZN (NAND2_X1)                                     0.03       1.91 f
+  U2001/ZN (XNOR2_X1)                                     0.05       1.96 r
+  U2260/ZN (AOI22_X1)                                     0.03       1.99 f
+  U2259/ZN (OAI221_X1)                                    0.05       2.04 r
+  U3385/ZN (NAND2_X1)                                     0.04       2.08 f
+  U3396/ZN (NAND3_X1)                                     0.03       2.11 r
+  U3397/ZN (OAI21_X1)                                     0.04       2.15 f
+  U3400/ZN (OAI22_X1)                                     0.06       2.20 r
+  U3401/ZN (OAI21_X1)                                     0.04       2.24 f
+  U3421/ZN (OAI22_X1)                                     0.06       2.30 r
+  U985/ZN (NAND3_X1)                                      0.06       2.37 f
+  U1859/ZN (INV_X1)                                       0.05       2.42 r
+  U946/ZN (NAND3_X1)                                      0.05       2.48 f
+  U1848/ZN (OAI21_X1)                                     0.07       2.55 r
+  clk_gate_ispad_reg_10_/EN (SNPS_CLOCK_GATE_HIGH_eyeriss_pe_5)     0.00     2.55 r
+  clk_gate_ispad_reg_10_/latch/D (DLL_X1)                 0.01       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_ispad_reg_10_/latch/GN (DLL_X1)                0.00       2.45 f
+  time borrowed from endpoint                             0.11       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         2.46   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.05   
+  --------------------------------------------------------------
+  time given to startpoint                                0.06   
+  --------------------------------------------------------------
+
+
+  Startpoint: cfg_u[1] (input port clocked by clk)
+  Endpoint: clk_gate_ispad_reg_11_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eyeriss_pe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  cfg_u[1] (in)                                           0.00       0.25 f
+  mult_157/b[1] (eyeriss_pe_DW_mult_uns_3)                0.00       0.25 f
+  mult_157/U72/ZN (INV_X1)                                0.07       0.32 r
+  mult_157/U93/ZN (NOR2_X1)                               0.04       0.36 f
+  mult_157/U25/S (HA_X1)                                  0.08       0.43 f
+  mult_157/U10/CO (FA_X1)                                 0.09       0.53 f
+  mult_157/U9/S (FA_X1)                                   0.14       0.67 r
+  mult_157/product[3] (eyeriss_pe_DW_mult_uns_3)          0.00       0.67 r
+  add_1_root_add_0_root_add_157_2_U1_3/S (FA_X1)          0.12       0.79 f
+  add_0_root_add_0_root_add_157_2/B[3] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     0.79 f
+  add_0_root_add_0_root_add_157_2/U1_3/CO (FA_X1)         0.10       0.90 f
+  add_0_root_add_0_root_add_157_2/U1_4/CO (FA_X1)         0.09       0.99 f
+  add_0_root_add_0_root_add_157_2/U1_5/CO (FA_X1)         0.09       1.08 f
+  add_0_root_add_0_root_add_157_2/U1_6/CO (FA_X1)         0.09       1.17 f
+  add_0_root_add_0_root_add_157_2/U1_7/CO (FA_X1)         0.09       1.26 f
+  add_0_root_add_0_root_add_157_2/U1_8/CO (FA_X1)         0.09       1.35 f
+  add_0_root_add_0_root_add_157_2/U1_9/CO (FA_X1)         0.09       1.44 f
+  add_0_root_add_0_root_add_157_2/U1_10/CO (FA_X1)        0.09       1.53 f
+  add_0_root_add_0_root_add_157_2/U1_11/CO (FA_X1)        0.09       1.62 f
+  add_0_root_add_0_root_add_157_2/U1_12/S (FA_X1)         0.15       1.77 r
+  add_0_root_add_0_root_add_157_2/SUM[12] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     1.77 r
+  U3201/ZN (AND2_X1)                                      0.05       1.83 r
+  U3198/ZN (AND2_X1)                                      0.05       1.88 r
+  U2002/ZN (NAND2_X1)                                     0.03       1.91 f
+  U2001/ZN (XNOR2_X1)                                     0.05       1.96 r
+  U2260/ZN (AOI22_X1)                                     0.03       1.99 f
+  U2259/ZN (OAI221_X1)                                    0.05       2.04 r
+  U3385/ZN (NAND2_X1)                                     0.04       2.08 f
+  U3396/ZN (NAND3_X1)                                     0.03       2.11 r
+  U3397/ZN (OAI21_X1)                                     0.04       2.15 f
+  U3400/ZN (OAI22_X1)                                     0.06       2.20 r
+  U3401/ZN (OAI21_X1)                                     0.04       2.24 f
+  U3421/ZN (OAI22_X1)                                     0.06       2.30 r
+  U985/ZN (NAND3_X1)                                      0.06       2.37 f
+  U1859/ZN (INV_X1)                                       0.05       2.42 r
+  U946/ZN (NAND3_X1)                                      0.05       2.48 f
+  U1849/ZN (OAI21_X1)                                     0.07       2.55 r
+  clk_gate_ispad_reg_11_/EN (SNPS_CLOCK_GATE_HIGH_eyeriss_pe_4)     0.00     2.55 r
+  clk_gate_ispad_reg_11_/latch/D (DLL_X1)                 0.01       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_ispad_reg_11_/latch/GN (DLL_X1)                0.00       2.45 f
+  time borrowed from endpoint                             0.11       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         2.46   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.05   
+  --------------------------------------------------------------
+  time given to startpoint                                0.06   
+  --------------------------------------------------------------
+
+
+  Startpoint: cfg_u[1] (input port clocked by clk)
+  Endpoint: clk_gate_ispad_reg_4_/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eyeriss_pe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  cfg_u[1] (in)                                           0.00       0.25 f
+  mult_157/b[1] (eyeriss_pe_DW_mult_uns_3)                0.00       0.25 f
+  mult_157/U72/ZN (INV_X1)                                0.07       0.32 r
+  mult_157/U93/ZN (NOR2_X1)                               0.04       0.36 f
+  mult_157/U25/S (HA_X1)                                  0.08       0.43 f
+  mult_157/U10/CO (FA_X1)                                 0.09       0.53 f
+  mult_157/U9/S (FA_X1)                                   0.14       0.67 r
+  mult_157/product[3] (eyeriss_pe_DW_mult_uns_3)          0.00       0.67 r
+  add_1_root_add_0_root_add_157_2_U1_3/S (FA_X1)          0.12       0.79 f
+  add_0_root_add_0_root_add_157_2/B[3] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     0.79 f
+  add_0_root_add_0_root_add_157_2/U1_3/CO (FA_X1)         0.10       0.90 f
+  add_0_root_add_0_root_add_157_2/U1_4/CO (FA_X1)         0.09       0.99 f
+  add_0_root_add_0_root_add_157_2/U1_5/CO (FA_X1)         0.09       1.08 f
+  add_0_root_add_0_root_add_157_2/U1_6/CO (FA_X1)         0.09       1.17 f
+  add_0_root_add_0_root_add_157_2/U1_7/CO (FA_X1)         0.09       1.26 f
+  add_0_root_add_0_root_add_157_2/U1_8/CO (FA_X1)         0.09       1.35 f
+  add_0_root_add_0_root_add_157_2/U1_9/CO (FA_X1)         0.09       1.44 f
+  add_0_root_add_0_root_add_157_2/U1_10/CO (FA_X1)        0.09       1.53 f
+  add_0_root_add_0_root_add_157_2/U1_11/CO (FA_X1)        0.09       1.62 f
+  add_0_root_add_0_root_add_157_2/U1_12/S (FA_X1)         0.15       1.77 r
+  add_0_root_add_0_root_add_157_2/SUM[12] (eyeriss_pe_DW01_add_6_DW01_add_9)     0.00     1.77 r
+  U3201/ZN (AND2_X1)                                      0.05       1.83 r
+  U3198/ZN (AND2_X1)                                      0.05       1.88 r
+  U2002/ZN (NAND2_X1)                                     0.03       1.91 f
+  U2001/ZN (XNOR2_X1)                                     0.05       1.96 r
+  U2260/ZN (AOI22_X1)                                     0.03       1.99 f
+  U2259/ZN (OAI221_X1)                                    0.05       2.04 r
+  U3385/ZN (NAND2_X1)                                     0.04       2.08 f
+  U3396/ZN (NAND3_X1)                                     0.03       2.11 r
+  U3397/ZN (OAI21_X1)                                     0.04       2.15 f
+  U3400/ZN (OAI22_X1)                                     0.06       2.20 r
+  U3401/ZN (OAI21_X1)                                     0.04       2.24 f
+  U3421/ZN (OAI22_X1)                                     0.06       2.30 r
+  U985/ZN (NAND3_X1)                                      0.06       2.37 f
+  U2003/ZN (NOR2_X1)                                      0.06       2.43 r
+  U2006/ZN (NAND2_X1)                                     0.05       2.48 f
+  U1853/ZN (OAI21_X1)                                     0.07       2.55 r
+  clk_gate_ispad_reg_4_/EN (SNPS_CLOCK_GATE_HIGH_eyeriss_pe_11)     0.00     2.55 r
+  clk_gate_ispad_reg_4_/latch/D (DLL_X1)                  0.01       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.05       2.45
+  clk_gate_ispad_reg_4_/latch/GN (DLL_X1)                 0.00       2.45 f
+  time borrowed from endpoint                             0.11       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 2.50   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         2.46   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.05   
+  --------------------------------------------------------------
+  time given to startpoint                                0.06   
+  --------------------------------------------------------------
+
+
+1

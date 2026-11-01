@@ -1,0 +1,817 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : ttfs_iv
+Version: U-2022.12
+Date   : Sun Nov  1 06:26:27 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: wb_mask[2] (input port clocked by clk)
+  Endpoint: weights/bank_0__mem_reg_0__253_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ttfs_iv            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  wb_mask[2] (in)                                         0.00       0.25 f
+  unpack/mask[2] (ttfs_unpack_LANES64_W4)                 0.00       0.25 f
+  unpack/U1745/ZN (INV_X1)                                0.03       0.28 r
+  unpack/U4052/ZN (XNOR2_X1)                              0.06       0.33 r
+  unpack/U4051/ZN (XNOR2_X1)                              0.06       0.39 r
+  unpack/U4267/ZN (NAND2_X1)                              0.04       0.44 f
+  unpack/U1263/ZN (OAI21_X1)                              0.04       0.48 r
+  unpack/U1624/ZN (INV_X1)                                0.02       0.50 f
+  unpack/U4269/ZN (OAI221_X1)                             0.04       0.53 r
+  unpack/U1087/ZN (OAI211_X1)                             0.06       0.59 f
+  unpack/U928/ZN (NAND2_X1)                               0.04       0.63 r
+  unpack/U767/ZN (NAND2_X1)                               0.03       0.67 f
+  unpack/U4230/ZN (OAI221_X1)                             0.04       0.71 r
+  unpack/U1018/ZN (AND2_X1)                               0.05       0.76 r
+  unpack/U4281/ZN (OAI21_X1)                              0.03       0.79 f
+  unpack/U1574/ZN (OAI221_X1)                             0.04       0.83 r
+  unpack/U1651/ZN (AND2_X1)                               0.05       0.89 r
+  unpack/U1653/ZN (NAND2_X1)                              0.03       0.92 f
+  unpack/U678/ZN (OAI221_X1)                              0.04       0.96 r
+  unpack/U4288/ZN (NAND2_X1)                              0.04       1.00 f
+  unpack/U635/ZN (NAND2_X1)                               0.04       1.03 r
+  unpack/U1424/ZN (OAI221_X1)                             0.04       1.07 f
+  unpack/U869/ZN (AND2_X1)                                0.05       1.12 f
+  unpack/U1468/ZN (NAND2_X1)                              0.03       1.15 r
+  unpack/U1113/ZN (OAI221_X1)                             0.05       1.19 f
+  unpack/U4328/ZN (NAND2_X1)                              0.03       1.23 r
+  unpack/U4337/ZN (NAND2_X1)                              0.03       1.26 f
+  unpack/U844/ZN (OAI221_X1)                              0.04       1.30 r
+  unpack/U4346/ZN (NAND2_X1)                              0.04       1.34 f
+  unpack/U20/ZN (NAND2_X1)                                0.04       1.38 r
+  unpack/U1257/ZN (OAI221_X1)                             0.04       1.42 f
+  unpack/U320/ZN (NAND2_X1)                               0.04       1.46 r
+  unpack/U1022/ZN (NAND2_X1)                              0.03       1.49 f
+  unpack/U1398/ZN (NAND2_X1)                              0.03       1.52 r
+  unpack/U1144/ZN (OAI21_X1)                              0.04       1.56 f
+  unpack/U669/ZN (OR2_X2)                                 0.06       1.62 f
+  unpack/U1399/ZN (OAI22_X1)                              0.04       1.66 r
+  unpack/U732/ZN (OR2_X1)                                 0.04       1.70 r
+  unpack/U4386/ZN (OAI21_X1)                              0.03       1.72 f
+  unpack/U312/ZN (NAND2_X1)                               0.04       1.76 r
+  unpack/U811/ZN (OAI21_X1)                               0.04       1.80 f
+  unpack/U1295/ZN (NAND2_X1)                              0.03       1.83 r
+  unpack/U4216/ZN (OAI21_X1)                              0.03       1.86 f
+  unpack/U314/ZN (NAND2_X1)                               0.03       1.90 r
+  unpack/U731/ZN (OAI21_X1)                               0.04       1.93 f
+  unpack/U681/ZN (OR2_X1)                                 0.05       1.99 f
+  unpack/U771/ZN (OAI21_X1)                               0.06       2.04 r
+  unpack/U304/ZN (NAND2_X1)                               0.03       2.07 f
+  unpack/U4408/ZN (OAI21_X1)                              0.03       2.11 r
+  unpack/U316/ZN (NAND2_X1)                               0.03       2.14 f
+  unpack/U1217/ZN (OAI21_X1)                              0.04       2.18 r
+  unpack/U872/ZN (OR2_X1)                                 0.04       2.22 r
+  unpack/U1134/ZN (OAI21_X1)                              0.03       2.25 f
+  unpack/U1555/ZN (NAND2_X1)                              0.04       2.28 r
+  unpack/U1194/ZN (OAI21_X1)                              0.04       2.32 f
+  unpack/U854/ZN (OR2_X1)                                 0.05       2.37 f
+  unpack/U1412/ZN (OAI21_X1)                              0.04       2.41 r
+  unpack/U1561/ZN (NAND2_X1)                              0.03       2.44 f
+  unpack/U1236/ZN (OAI21_X1)                              0.03       2.47 r
+  unpack/U888/ZN (OR2_X1)                                 0.04       2.51 r
+  unpack/U1565/ZN (OAI21_X1)                              0.03       2.53 f
+  unpack/U327/ZN (NAND2_X1)                               0.03       2.57 r
+  unpack/U1224/ZN (OAI21_X1)                              0.04       2.60 f
+  unpack/U860/ZN (OR2_X1)                                 0.06       2.66 f
+  unpack/U1415/ZN (OAI21_X1)                              0.04       2.70 r
+  unpack/U1557/ZN (NAND2_X1)                              0.03       2.73 f
+  unpack/U1419/ZN (OAI21_X1)                              0.03       2.77 r
+  unpack/U723/ZN (OR2_X1)                                 0.04       2.81 r
+  unpack/U1314/ZN (OAI21_X1)                              0.03       2.83 f
+  unpack/U1437/ZN (NAND2_X1)                              0.03       2.87 r
+  unpack/U739/ZN (OAI21_X1)                               0.04       2.91 f
+  unpack/U621/ZN (OR2_X1)                                 0.06       2.96 f
+  unpack/U1413/ZN (OAI21_X1)                              0.04       3.00 r
+  unpack/U1533/ZN (NAND2_X1)                              0.03       3.03 f
+  unpack/U261/ZN (AND2_X1)                                0.04       3.07 f
+  unpack/U775/ZN (NAND2_X1)                               0.03       3.10 r
+  unpack/U1564/ZN (OAI21_X1)                              0.03       3.13 f
+  unpack/U306/ZN (NAND2_X1)                               0.04       3.17 r
+  unpack/U1232/ZN (OAI21_X1)                              0.03       3.21 f
+  unpack/U4546/ZN (OAI21_X1)                              0.04       3.24 r
+  unpack/U1414/ZN (OAI21_X1)                              0.03       3.28 f
+  unpack/U1439/ZN (NAND2_X1)                              0.04       3.31 r
+  unpack/U1418/ZN (OAI21_X1)                              0.03       3.34 f
+  unpack/U747/ZN (OR2_X1)                                 0.06       3.40 f
+  unpack/U1562/ZN (OAI21_X1)                              0.04       3.44 r
+  unpack/U1626/ZN (NAND2_X1)                              0.03       3.47 f
+  unpack/U1253/ZN (OAI21_X1)                              0.03       3.51 r
+  unpack/U848/ZN (OR2_X1)                                 0.04       3.54 r
+  unpack/U1126/ZN (OAI21_X1)                              0.03       3.58 f
+  unpack/U1656/ZN (NAND2_X1)                              0.03       3.61 r
+  unpack/U837/ZN (OAI21_X1)                               0.04       3.64 f
+  unpack/U1727/ZN (OR2_X1)                                0.06       3.70 f
+  unpack/U1563/ZN (OAI21_X1)                              0.05       3.75 r
+  unpack/U1559/ZN (NAND2_X1)                              0.04       3.79 f
+  unpack/U1183/ZN (OAI21_X1)                              0.04       3.83 r
+  unpack/U850/ZN (OR2_X1)                                 0.04       3.86 r
+  unpack/U4557/ZN (OAI21_X1)                              0.03       3.89 f
+  unpack/U1698/ZN (NAND2_X1)                              0.03       3.93 r
+  unpack/U1420/ZN (OAI21_X1)                              0.04       3.96 f
+  unpack/U894/ZN (OR2_X1)                                 0.06       4.02 f
+  unpack/U1411/ZN (OAI21_X1)                              0.04       4.06 r
+  unpack/U1517/ZN (NAND2_X1)                              0.03       4.09 f
+  unpack/U1208/ZN (OAI21_X1)                              0.04       4.13 r
+  unpack/U1582/ZN (OR2_X1)                                0.04       4.18 r
+  unpack/U1004/ZN (OAI21_X1)                              0.03       4.20 f
+  unpack/U1697/ZN (NAND2_X1)                              0.04       4.24 r
+  unpack/U1577/ZN (AND2_X1)                               0.05       4.29 r
+  unpack/U4563/ZN (NAND2_X1)                              0.03       4.32 f
+  unpack/U1580/ZN (OAI21_X1)                              0.04       4.36 r
+  unpack/U1579/ZN (NAND2_X1)                              0.04       4.40 f
+  unpack/U1102/ZN (OAI21_X1)                              0.04       4.44 r
+  unpack/U1628/ZN (NAND2_X1)                              0.03       4.47 f
+  unpack/U5147/ZN (OAI21_X1)                              0.03       4.51 r
+  unpack/U1603/ZN (NAND2_X1)                              0.03       4.54 f
+  unpack/U1164/ZN (OAI21_X1)                              0.05       4.59 r
+  unpack/U694/ZN (AND2_X1)                                0.05       4.64 r
+  unpack/U1726/ZN (AND2_X1)                               0.04       4.68 r
+  unpack/U1493/ZN (NAND2_X1)                              0.03       4.71 f
+  unpack/U1492/ZN (NOR2_X1)                               0.04       4.75 r
+  unpack/U1707/ZN (XNOR2_X1)                              0.06       4.81 r
+  unpack/U1151/ZN (XNOR2_X1)                              0.08       4.88 r
+  unpack/U255/ZN (XNOR2_X1)                               0.08       4.97 r
+  unpack/U5726/ZN (NAND2_X1)                              0.06       5.02 f
+  unpack/U5772/ZN (AOI21_X1)                              0.06       5.09 r
+  unpack/U5782/ZN (NOR4_X1)                               0.03       5.11 f
+  unpack/U4253/ZN (AOI21_X1)                              0.05       5.17 r
+  unpack/U1720/Z (BUF_X4)                                 0.08       5.25 r
+  unpack/dense[253] (ttfs_unpack_LANES64_W4)              0.00       5.25 r
+  weights/wdata[253] (ttfs_wbanks_CH16_NB4_WIDTH256)      0.00       5.25 r
+  weights/bank_0__mem_reg_0__253_/D (DFF_X1)              0.03       5.28 r
+  data arrival time                                                  5.28
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  weights/bank_0__mem_reg_0__253_/CK (DFF_X1)             0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: wb_mask[2] (input port clocked by clk)
+  Endpoint: weights/bank_0__mem_reg_1__253_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ttfs_iv            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  wb_mask[2] (in)                                         0.00       0.25 f
+  unpack/mask[2] (ttfs_unpack_LANES64_W4)                 0.00       0.25 f
+  unpack/U1745/ZN (INV_X1)                                0.03       0.28 r
+  unpack/U4052/ZN (XNOR2_X1)                              0.06       0.33 r
+  unpack/U4051/ZN (XNOR2_X1)                              0.06       0.39 r
+  unpack/U4267/ZN (NAND2_X1)                              0.04       0.44 f
+  unpack/U1263/ZN (OAI21_X1)                              0.04       0.48 r
+  unpack/U1624/ZN (INV_X1)                                0.02       0.50 f
+  unpack/U4269/ZN (OAI221_X1)                             0.04       0.53 r
+  unpack/U1087/ZN (OAI211_X1)                             0.06       0.59 f
+  unpack/U928/ZN (NAND2_X1)                               0.04       0.63 r
+  unpack/U767/ZN (NAND2_X1)                               0.03       0.67 f
+  unpack/U4230/ZN (OAI221_X1)                             0.04       0.71 r
+  unpack/U1018/ZN (AND2_X1)                               0.05       0.76 r
+  unpack/U4281/ZN (OAI21_X1)                              0.03       0.79 f
+  unpack/U1574/ZN (OAI221_X1)                             0.04       0.83 r
+  unpack/U1651/ZN (AND2_X1)                               0.05       0.89 r
+  unpack/U1653/ZN (NAND2_X1)                              0.03       0.92 f
+  unpack/U678/ZN (OAI221_X1)                              0.04       0.96 r
+  unpack/U4288/ZN (NAND2_X1)                              0.04       1.00 f
+  unpack/U635/ZN (NAND2_X1)                               0.04       1.03 r
+  unpack/U1424/ZN (OAI221_X1)                             0.04       1.07 f
+  unpack/U869/ZN (AND2_X1)                                0.05       1.12 f
+  unpack/U1468/ZN (NAND2_X1)                              0.03       1.15 r
+  unpack/U1113/ZN (OAI221_X1)                             0.05       1.19 f
+  unpack/U4328/ZN (NAND2_X1)                              0.03       1.23 r
+  unpack/U4337/ZN (NAND2_X1)                              0.03       1.26 f
+  unpack/U844/ZN (OAI221_X1)                              0.04       1.30 r
+  unpack/U4346/ZN (NAND2_X1)                              0.04       1.34 f
+  unpack/U20/ZN (NAND2_X1)                                0.04       1.38 r
+  unpack/U1257/ZN (OAI221_X1)                             0.04       1.42 f
+  unpack/U320/ZN (NAND2_X1)                               0.04       1.46 r
+  unpack/U1022/ZN (NAND2_X1)                              0.03       1.49 f
+  unpack/U1398/ZN (NAND2_X1)                              0.03       1.52 r
+  unpack/U1144/ZN (OAI21_X1)                              0.04       1.56 f
+  unpack/U669/ZN (OR2_X2)                                 0.06       1.62 f
+  unpack/U1399/ZN (OAI22_X1)                              0.04       1.66 r
+  unpack/U732/ZN (OR2_X1)                                 0.04       1.70 r
+  unpack/U4386/ZN (OAI21_X1)                              0.03       1.72 f
+  unpack/U312/ZN (NAND2_X1)                               0.04       1.76 r
+  unpack/U811/ZN (OAI21_X1)                               0.04       1.80 f
+  unpack/U1295/ZN (NAND2_X1)                              0.03       1.83 r
+  unpack/U4216/ZN (OAI21_X1)                              0.03       1.86 f
+  unpack/U314/ZN (NAND2_X1)                               0.03       1.90 r
+  unpack/U731/ZN (OAI21_X1)                               0.04       1.93 f
+  unpack/U681/ZN (OR2_X1)                                 0.05       1.99 f
+  unpack/U771/ZN (OAI21_X1)                               0.06       2.04 r
+  unpack/U304/ZN (NAND2_X1)                               0.03       2.07 f
+  unpack/U4408/ZN (OAI21_X1)                              0.03       2.11 r
+  unpack/U316/ZN (NAND2_X1)                               0.03       2.14 f
+  unpack/U1217/ZN (OAI21_X1)                              0.04       2.18 r
+  unpack/U872/ZN (OR2_X1)                                 0.04       2.22 r
+  unpack/U1134/ZN (OAI21_X1)                              0.03       2.25 f
+  unpack/U1555/ZN (NAND2_X1)                              0.04       2.28 r
+  unpack/U1194/ZN (OAI21_X1)                              0.04       2.32 f
+  unpack/U854/ZN (OR2_X1)                                 0.05       2.37 f
+  unpack/U1412/ZN (OAI21_X1)                              0.04       2.41 r
+  unpack/U1561/ZN (NAND2_X1)                              0.03       2.44 f
+  unpack/U1236/ZN (OAI21_X1)                              0.03       2.47 r
+  unpack/U888/ZN (OR2_X1)                                 0.04       2.51 r
+  unpack/U1565/ZN (OAI21_X1)                              0.03       2.53 f
+  unpack/U327/ZN (NAND2_X1)                               0.03       2.57 r
+  unpack/U1224/ZN (OAI21_X1)                              0.04       2.60 f
+  unpack/U860/ZN (OR2_X1)                                 0.06       2.66 f
+  unpack/U1415/ZN (OAI21_X1)                              0.04       2.70 r
+  unpack/U1557/ZN (NAND2_X1)                              0.03       2.73 f
+  unpack/U1419/ZN (OAI21_X1)                              0.03       2.77 r
+  unpack/U723/ZN (OR2_X1)                                 0.04       2.81 r
+  unpack/U1314/ZN (OAI21_X1)                              0.03       2.83 f
+  unpack/U1437/ZN (NAND2_X1)                              0.03       2.87 r
+  unpack/U739/ZN (OAI21_X1)                               0.04       2.91 f
+  unpack/U621/ZN (OR2_X1)                                 0.06       2.96 f
+  unpack/U1413/ZN (OAI21_X1)                              0.04       3.00 r
+  unpack/U1533/ZN (NAND2_X1)                              0.03       3.03 f
+  unpack/U261/ZN (AND2_X1)                                0.04       3.07 f
+  unpack/U775/ZN (NAND2_X1)                               0.03       3.10 r
+  unpack/U1564/ZN (OAI21_X1)                              0.03       3.13 f
+  unpack/U306/ZN (NAND2_X1)                               0.04       3.17 r
+  unpack/U1232/ZN (OAI21_X1)                              0.03       3.21 f
+  unpack/U4546/ZN (OAI21_X1)                              0.04       3.24 r
+  unpack/U1414/ZN (OAI21_X1)                              0.03       3.28 f
+  unpack/U1439/ZN (NAND2_X1)                              0.04       3.31 r
+  unpack/U1418/ZN (OAI21_X1)                              0.03       3.34 f
+  unpack/U747/ZN (OR2_X1)                                 0.06       3.40 f
+  unpack/U1562/ZN (OAI21_X1)                              0.04       3.44 r
+  unpack/U1626/ZN (NAND2_X1)                              0.03       3.47 f
+  unpack/U1253/ZN (OAI21_X1)                              0.03       3.51 r
+  unpack/U848/ZN (OR2_X1)                                 0.04       3.54 r
+  unpack/U1126/ZN (OAI21_X1)                              0.03       3.58 f
+  unpack/U1656/ZN (NAND2_X1)                              0.03       3.61 r
+  unpack/U837/ZN (OAI21_X1)                               0.04       3.64 f
+  unpack/U1727/ZN (OR2_X1)                                0.06       3.70 f
+  unpack/U1563/ZN (OAI21_X1)                              0.05       3.75 r
+  unpack/U1559/ZN (NAND2_X1)                              0.04       3.79 f
+  unpack/U1183/ZN (OAI21_X1)                              0.04       3.83 r
+  unpack/U850/ZN (OR2_X1)                                 0.04       3.86 r
+  unpack/U4557/ZN (OAI21_X1)                              0.03       3.89 f
+  unpack/U1698/ZN (NAND2_X1)                              0.03       3.93 r
+  unpack/U1420/ZN (OAI21_X1)                              0.04       3.96 f
+  unpack/U894/ZN (OR2_X1)                                 0.06       4.02 f
+  unpack/U1411/ZN (OAI21_X1)                              0.04       4.06 r
+  unpack/U1517/ZN (NAND2_X1)                              0.03       4.09 f
+  unpack/U1208/ZN (OAI21_X1)                              0.04       4.13 r
+  unpack/U1582/ZN (OR2_X1)                                0.04       4.18 r
+  unpack/U1004/ZN (OAI21_X1)                              0.03       4.20 f
+  unpack/U1697/ZN (NAND2_X1)                              0.04       4.24 r
+  unpack/U1577/ZN (AND2_X1)                               0.05       4.29 r
+  unpack/U4563/ZN (NAND2_X1)                              0.03       4.32 f
+  unpack/U1580/ZN (OAI21_X1)                              0.04       4.36 r
+  unpack/U1579/ZN (NAND2_X1)                              0.04       4.40 f
+  unpack/U1102/ZN (OAI21_X1)                              0.04       4.44 r
+  unpack/U1628/ZN (NAND2_X1)                              0.03       4.47 f
+  unpack/U5147/ZN (OAI21_X1)                              0.03       4.51 r
+  unpack/U1603/ZN (NAND2_X1)                              0.03       4.54 f
+  unpack/U1164/ZN (OAI21_X1)                              0.05       4.59 r
+  unpack/U694/ZN (AND2_X1)                                0.05       4.64 r
+  unpack/U1726/ZN (AND2_X1)                               0.04       4.68 r
+  unpack/U1493/ZN (NAND2_X1)                              0.03       4.71 f
+  unpack/U1492/ZN (NOR2_X1)                               0.04       4.75 r
+  unpack/U1707/ZN (XNOR2_X1)                              0.06       4.81 r
+  unpack/U1151/ZN (XNOR2_X1)                              0.08       4.88 r
+  unpack/U255/ZN (XNOR2_X1)                               0.08       4.97 r
+  unpack/U5726/ZN (NAND2_X1)                              0.06       5.02 f
+  unpack/U5772/ZN (AOI21_X1)                              0.06       5.09 r
+  unpack/U5782/ZN (NOR4_X1)                               0.03       5.11 f
+  unpack/U4253/ZN (AOI21_X1)                              0.05       5.17 r
+  unpack/U1720/Z (BUF_X4)                                 0.08       5.25 r
+  unpack/dense[253] (ttfs_unpack_LANES64_W4)              0.00       5.25 r
+  weights/wdata[253] (ttfs_wbanks_CH16_NB4_WIDTH256)      0.00       5.25 r
+  weights/bank_0__mem_reg_1__253_/D (DFF_X1)              0.03       5.28 r
+  data arrival time                                                  5.28
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  weights/bank_0__mem_reg_1__253_/CK (DFF_X1)             0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: wb_mask[2] (input port clocked by clk)
+  Endpoint: weights/bank_0__mem_reg_2__253_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ttfs_iv            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  wb_mask[2] (in)                                         0.00       0.25 f
+  unpack/mask[2] (ttfs_unpack_LANES64_W4)                 0.00       0.25 f
+  unpack/U1745/ZN (INV_X1)                                0.03       0.28 r
+  unpack/U4052/ZN (XNOR2_X1)                              0.06       0.33 r
+  unpack/U4051/ZN (XNOR2_X1)                              0.06       0.39 r
+  unpack/U4267/ZN (NAND2_X1)                              0.04       0.44 f
+  unpack/U1263/ZN (OAI21_X1)                              0.04       0.48 r
+  unpack/U1624/ZN (INV_X1)                                0.02       0.50 f
+  unpack/U4269/ZN (OAI221_X1)                             0.04       0.53 r
+  unpack/U1087/ZN (OAI211_X1)                             0.06       0.59 f
+  unpack/U928/ZN (NAND2_X1)                               0.04       0.63 r
+  unpack/U767/ZN (NAND2_X1)                               0.03       0.67 f
+  unpack/U4230/ZN (OAI221_X1)                             0.04       0.71 r
+  unpack/U1018/ZN (AND2_X1)                               0.05       0.76 r
+  unpack/U4281/ZN (OAI21_X1)                              0.03       0.79 f
+  unpack/U1574/ZN (OAI221_X1)                             0.04       0.83 r
+  unpack/U1651/ZN (AND2_X1)                               0.05       0.89 r
+  unpack/U1653/ZN (NAND2_X1)                              0.03       0.92 f
+  unpack/U678/ZN (OAI221_X1)                              0.04       0.96 r
+  unpack/U4288/ZN (NAND2_X1)                              0.04       1.00 f
+  unpack/U635/ZN (NAND2_X1)                               0.04       1.03 r
+  unpack/U1424/ZN (OAI221_X1)                             0.04       1.07 f
+  unpack/U869/ZN (AND2_X1)                                0.05       1.12 f
+  unpack/U1468/ZN (NAND2_X1)                              0.03       1.15 r
+  unpack/U1113/ZN (OAI221_X1)                             0.05       1.19 f
+  unpack/U4328/ZN (NAND2_X1)                              0.03       1.23 r
+  unpack/U4337/ZN (NAND2_X1)                              0.03       1.26 f
+  unpack/U844/ZN (OAI221_X1)                              0.04       1.30 r
+  unpack/U4346/ZN (NAND2_X1)                              0.04       1.34 f
+  unpack/U20/ZN (NAND2_X1)                                0.04       1.38 r
+  unpack/U1257/ZN (OAI221_X1)                             0.04       1.42 f
+  unpack/U320/ZN (NAND2_X1)                               0.04       1.46 r
+  unpack/U1022/ZN (NAND2_X1)                              0.03       1.49 f
+  unpack/U1398/ZN (NAND2_X1)                              0.03       1.52 r
+  unpack/U1144/ZN (OAI21_X1)                              0.04       1.56 f
+  unpack/U669/ZN (OR2_X2)                                 0.06       1.62 f
+  unpack/U1399/ZN (OAI22_X1)                              0.04       1.66 r
+  unpack/U732/ZN (OR2_X1)                                 0.04       1.70 r
+  unpack/U4386/ZN (OAI21_X1)                              0.03       1.72 f
+  unpack/U312/ZN (NAND2_X1)                               0.04       1.76 r
+  unpack/U811/ZN (OAI21_X1)                               0.04       1.80 f
+  unpack/U1295/ZN (NAND2_X1)                              0.03       1.83 r
+  unpack/U4216/ZN (OAI21_X1)                              0.03       1.86 f
+  unpack/U314/ZN (NAND2_X1)                               0.03       1.90 r
+  unpack/U731/ZN (OAI21_X1)                               0.04       1.93 f
+  unpack/U681/ZN (OR2_X1)                                 0.05       1.99 f
+  unpack/U771/ZN (OAI21_X1)                               0.06       2.04 r
+  unpack/U304/ZN (NAND2_X1)                               0.03       2.07 f
+  unpack/U4408/ZN (OAI21_X1)                              0.03       2.11 r
+  unpack/U316/ZN (NAND2_X1)                               0.03       2.14 f
+  unpack/U1217/ZN (OAI21_X1)                              0.04       2.18 r
+  unpack/U872/ZN (OR2_X1)                                 0.04       2.22 r
+  unpack/U1134/ZN (OAI21_X1)                              0.03       2.25 f
+  unpack/U1555/ZN (NAND2_X1)                              0.04       2.28 r
+  unpack/U1194/ZN (OAI21_X1)                              0.04       2.32 f
+  unpack/U854/ZN (OR2_X1)                                 0.05       2.37 f
+  unpack/U1412/ZN (OAI21_X1)                              0.04       2.41 r
+  unpack/U1561/ZN (NAND2_X1)                              0.03       2.44 f
+  unpack/U1236/ZN (OAI21_X1)                              0.03       2.47 r
+  unpack/U888/ZN (OR2_X1)                                 0.04       2.51 r
+  unpack/U1565/ZN (OAI21_X1)                              0.03       2.53 f
+  unpack/U327/ZN (NAND2_X1)                               0.03       2.57 r
+  unpack/U1224/ZN (OAI21_X1)                              0.04       2.60 f
+  unpack/U860/ZN (OR2_X1)                                 0.06       2.66 f
+  unpack/U1415/ZN (OAI21_X1)                              0.04       2.70 r
+  unpack/U1557/ZN (NAND2_X1)                              0.03       2.73 f
+  unpack/U1419/ZN (OAI21_X1)                              0.03       2.77 r
+  unpack/U723/ZN (OR2_X1)                                 0.04       2.81 r
+  unpack/U1314/ZN (OAI21_X1)                              0.03       2.83 f
+  unpack/U1437/ZN (NAND2_X1)                              0.03       2.87 r
+  unpack/U739/ZN (OAI21_X1)                               0.04       2.91 f
+  unpack/U621/ZN (OR2_X1)                                 0.06       2.96 f
+  unpack/U1413/ZN (OAI21_X1)                              0.04       3.00 r
+  unpack/U1533/ZN (NAND2_X1)                              0.03       3.03 f
+  unpack/U261/ZN (AND2_X1)                                0.04       3.07 f
+  unpack/U775/ZN (NAND2_X1)                               0.03       3.10 r
+  unpack/U1564/ZN (OAI21_X1)                              0.03       3.13 f
+  unpack/U306/ZN (NAND2_X1)                               0.04       3.17 r
+  unpack/U1232/ZN (OAI21_X1)                              0.03       3.21 f
+  unpack/U4546/ZN (OAI21_X1)                              0.04       3.24 r
+  unpack/U1414/ZN (OAI21_X1)                              0.03       3.28 f
+  unpack/U1439/ZN (NAND2_X1)                              0.04       3.31 r
+  unpack/U1418/ZN (OAI21_X1)                              0.03       3.34 f
+  unpack/U747/ZN (OR2_X1)                                 0.06       3.40 f
+  unpack/U1562/ZN (OAI21_X1)                              0.04       3.44 r
+  unpack/U1626/ZN (NAND2_X1)                              0.03       3.47 f
+  unpack/U1253/ZN (OAI21_X1)                              0.03       3.51 r
+  unpack/U848/ZN (OR2_X1)                                 0.04       3.54 r
+  unpack/U1126/ZN (OAI21_X1)                              0.03       3.58 f
+  unpack/U1656/ZN (NAND2_X1)                              0.03       3.61 r
+  unpack/U837/ZN (OAI21_X1)                               0.04       3.64 f
+  unpack/U1727/ZN (OR2_X1)                                0.06       3.70 f
+  unpack/U1563/ZN (OAI21_X1)                              0.05       3.75 r
+  unpack/U1559/ZN (NAND2_X1)                              0.04       3.79 f
+  unpack/U1183/ZN (OAI21_X1)                              0.04       3.83 r
+  unpack/U850/ZN (OR2_X1)                                 0.04       3.86 r
+  unpack/U4557/ZN (OAI21_X1)                              0.03       3.89 f
+  unpack/U1698/ZN (NAND2_X1)                              0.03       3.93 r
+  unpack/U1420/ZN (OAI21_X1)                              0.04       3.96 f
+  unpack/U894/ZN (OR2_X1)                                 0.06       4.02 f
+  unpack/U1411/ZN (OAI21_X1)                              0.04       4.06 r
+  unpack/U1517/ZN (NAND2_X1)                              0.03       4.09 f
+  unpack/U1208/ZN (OAI21_X1)                              0.04       4.13 r
+  unpack/U1582/ZN (OR2_X1)                                0.04       4.18 r
+  unpack/U1004/ZN (OAI21_X1)                              0.03       4.20 f
+  unpack/U1697/ZN (NAND2_X1)                              0.04       4.24 r
+  unpack/U1577/ZN (AND2_X1)                               0.05       4.29 r
+  unpack/U4563/ZN (NAND2_X1)                              0.03       4.32 f
+  unpack/U1580/ZN (OAI21_X1)                              0.04       4.36 r
+  unpack/U1579/ZN (NAND2_X1)                              0.04       4.40 f
+  unpack/U1102/ZN (OAI21_X1)                              0.04       4.44 r
+  unpack/U1628/ZN (NAND2_X1)                              0.03       4.47 f
+  unpack/U5147/ZN (OAI21_X1)                              0.03       4.51 r
+  unpack/U1603/ZN (NAND2_X1)                              0.03       4.54 f
+  unpack/U1164/ZN (OAI21_X1)                              0.05       4.59 r
+  unpack/U694/ZN (AND2_X1)                                0.05       4.64 r
+  unpack/U1726/ZN (AND2_X1)                               0.04       4.68 r
+  unpack/U1493/ZN (NAND2_X1)                              0.03       4.71 f
+  unpack/U1492/ZN (NOR2_X1)                               0.04       4.75 r
+  unpack/U1707/ZN (XNOR2_X1)                              0.06       4.81 r
+  unpack/U1151/ZN (XNOR2_X1)                              0.08       4.88 r
+  unpack/U255/ZN (XNOR2_X1)                               0.08       4.97 r
+  unpack/U5726/ZN (NAND2_X1)                              0.06       5.02 f
+  unpack/U5772/ZN (AOI21_X1)                              0.06       5.09 r
+  unpack/U5782/ZN (NOR4_X1)                               0.03       5.11 f
+  unpack/U4253/ZN (AOI21_X1)                              0.05       5.17 r
+  unpack/U1720/Z (BUF_X4)                                 0.08       5.25 r
+  unpack/dense[253] (ttfs_unpack_LANES64_W4)              0.00       5.25 r
+  weights/wdata[253] (ttfs_wbanks_CH16_NB4_WIDTH256)      0.00       5.25 r
+  weights/bank_0__mem_reg_2__253_/D (DFF_X1)              0.03       5.28 r
+  data arrival time                                                  5.28
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  weights/bank_0__mem_reg_2__253_/CK (DFF_X1)             0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: wb_mask[2] (input port clocked by clk)
+  Endpoint: weights/bank_0__mem_reg_3__253_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ttfs_iv            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  wb_mask[2] (in)                                         0.00       0.25 f
+  unpack/mask[2] (ttfs_unpack_LANES64_W4)                 0.00       0.25 f
+  unpack/U1745/ZN (INV_X1)                                0.03       0.28 r
+  unpack/U4052/ZN (XNOR2_X1)                              0.06       0.33 r
+  unpack/U4051/ZN (XNOR2_X1)                              0.06       0.39 r
+  unpack/U4267/ZN (NAND2_X1)                              0.04       0.44 f
+  unpack/U1263/ZN (OAI21_X1)                              0.04       0.48 r
+  unpack/U1624/ZN (INV_X1)                                0.02       0.50 f
+  unpack/U4269/ZN (OAI221_X1)                             0.04       0.53 r
+  unpack/U1087/ZN (OAI211_X1)                             0.06       0.59 f
+  unpack/U928/ZN (NAND2_X1)                               0.04       0.63 r
+  unpack/U767/ZN (NAND2_X1)                               0.03       0.67 f
+  unpack/U4230/ZN (OAI221_X1)                             0.04       0.71 r
+  unpack/U1018/ZN (AND2_X1)                               0.05       0.76 r
+  unpack/U4281/ZN (OAI21_X1)                              0.03       0.79 f
+  unpack/U1574/ZN (OAI221_X1)                             0.04       0.83 r
+  unpack/U1651/ZN (AND2_X1)                               0.05       0.89 r
+  unpack/U1653/ZN (NAND2_X1)                              0.03       0.92 f
+  unpack/U678/ZN (OAI221_X1)                              0.04       0.96 r
+  unpack/U4288/ZN (NAND2_X1)                              0.04       1.00 f
+  unpack/U635/ZN (NAND2_X1)                               0.04       1.03 r
+  unpack/U1424/ZN (OAI221_X1)                             0.04       1.07 f
+  unpack/U869/ZN (AND2_X1)                                0.05       1.12 f
+  unpack/U1468/ZN (NAND2_X1)                              0.03       1.15 r
+  unpack/U1113/ZN (OAI221_X1)                             0.05       1.19 f
+  unpack/U4328/ZN (NAND2_X1)                              0.03       1.23 r
+  unpack/U4337/ZN (NAND2_X1)                              0.03       1.26 f
+  unpack/U844/ZN (OAI221_X1)                              0.04       1.30 r
+  unpack/U4346/ZN (NAND2_X1)                              0.04       1.34 f
+  unpack/U20/ZN (NAND2_X1)                                0.04       1.38 r
+  unpack/U1257/ZN (OAI221_X1)                             0.04       1.42 f
+  unpack/U320/ZN (NAND2_X1)                               0.04       1.46 r
+  unpack/U1022/ZN (NAND2_X1)                              0.03       1.49 f
+  unpack/U1398/ZN (NAND2_X1)                              0.03       1.52 r
+  unpack/U1144/ZN (OAI21_X1)                              0.04       1.56 f
+  unpack/U669/ZN (OR2_X2)                                 0.06       1.62 f
+  unpack/U1399/ZN (OAI22_X1)                              0.04       1.66 r
+  unpack/U732/ZN (OR2_X1)                                 0.04       1.70 r
+  unpack/U4386/ZN (OAI21_X1)                              0.03       1.72 f
+  unpack/U312/ZN (NAND2_X1)                               0.04       1.76 r
+  unpack/U811/ZN (OAI21_X1)                               0.04       1.80 f
+  unpack/U1295/ZN (NAND2_X1)                              0.03       1.83 r
+  unpack/U4216/ZN (OAI21_X1)                              0.03       1.86 f
+  unpack/U314/ZN (NAND2_X1)                               0.03       1.90 r
+  unpack/U731/ZN (OAI21_X1)                               0.04       1.93 f
+  unpack/U681/ZN (OR2_X1)                                 0.05       1.99 f
+  unpack/U771/ZN (OAI21_X1)                               0.06       2.04 r
+  unpack/U304/ZN (NAND2_X1)                               0.03       2.07 f
+  unpack/U4408/ZN (OAI21_X1)                              0.03       2.11 r
+  unpack/U316/ZN (NAND2_X1)                               0.03       2.14 f
+  unpack/U1217/ZN (OAI21_X1)                              0.04       2.18 r
+  unpack/U872/ZN (OR2_X1)                                 0.04       2.22 r
+  unpack/U1134/ZN (OAI21_X1)                              0.03       2.25 f
+  unpack/U1555/ZN (NAND2_X1)                              0.04       2.28 r
+  unpack/U1194/ZN (OAI21_X1)                              0.04       2.32 f
+  unpack/U854/ZN (OR2_X1)                                 0.05       2.37 f
+  unpack/U1412/ZN (OAI21_X1)                              0.04       2.41 r
+  unpack/U1561/ZN (NAND2_X1)                              0.03       2.44 f
+  unpack/U1236/ZN (OAI21_X1)                              0.03       2.47 r
+  unpack/U888/ZN (OR2_X1)                                 0.04       2.51 r
+  unpack/U1565/ZN (OAI21_X1)                              0.03       2.53 f
+  unpack/U327/ZN (NAND2_X1)                               0.03       2.57 r
+  unpack/U1224/ZN (OAI21_X1)                              0.04       2.60 f
+  unpack/U860/ZN (OR2_X1)                                 0.06       2.66 f
+  unpack/U1415/ZN (OAI21_X1)                              0.04       2.70 r
+  unpack/U1557/ZN (NAND2_X1)                              0.03       2.73 f
+  unpack/U1419/ZN (OAI21_X1)                              0.03       2.77 r
+  unpack/U723/ZN (OR2_X1)                                 0.04       2.81 r
+  unpack/U1314/ZN (OAI21_X1)                              0.03       2.83 f
+  unpack/U1437/ZN (NAND2_X1)                              0.03       2.87 r
+  unpack/U739/ZN (OAI21_X1)                               0.04       2.91 f
+  unpack/U621/ZN (OR2_X1)                                 0.06       2.96 f
+  unpack/U1413/ZN (OAI21_X1)                              0.04       3.00 r
+  unpack/U1533/ZN (NAND2_X1)                              0.03       3.03 f
+  unpack/U261/ZN (AND2_X1)                                0.04       3.07 f
+  unpack/U775/ZN (NAND2_X1)                               0.03       3.10 r
+  unpack/U1564/ZN (OAI21_X1)                              0.03       3.13 f
+  unpack/U306/ZN (NAND2_X1)                               0.04       3.17 r
+  unpack/U1232/ZN (OAI21_X1)                              0.03       3.21 f
+  unpack/U4546/ZN (OAI21_X1)                              0.04       3.24 r
+  unpack/U1414/ZN (OAI21_X1)                              0.03       3.28 f
+  unpack/U1439/ZN (NAND2_X1)                              0.04       3.31 r
+  unpack/U1418/ZN (OAI21_X1)                              0.03       3.34 f
+  unpack/U747/ZN (OR2_X1)                                 0.06       3.40 f
+  unpack/U1562/ZN (OAI21_X1)                              0.04       3.44 r
+  unpack/U1626/ZN (NAND2_X1)                              0.03       3.47 f
+  unpack/U1253/ZN (OAI21_X1)                              0.03       3.51 r
+  unpack/U848/ZN (OR2_X1)                                 0.04       3.54 r
+  unpack/U1126/ZN (OAI21_X1)                              0.03       3.58 f
+  unpack/U1656/ZN (NAND2_X1)                              0.03       3.61 r
+  unpack/U837/ZN (OAI21_X1)                               0.04       3.64 f
+  unpack/U1727/ZN (OR2_X1)                                0.06       3.70 f
+  unpack/U1563/ZN (OAI21_X1)                              0.05       3.75 r
+  unpack/U1559/ZN (NAND2_X1)                              0.04       3.79 f
+  unpack/U1183/ZN (OAI21_X1)                              0.04       3.83 r
+  unpack/U850/ZN (OR2_X1)                                 0.04       3.86 r
+  unpack/U4557/ZN (OAI21_X1)                              0.03       3.89 f
+  unpack/U1698/ZN (NAND2_X1)                              0.03       3.93 r
+  unpack/U1420/ZN (OAI21_X1)                              0.04       3.96 f
+  unpack/U894/ZN (OR2_X1)                                 0.06       4.02 f
+  unpack/U1411/ZN (OAI21_X1)                              0.04       4.06 r
+  unpack/U1517/ZN (NAND2_X1)                              0.03       4.09 f
+  unpack/U1208/ZN (OAI21_X1)                              0.04       4.13 r
+  unpack/U1582/ZN (OR2_X1)                                0.04       4.18 r
+  unpack/U1004/ZN (OAI21_X1)                              0.03       4.20 f
+  unpack/U1697/ZN (NAND2_X1)                              0.04       4.24 r
+  unpack/U1577/ZN (AND2_X1)                               0.05       4.29 r
+  unpack/U4563/ZN (NAND2_X1)                              0.03       4.32 f
+  unpack/U1580/ZN (OAI21_X1)                              0.04       4.36 r
+  unpack/U1579/ZN (NAND2_X1)                              0.04       4.40 f
+  unpack/U1102/ZN (OAI21_X1)                              0.04       4.44 r
+  unpack/U1628/ZN (NAND2_X1)                              0.03       4.47 f
+  unpack/U5147/ZN (OAI21_X1)                              0.03       4.51 r
+  unpack/U1603/ZN (NAND2_X1)                              0.03       4.54 f
+  unpack/U1164/ZN (OAI21_X1)                              0.05       4.59 r
+  unpack/U694/ZN (AND2_X1)                                0.05       4.64 r
+  unpack/U1726/ZN (AND2_X1)                               0.04       4.68 r
+  unpack/U1493/ZN (NAND2_X1)                              0.03       4.71 f
+  unpack/U1492/ZN (NOR2_X1)                               0.04       4.75 r
+  unpack/U1707/ZN (XNOR2_X1)                              0.06       4.81 r
+  unpack/U1151/ZN (XNOR2_X1)                              0.08       4.88 r
+  unpack/U255/ZN (XNOR2_X1)                               0.08       4.97 r
+  unpack/U5726/ZN (NAND2_X1)                              0.06       5.02 f
+  unpack/U5772/ZN (AOI21_X1)                              0.06       5.09 r
+  unpack/U5782/ZN (NOR4_X1)                               0.03       5.11 f
+  unpack/U4253/ZN (AOI21_X1)                              0.05       5.17 r
+  unpack/U1720/Z (BUF_X4)                                 0.08       5.25 r
+  unpack/dense[253] (ttfs_unpack_LANES64_W4)              0.00       5.25 r
+  weights/wdata[253] (ttfs_wbanks_CH16_NB4_WIDTH256)      0.00       5.25 r
+  weights/bank_0__mem_reg_3__253_/D (DFF_X1)              0.03       5.28 r
+  data arrival time                                                  5.28
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  weights/bank_0__mem_reg_3__253_/CK (DFF_X1)             0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: wb_mask[2] (input port clocked by clk)
+  Endpoint: weights/bank_0__mem_reg_4__253_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ttfs_iv            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  wb_mask[2] (in)                                         0.00       0.25 f
+  unpack/mask[2] (ttfs_unpack_LANES64_W4)                 0.00       0.25 f
+  unpack/U1745/ZN (INV_X1)                                0.03       0.28 r
+  unpack/U4052/ZN (XNOR2_X1)                              0.06       0.33 r
+  unpack/U4051/ZN (XNOR2_X1)                              0.06       0.39 r
+  unpack/U4267/ZN (NAND2_X1)                              0.04       0.44 f
+  unpack/U1263/ZN (OAI21_X1)                              0.04       0.48 r
+  unpack/U1624/ZN (INV_X1)                                0.02       0.50 f
+  unpack/U4269/ZN (OAI221_X1)                             0.04       0.53 r
+  unpack/U1087/ZN (OAI211_X1)                             0.06       0.59 f
+  unpack/U928/ZN (NAND2_X1)                               0.04       0.63 r
+  unpack/U767/ZN (NAND2_X1)                               0.03       0.67 f
+  unpack/U4230/ZN (OAI221_X1)                             0.04       0.71 r
+  unpack/U1018/ZN (AND2_X1)                               0.05       0.76 r
+  unpack/U4281/ZN (OAI21_X1)                              0.03       0.79 f
+  unpack/U1574/ZN (OAI221_X1)                             0.04       0.83 r
+  unpack/U1651/ZN (AND2_X1)                               0.05       0.89 r
+  unpack/U1653/ZN (NAND2_X1)                              0.03       0.92 f
+  unpack/U678/ZN (OAI221_X1)                              0.04       0.96 r
+  unpack/U4288/ZN (NAND2_X1)                              0.04       1.00 f
+  unpack/U635/ZN (NAND2_X1)                               0.04       1.03 r
+  unpack/U1424/ZN (OAI221_X1)                             0.04       1.07 f
+  unpack/U869/ZN (AND2_X1)                                0.05       1.12 f
+  unpack/U1468/ZN (NAND2_X1)                              0.03       1.15 r
+  unpack/U1113/ZN (OAI221_X1)                             0.05       1.19 f
+  unpack/U4328/ZN (NAND2_X1)                              0.03       1.23 r
+  unpack/U4337/ZN (NAND2_X1)                              0.03       1.26 f
+  unpack/U844/ZN (OAI221_X1)                              0.04       1.30 r
+  unpack/U4346/ZN (NAND2_X1)                              0.04       1.34 f
+  unpack/U20/ZN (NAND2_X1)                                0.04       1.38 r
+  unpack/U1257/ZN (OAI221_X1)                             0.04       1.42 f
+  unpack/U320/ZN (NAND2_X1)                               0.04       1.46 r
+  unpack/U1022/ZN (NAND2_X1)                              0.03       1.49 f
+  unpack/U1398/ZN (NAND2_X1)                              0.03       1.52 r
+  unpack/U1144/ZN (OAI21_X1)                              0.04       1.56 f
+  unpack/U669/ZN (OR2_X2)                                 0.06       1.62 f
+  unpack/U1399/ZN (OAI22_X1)                              0.04       1.66 r
+  unpack/U732/ZN (OR2_X1)                                 0.04       1.70 r
+  unpack/U4386/ZN (OAI21_X1)                              0.03       1.72 f
+  unpack/U312/ZN (NAND2_X1)                               0.04       1.76 r
+  unpack/U811/ZN (OAI21_X1)                               0.04       1.80 f
+  unpack/U1295/ZN (NAND2_X1)                              0.03       1.83 r
+  unpack/U4216/ZN (OAI21_X1)                              0.03       1.86 f
+  unpack/U314/ZN (NAND2_X1)                               0.03       1.90 r
+  unpack/U731/ZN (OAI21_X1)                               0.04       1.93 f
+  unpack/U681/ZN (OR2_X1)                                 0.05       1.99 f
+  unpack/U771/ZN (OAI21_X1)                               0.06       2.04 r
+  unpack/U304/ZN (NAND2_X1)                               0.03       2.07 f
+  unpack/U4408/ZN (OAI21_X1)                              0.03       2.11 r
+  unpack/U316/ZN (NAND2_X1)                               0.03       2.14 f
+  unpack/U1217/ZN (OAI21_X1)                              0.04       2.18 r
+  unpack/U872/ZN (OR2_X1)                                 0.04       2.22 r
+  unpack/U1134/ZN (OAI21_X1)                              0.03       2.25 f
+  unpack/U1555/ZN (NAND2_X1)                              0.04       2.28 r
+  unpack/U1194/ZN (OAI21_X1)                              0.04       2.32 f
+  unpack/U854/ZN (OR2_X1)                                 0.05       2.37 f
+  unpack/U1412/ZN (OAI21_X1)                              0.04       2.41 r
+  unpack/U1561/ZN (NAND2_X1)                              0.03       2.44 f
+  unpack/U1236/ZN (OAI21_X1)                              0.03       2.47 r
+  unpack/U888/ZN (OR2_X1)                                 0.04       2.51 r
+  unpack/U1565/ZN (OAI21_X1)                              0.03       2.53 f
+  unpack/U327/ZN (NAND2_X1)                               0.03       2.57 r
+  unpack/U1224/ZN (OAI21_X1)                              0.04       2.60 f
+  unpack/U860/ZN (OR2_X1)                                 0.06       2.66 f
+  unpack/U1415/ZN (OAI21_X1)                              0.04       2.70 r
+  unpack/U1557/ZN (NAND2_X1)                              0.03       2.73 f
+  unpack/U1419/ZN (OAI21_X1)                              0.03       2.77 r
+  unpack/U723/ZN (OR2_X1)                                 0.04       2.81 r
+  unpack/U1314/ZN (OAI21_X1)                              0.03       2.83 f
+  unpack/U1437/ZN (NAND2_X1)                              0.03       2.87 r
+  unpack/U739/ZN (OAI21_X1)                               0.04       2.91 f
+  unpack/U621/ZN (OR2_X1)                                 0.06       2.96 f
+  unpack/U1413/ZN (OAI21_X1)                              0.04       3.00 r
+  unpack/U1533/ZN (NAND2_X1)                              0.03       3.03 f
+  unpack/U261/ZN (AND2_X1)                                0.04       3.07 f
+  unpack/U775/ZN (NAND2_X1)                               0.03       3.10 r
+  unpack/U1564/ZN (OAI21_X1)                              0.03       3.13 f
+  unpack/U306/ZN (NAND2_X1)                               0.04       3.17 r
+  unpack/U1232/ZN (OAI21_X1)                              0.03       3.21 f
+  unpack/U4546/ZN (OAI21_X1)                              0.04       3.24 r
+  unpack/U1414/ZN (OAI21_X1)                              0.03       3.28 f
+  unpack/U1439/ZN (NAND2_X1)                              0.04       3.31 r
+  unpack/U1418/ZN (OAI21_X1)                              0.03       3.34 f
+  unpack/U747/ZN (OR2_X1)                                 0.06       3.40 f
+  unpack/U1562/ZN (OAI21_X1)                              0.04       3.44 r
+  unpack/U1626/ZN (NAND2_X1)                              0.03       3.47 f
+  unpack/U1253/ZN (OAI21_X1)                              0.03       3.51 r
+  unpack/U848/ZN (OR2_X1)                                 0.04       3.54 r
+  unpack/U1126/ZN (OAI21_X1)                              0.03       3.58 f
+  unpack/U1656/ZN (NAND2_X1)                              0.03       3.61 r
+  unpack/U837/ZN (OAI21_X1)                               0.04       3.64 f
+  unpack/U1727/ZN (OR2_X1)                                0.06       3.70 f
+  unpack/U1563/ZN (OAI21_X1)                              0.05       3.75 r
+  unpack/U1559/ZN (NAND2_X1)                              0.04       3.79 f
+  unpack/U1183/ZN (OAI21_X1)                              0.04       3.83 r
+  unpack/U850/ZN (OR2_X1)                                 0.04       3.86 r
+  unpack/U4557/ZN (OAI21_X1)                              0.03       3.89 f
+  unpack/U1698/ZN (NAND2_X1)                              0.03       3.93 r
+  unpack/U1420/ZN (OAI21_X1)                              0.04       3.96 f
+  unpack/U894/ZN (OR2_X1)                                 0.06       4.02 f
+  unpack/U1411/ZN (OAI21_X1)                              0.04       4.06 r
+  unpack/U1517/ZN (NAND2_X1)                              0.03       4.09 f
+  unpack/U1208/ZN (OAI21_X1)                              0.04       4.13 r
+  unpack/U1582/ZN (OR2_X1)                                0.04       4.18 r
+  unpack/U1004/ZN (OAI21_X1)                              0.03       4.20 f
+  unpack/U1697/ZN (NAND2_X1)                              0.04       4.24 r
+  unpack/U1577/ZN (AND2_X1)                               0.05       4.29 r
+  unpack/U4563/ZN (NAND2_X1)                              0.03       4.32 f
+  unpack/U1580/ZN (OAI21_X1)                              0.04       4.36 r
+  unpack/U1579/ZN (NAND2_X1)                              0.04       4.40 f
+  unpack/U1102/ZN (OAI21_X1)                              0.04       4.44 r
+  unpack/U1628/ZN (NAND2_X1)                              0.03       4.47 f
+  unpack/U5147/ZN (OAI21_X1)                              0.03       4.51 r
+  unpack/U1603/ZN (NAND2_X1)                              0.03       4.54 f
+  unpack/U1164/ZN (OAI21_X1)                              0.05       4.59 r
+  unpack/U694/ZN (AND2_X1)                                0.05       4.64 r
+  unpack/U1726/ZN (AND2_X1)                               0.04       4.68 r
+  unpack/U1493/ZN (NAND2_X1)                              0.03       4.71 f
+  unpack/U1492/ZN (NOR2_X1)                               0.04       4.75 r
+  unpack/U1707/ZN (XNOR2_X1)                              0.06       4.81 r
+  unpack/U1151/ZN (XNOR2_X1)                              0.08       4.88 r
+  unpack/U255/ZN (XNOR2_X1)                               0.08       4.97 r
+  unpack/U5726/ZN (NAND2_X1)                              0.06       5.02 f
+  unpack/U5772/ZN (AOI21_X1)                              0.06       5.09 r
+  unpack/U5782/ZN (NOR4_X1)                               0.03       5.11 f
+  unpack/U4253/ZN (AOI21_X1)                              0.05       5.17 r
+  unpack/U1720/Z (BUF_X4)                                 0.08       5.25 r
+  unpack/dense[253] (ttfs_unpack_LANES64_W4)              0.00       5.25 r
+  weights/wdata[253] (ttfs_wbanks_CH16_NB4_WIDTH256)      0.00       5.25 r
+  weights/bank_0__mem_reg_4__253_/D (DFF_X1)              0.03       5.28 r
+  data arrival time                                                  5.28
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  weights/bank_0__mem_reg_4__253_/CK (DFF_X1)             0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+1

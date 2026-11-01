@@ -1,0 +1,270 @@
+ 
+****************************************
+Report : area
+Design : apex_tppe
+Version: U-2022.12
+Date   : Sun Nov  1 05:56:58 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+Number of ports:                         5742
+Number of nets:                         30097
+Number of cells:                        23355
+Number of combinational cells:          17038
+Number of sequential cells:              5989
+Number of macros/black boxes:               0
+Number of buf/inv:                       4945
+Number of references:                     121
+
+Combinational area:              22198.498237
+Buf/Inv area:                     2746.982017
+Noncombinational area:           26846.847053
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 49045.345289
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------
+apex_tppe                         49045.3453    100.0   4884.8240   6318.5638  0.0000  apex_tppe
+add_0_root_add_43_root_add_255_S4_I128_C329    26.6000     0.1    26.6000     0.0000 0.0000 apex_tppe_DW01_add_17_DW01_add_45
+add_294                              23.9400      0.0     23.9400      0.0000  0.0000  apex_tppe_DW01_add_105_DW01_add_139
+add_2_root_add_43_root_add_255_S4_I128_C269    40.6980     0.1    40.6980     0.0000 0.0000 apex_tppe_DW01_add_191
+add_352                              26.3340      0.1     26.3340      0.0000  0.0000  apex_tppe_DW01_add_98_DW01_add_129
+clk_gate_ac_flip_reg                  3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_31
+clk_gate_andr_reg                     3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_1
+clk_gate_base_reg_0__0_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_19
+clk_gate_base_reg_0__1_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_18
+clk_gate_base_reg_0__2_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_17
+clk_gate_base_reg_0__3_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_16
+clk_gate_base_reg_0__4_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_15
+clk_gate_base_reg_0__5_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_14
+clk_gate_base_reg_0__6_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_13
+clk_gate_base_reg_0__7_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_12
+clk_gate_base_reg_1__0_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_11
+clk_gate_base_reg_1__1_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_10
+clk_gate_base_reg_1__2_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_9
+clk_gate_base_reg_1__3_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_8
+clk_gate_base_reg_1__4_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_7
+clk_gate_base_reg_1__5_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_6
+clk_gate_base_reg_1__6_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_5
+clk_gate_base_reg_1__7_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_4
+clk_gate_bm_a_reg                     3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_0
+clk_gate_bm_a_reg_0                   3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_56
+clk_gate_bm_b_reg                     3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_55
+clk_gate_bm_b_reg_0                   3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_54
+clk_gate_c1_word_reg                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_2
+clk_gate_corr_reg_0_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_48
+clk_gate_corr_reg_10_                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_38
+clk_gate_corr_reg_11_                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_37
+clk_gate_corr_reg_12_                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_36
+clk_gate_corr_reg_13_                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_35
+clk_gate_corr_reg_14_                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_34
+clk_gate_corr_reg_1_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_47
+clk_gate_corr_reg_2_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_46
+clk_gate_corr_reg_3_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_45
+clk_gate_corr_reg_4_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_44
+clk_gate_corr_reg_5_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_43
+clk_gate_corr_reg_6_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_42
+clk_gate_corr_reg_7_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_41
+clk_gate_corr_reg_8_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_40
+clk_gate_corr_reg_9_                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_39
+clk_gate_f1_ctx_reg                   3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_28
+clk_gate_fhead_reg                    3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_51
+clk_gate_fifo_mp_reg_0_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_27
+clk_gate_fifo_mp_reg_1_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_26
+clk_gate_fifo_mp_reg_2_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_25
+clk_gate_fifo_mp_reg_3_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_24
+clk_gate_fifo_mp_reg_4_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_23
+clk_gate_fifo_mp_reg_5_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_22
+clk_gate_fifo_mp_reg_6_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_21
+clk_gate_fifo_mp_reg_7_               3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_20
+clk_gate_ftail_reg                    3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_50
+clk_gate_lag_bm_reg_0_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_30
+clk_gate_lag_bm_reg_1_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_29
+clk_gate_lag_g_reg                    3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_3
+clk_gate_o_cap_reg_0_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_52
+clk_gate_outstanding_reg_0_           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_33
+clk_gate_outstanding_reg_1_           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_32
+clk_gate_pseudo_reg                   3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_49
+clk_gate_st_flip_reg                  3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_tppe_53
+dbufa                             23902.7595     48.7   6298.8802  17364.4794  0.0000  apex_dbufa_T15_BLOCK128
+dbufa/clk_gate_mem_reg_0__0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_0
+dbufa/clk_gate_mem_reg_0__10_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_50
+dbufa/clk_gate_mem_reg_0__11_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_49
+dbufa/clk_gate_mem_reg_0__12_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_48
+dbufa/clk_gate_mem_reg_0__13_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_47
+dbufa/clk_gate_mem_reg_0__14_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_46
+dbufa/clk_gate_mem_reg_0__15_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_45
+dbufa/clk_gate_mem_reg_0__16_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_44
+dbufa/clk_gate_mem_reg_0__17_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_43
+dbufa/clk_gate_mem_reg_0__18_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_42
+dbufa/clk_gate_mem_reg_0__19_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_41
+dbufa/clk_gate_mem_reg_0__1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_59
+dbufa/clk_gate_mem_reg_0__20_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_40
+dbufa/clk_gate_mem_reg_0__21_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_39
+dbufa/clk_gate_mem_reg_0__22_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_38
+dbufa/clk_gate_mem_reg_0__23_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_37
+dbufa/clk_gate_mem_reg_0__24_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_36
+dbufa/clk_gate_mem_reg_0__25_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_35
+dbufa/clk_gate_mem_reg_0__26_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_34
+dbufa/clk_gate_mem_reg_0__27_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_33
+dbufa/clk_gate_mem_reg_0__28_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_32
+dbufa/clk_gate_mem_reg_0__29_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_31
+dbufa/clk_gate_mem_reg_0__2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_58
+dbufa/clk_gate_mem_reg_0__3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_57
+dbufa/clk_gate_mem_reg_0__4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_56
+dbufa/clk_gate_mem_reg_0__5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_55
+dbufa/clk_gate_mem_reg_0__6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_54
+dbufa/clk_gate_mem_reg_0__7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_53
+dbufa/clk_gate_mem_reg_0__8_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_52
+dbufa/clk_gate_mem_reg_0__9_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_51
+dbufa/clk_gate_mem_reg_1__0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_30
+dbufa/clk_gate_mem_reg_1__10_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_20
+dbufa/clk_gate_mem_reg_1__11_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_19
+dbufa/clk_gate_mem_reg_1__12_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_18
+dbufa/clk_gate_mem_reg_1__13_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_17
+dbufa/clk_gate_mem_reg_1__14_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_16
+dbufa/clk_gate_mem_reg_1__15_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_15
+dbufa/clk_gate_mem_reg_1__16_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_14
+dbufa/clk_gate_mem_reg_1__17_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_13
+dbufa/clk_gate_mem_reg_1__18_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_12
+dbufa/clk_gate_mem_reg_1__19_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_11
+dbufa/clk_gate_mem_reg_1__1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_29
+dbufa/clk_gate_mem_reg_1__20_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_10
+dbufa/clk_gate_mem_reg_1__21_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_9
+dbufa/clk_gate_mem_reg_1__22_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_8
+dbufa/clk_gate_mem_reg_1__23_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_7
+dbufa/clk_gate_mem_reg_1__24_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_6
+dbufa/clk_gate_mem_reg_1__25_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_5
+dbufa/clk_gate_mem_reg_1__26_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_4
+dbufa/clk_gate_mem_reg_1__27_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_3
+dbufa/clk_gate_mem_reg_1__28_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_2
+dbufa/clk_gate_mem_reg_1__29_         3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_1
+dbufa/clk_gate_mem_reg_1__2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_28
+dbufa/clk_gate_mem_reg_1__3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_27
+dbufa/clk_gate_mem_reg_1__4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_26
+dbufa/clk_gate_mem_reg_1__5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_25
+dbufa/clk_gate_mem_reg_1__6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_24
+dbufa/clk_gate_mem_reg_1__7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_23
+dbufa/clk_gate_mem_reg_1__8_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_22
+dbufa/clk_gate_mem_reg_1__9_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufa_T15_BLOCK128_21
+dbufb                              2894.0799      5.9    546.8960   2315.2639  0.0000  apex_dbufb_WB4_BLOCK128
+dbufb/clk_gate_mem_reg_0_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_0
+dbufb/clk_gate_mem_reg_1_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_7
+dbufb/clk_gate_mem_reg_2_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_6
+dbufb/clk_gate_mem_reg_3_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_5
+dbufb/clk_gate_mem_reg_4_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_4
+dbufb/clk_gate_mem_reg_5_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_3
+dbufb/clk_gate_mem_reg_6_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_2
+dbufb/clk_gate_mem_reg_7_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_dbufb_WB4_BLOCK128_1
+pasc                               9297.2320     19.0   3951.9620    497.4200  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8
+pasc/add_109                         49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_27_DW01_add_44
+pasc/add_109_I10                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_18_DW01_add_35
+pasc/add_109_I11                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_17_DW01_add_34
+pasc/add_109_I12                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_16_DW01_add_33
+pasc/add_109_I13                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_15_DW01_add_32
+pasc/add_109_I14                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_14_DW01_add_31
+pasc/add_109_I15                     49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_13_DW01_add_30
+pasc/add_109_I2                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_26_DW01_add_43
+pasc/add_109_I3                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_25_DW01_add_42
+pasc/add_109_I4                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_24_DW01_add_41
+pasc/add_109_I5                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_23_DW01_add_40
+pasc/add_109_I6                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_22_DW01_add_39
+pasc/add_109_I7                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_21_DW01_add_38
+pasc/add_109_I8                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_20_DW01_add_37
+pasc/add_109_I9                      49.4760      0.1     49.4760      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_19_DW01_add_36
+pasc/add_122_S3                      74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_12_DW01_add_29
+pasc/add_122_S3_I10                  74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_3_DW01_add_20
+pasc/add_122_S3_I11                  74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_2_DW01_add_19
+pasc/add_122_S3_I12                  74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_1_DW01_add_18
+pasc/add_122_S3_I13                  74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_0_DW01_add_17
+pasc/add_122_S3_I2                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_11_DW01_add_28
+pasc/add_122_S3_I3                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_10_DW01_add_27
+pasc/add_122_S3_I4                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_9_DW01_add_26
+pasc/add_122_S3_I5                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_8_DW01_add_25
+pasc/add_122_S3_I6                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_7_DW01_add_24
+pasc/add_122_S3_I7                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_6_DW01_add_23
+pasc/add_122_S3_I8                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_5_DW01_add_22
+pasc/add_122_S3_I9                   74.2140      0.2     74.2140      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_4_DW01_add_21
+pasc/clk_gate_c1_reg                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_6
+pasc/clk_gate_c2_reg                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_4
+pasc/clk_gate_c3_reg                  3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_2
+pasc/clk_gate_p_th_reg                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_5
+pasc/clk_gate_r_m1_reg                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_3
+pasc/clk_gate_r_s2_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_1
+pasc/clk_gate_spikes_reg              3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_pasc_T15_OW13_MW18_FB6_PC8_0
+pasc/gte_121                         57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_42
+pasc/gte_121_I10                     57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_24
+pasc/gte_121_I11                     57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_22
+pasc/gte_121_I12                     57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_20
+pasc/gte_121_I13                     57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_18
+pasc/gte_121_I14                     57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_16
+pasc/gte_121_I2                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_40
+pasc/gte_121_I3                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_38
+pasc/gte_121_I4                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_36
+pasc/gte_121_I5                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_34
+pasc/gte_121_I6                      58.7860      0.1     58.7860      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_32
+pasc/gte_121_I7                      58.7860      0.1     58.7860      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_30
+pasc/gte_121_I8                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_28
+pasc/gte_121_I9                      57.9880      0.1     57.9880      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_26
+pasc/sub_110_S3                      82.1940      0.2     82.1940      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_27_DW01_sub_45
+pasc/sub_110_S3_I10                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_18_DW01_sub_36
+pasc/sub_110_S3_I11                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_17_DW01_sub_35
+pasc/sub_110_S3_I12                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_16_DW01_sub_34
+pasc/sub_110_S3_I13                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_15_DW01_sub_33
+pasc/sub_110_S3_I14                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_14_DW01_sub_32
+pasc/sub_110_S3_I15                  81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_13_DW01_sub_31
+pasc/sub_110_S3_I2                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_26_DW01_sub_44
+pasc/sub_110_S3_I3                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_25_DW01_sub_43
+pasc/sub_110_S3_I4                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_24_DW01_sub_42
+pasc/sub_110_S3_I5                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_23_DW01_sub_41
+pasc/sub_110_S3_I6                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_22_DW01_sub_40
+pasc/sub_110_S3_I7                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_21_DW01_sub_39
+pasc/sub_110_S3_I8                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_20_DW01_sub_38
+pasc/sub_110_S3_I9                   81.6620      0.2     81.6620      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_19_DW01_sub_37
+pasc/sub_121_S3                      82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_12_DW01_sub_30
+pasc/sub_121_S3_I10                  82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_3_DW01_sub_21
+pasc/sub_121_S3_I11                  82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_2_DW01_sub_20
+pasc/sub_121_S3_I12                  82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_1_DW01_sub_19
+pasc/sub_121_S3_I13                  82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_0_DW01_sub_18
+pasc/sub_121_S3_I2                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_11_DW01_sub_29
+pasc/sub_121_S3_I3                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_10_DW01_sub_28
+pasc/sub_121_S3_I4                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_9_DW01_sub_27
+pasc/sub_121_S3_I5                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_8_DW01_sub_26
+pasc/sub_121_S3_I6                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_7_DW01_sub_25
+pasc/sub_121_S3_I7                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_6_DW01_sub_24
+pasc/sub_121_S3_I8                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_5_DW01_sub_23
+pasc/sub_121_S3_I9                   82.7260      0.2     82.7260      0.0000  0.0000  apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_4_DW01_sub_22
+sub_269                             470.5540      1.0    470.5540      0.0000  0.0000  apex_tppe_DW01_dec_3
+sub_294                              39.1020      0.1     39.1020      0.0000  0.0000  apex_tppe_DW01_dec_1
+sub_373_S4                           60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_14_DW01_sub_16
+sub_373_S4_I10                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_5_DW01_sub_7
+sub_373_S4_I11                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_4_DW01_sub_6
+sub_373_S4_I12                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_3_DW01_sub_5
+sub_373_S4_I13                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_2_DW01_sub_4
+sub_373_S4_I14                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_1_DW01_sub_3
+sub_373_S4_I15                       60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_0_DW01_sub_2
+sub_373_S4_I2                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_13_DW01_sub_15
+sub_373_S4_I3                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_12_DW01_sub_14
+sub_373_S4_I4                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_11_DW01_sub_13
+sub_373_S4_I5                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_10_DW01_sub_12
+sub_373_S4_I6                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_9_DW01_sub_11
+sub_373_S4_I7                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_8_DW01_sub_10
+sub_373_S4_I8                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_7_DW01_sub_9
+sub_373_S4_I9                        60.3820      0.1     60.3820      0.0000  0.0000  apex_tppe_DW01_sub_6_DW01_sub_8
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------
+Total                                                  22198.4982  26846.8471  0.0000
+
+1

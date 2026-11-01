@@ -1,0 +1,622 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : spf_periphery
+Version: U-2022.12
+Date   : Sun Nov  1 00:18:34 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: collector/level_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: collector/out_packed_reg_35_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spf_periphery      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  collector/level_reg_1__0_/CK (DFF_X1)                   0.00       0.00 r
+  collector/level_reg_1__0_/QN (DFF_X1)                   0.07       0.07 r
+  collector/U143/ZN (AND4_X2)                             0.07       0.13 r
+  collector/U1824/ZN (XNOR2_X1)                           0.06       0.19 r
+  collector/U2053/ZN (INV_X1)                             0.03       0.22 f
+  collector/U1940/ZN (NAND2_X1)                           0.03       0.25 r
+  collector/U1948/ZN (NAND2_X1)                           0.03       0.28 f
+  collector/U1063/ZN (AOI21_X1)                           0.06       0.34 r
+  collector/U2017/ZN (XNOR2_X1)                           0.06       0.40 r
+  collector/U1636/ZN (XNOR2_X1)                           0.06       0.46 r
+  collector/U1651/Z (XOR2_X1)                             0.07       0.54 r
+  collector/U1650/ZN (XNOR2_X1)                           0.07       0.61 r
+  collector/U1881/Z (XOR2_X1)                             0.09       0.70 r
+  collector/U32715/ZN (AND2_X1)                           0.06       0.77 r
+  collector/U1074/ZN (XNOR2_X1)                           0.07       0.84 r
+  collector/U1621/ZN (XNOR2_X1)                           0.07       0.91 r
+  collector/U866/Z (XOR2_X1)                              0.07       0.98 r
+  collector/U865/ZN (XNOR2_X1)                            0.06       1.04 r
+  collector/U1046/ZN (XNOR2_X1)                           0.06       1.10 r
+  collector/U1049/ZN (XNOR2_X1)                           0.07       1.17 r
+  collector/U681/ZN (NAND2_X1)                            0.03       1.20 f
+  collector/U1321/ZN (NAND2_X1)                           0.03       1.23 r
+  collector/U1371/ZN (XNOR2_X1)                           0.06       1.29 r
+  collector/U1052/Z (XOR2_X1)                             0.07       1.36 r
+  collector/U1051/ZN (XNOR2_X1)                           0.06       1.42 r
+  collector/U1197/Z (XOR2_X1)                             0.08       1.50 r
+  collector/U1663/Z (XOR2_X1)                             0.07       1.57 r
+  collector/U1827/ZN (XNOR2_X1)                           0.07       1.64 r
+  collector/U1974/ZN (NAND2_X1)                           0.04       1.68 f
+  collector/U1975/ZN (NAND2_X1)                           0.03       1.71 r
+  collector/U1128/ZN (XNOR2_X1)                           0.06       1.77 r
+  collector/U1127/ZN (XNOR2_X1)                           0.07       1.83 r
+  collector/U150/Z (BUF_X2)                               0.04       1.88 r
+  collector/U1612/Z (XOR2_X1)                             0.07       1.95 r
+  collector/U32676/ZN (AND2_X1)                           0.05       2.00 r
+  collector/U915/ZN (XNOR2_X1)                            0.07       2.06 r
+  collector/U32674/Z (XOR2_X1)                            0.09       2.15 r
+  collector/U1985/ZN (NAND2_X1)                           0.05       2.20 f
+  collector/U1986/ZN (NAND2_X1)                           0.04       2.24 r
+  collector/U1188/ZN (XNOR2_X1)                           0.06       2.29 r
+  collector/U1187/ZN (XNOR2_X1)                           0.06       2.35 r
+  collector/U32661/Z (XOR2_X1)                            0.07       2.43 r
+  collector/U1422/ZN (XNOR2_X1)                           0.06       2.49 r
+  collector/U1421/ZN (XNOR2_X1)                           0.06       2.55 r
+  collector/U1573/ZN (XNOR2_X1)                           0.07       2.62 r
+  collector/U1281/ZN (OR2_X1)                             0.05       2.67 r
+  collector/U1586/ZN (NAND2_X1)                           0.03       2.70 f
+  collector/U901/ZN (XNOR2_X1)                            0.05       2.75 f
+  collector/U900/ZN (XNOR2_X1)                            0.06       2.81 f
+  collector/U32648/Z (XOR2_X1)                            0.07       2.88 f
+  collector/U1607/ZN (XNOR2_X1)                           0.06       2.94 f
+  collector/U1458/ZN (OR2_X1)                             0.06       3.00 f
+  collector/U1638/ZN (NAND2_X1)                           0.03       3.03 r
+  collector/U737/ZN (XNOR2_X1)                            0.06       3.10 r
+  collector/U848/Z (XOR2_X1)                              0.07       3.17 r
+  collector/U847/ZN (XNOR2_X1)                            0.06       3.23 r
+  collector/U32632/Z (XOR2_X1)                            0.07       3.31 r
+  collector/U1344/ZN (XNOR2_X1)                           0.07       3.37 r
+  collector/U1343/ZN (XNOR2_X1)                           0.07       3.44 r
+  collector/U1006/ZN (XNOR2_X1)                           0.06       3.50 r
+  collector/U1005/ZN (XNOR2_X1)                           0.06       3.56 r
+  collector/U1509/ZN (XNOR2_X1)                           0.07       3.63 r
+  collector/U1761/ZN (NAND2_X1)                           0.04       3.67 f
+  collector/U1493/ZN (NAND2_X1)                           0.03       3.70 r
+  collector/U1107/ZN (XNOR2_X1)                           0.06       3.76 r
+  collector/U1106/ZN (XNOR2_X1)                           0.06       3.82 r
+  collector/U32613/Z (XOR2_X1)                            0.08       3.90 r
+  collector/U32610/Z (XOR2_X1)                            0.08       3.98 r
+  collector/U32607/Z (XOR2_X1)                            0.08       4.06 r
+  collector/U1475/Z (XOR2_X1)                             0.09       4.15 r
+  collector/U32604/ZN (AND2_X1)                           0.07       4.22 r
+  collector/U1358/ZN (INV_X1)                             0.03       4.24 f
+  collector/U1355/ZN (NAND2_X1)                           0.03       4.28 r
+  collector/U1357/ZN (NAND2_X1)                           0.03       4.31 f
+  collector/U713/ZN (XNOR2_X1)                            0.05       4.36 r
+  collector/U1869/ZN (XNOR2_X1)                           0.07       4.43 r
+  collector/U1350/ZN (XNOR2_X1)                           0.07       4.50 r
+  collector/U32517/ZN (AND2_X1)                           0.07       4.57 r
+  collector/U1378/Z (XOR2_X1)                             0.08       4.65 r
+  collector/U1377/ZN (XNOR2_X1)                           0.07       4.72 r
+  collector/U32499/ZN (AOI22_X1)                          0.04       4.75 f
+  collector/U2010/ZN (OAI22_X1)                           0.05       4.80 r
+  collector/U32316/ZN (AOI22_X1)                          0.05       4.85 f
+  collector/U1848/ZN (NOR2_X1)                            0.04       4.90 r
+  collector/U1073/ZN (NOR2_X1)                            0.03       4.92 f
+  collector/U32081/ZN (AOI221_X1)                         0.09       5.02 r
+  collector/U1777/ZN (AND2_X1)                            0.05       5.07 r
+  collector/U796/ZN (AND2_X1)                             0.05       5.11 r
+  collector/U32416/ZN (AOI22_X1)                          0.03       5.14 f
+  collector/U1527/ZN (NAND3_X1)                           0.03       5.17 r
+  collector/out_packed_reg_35_/D (DFF_X2)                 0.01       5.18 r
+  data arrival time                                                  5.18
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  collector/out_packed_reg_35_/CK (DFF_X2)                0.00       4.95 r
+  library setup time                                     -0.03       4.92
+  data required time                                                 4.92
+  --------------------------------------------------------------------------
+  data required time                                                 4.92
+  data arrival time                                                 -5.18
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: collector/level_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: collector/out_packed_reg_34_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spf_periphery      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  collector/level_reg_1__0_/CK (DFF_X1)                   0.00       0.00 r
+  collector/level_reg_1__0_/QN (DFF_X1)                   0.07       0.07 r
+  collector/U143/ZN (AND4_X2)                             0.07       0.13 r
+  collector/U1824/ZN (XNOR2_X1)                           0.06       0.19 r
+  collector/U2053/ZN (INV_X1)                             0.03       0.22 f
+  collector/U1940/ZN (NAND2_X1)                           0.03       0.25 r
+  collector/U1948/ZN (NAND2_X1)                           0.03       0.28 f
+  collector/U1063/ZN (AOI21_X1)                           0.06       0.34 r
+  collector/U2017/ZN (XNOR2_X1)                           0.06       0.40 r
+  collector/U1636/ZN (XNOR2_X1)                           0.06       0.46 r
+  collector/U1651/Z (XOR2_X1)                             0.07       0.54 r
+  collector/U1650/ZN (XNOR2_X1)                           0.07       0.61 r
+  collector/U1881/Z (XOR2_X1)                             0.09       0.70 r
+  collector/U32715/ZN (AND2_X1)                           0.06       0.77 r
+  collector/U1074/ZN (XNOR2_X1)                           0.07       0.84 r
+  collector/U1621/ZN (XNOR2_X1)                           0.07       0.91 r
+  collector/U866/Z (XOR2_X1)                              0.07       0.98 r
+  collector/U865/ZN (XNOR2_X1)                            0.06       1.04 r
+  collector/U1046/ZN (XNOR2_X1)                           0.06       1.10 r
+  collector/U1049/ZN (XNOR2_X1)                           0.07       1.17 r
+  collector/U681/ZN (NAND2_X1)                            0.03       1.20 f
+  collector/U1321/ZN (NAND2_X1)                           0.03       1.23 r
+  collector/U1371/ZN (XNOR2_X1)                           0.06       1.29 r
+  collector/U1052/Z (XOR2_X1)                             0.07       1.36 r
+  collector/U1051/ZN (XNOR2_X1)                           0.06       1.42 r
+  collector/U1197/Z (XOR2_X1)                             0.08       1.50 r
+  collector/U1663/Z (XOR2_X1)                             0.07       1.57 r
+  collector/U1827/ZN (XNOR2_X1)                           0.07       1.64 r
+  collector/U1974/ZN (NAND2_X1)                           0.04       1.68 f
+  collector/U1975/ZN (NAND2_X1)                           0.03       1.71 r
+  collector/U1128/ZN (XNOR2_X1)                           0.06       1.77 r
+  collector/U1127/ZN (XNOR2_X1)                           0.07       1.83 r
+  collector/U150/Z (BUF_X2)                               0.04       1.88 r
+  collector/U1612/Z (XOR2_X1)                             0.07       1.95 r
+  collector/U32676/ZN (AND2_X1)                           0.05       2.00 r
+  collector/U915/ZN (XNOR2_X1)                            0.07       2.06 r
+  collector/U32674/Z (XOR2_X1)                            0.09       2.15 r
+  collector/U1985/ZN (NAND2_X1)                           0.05       2.20 f
+  collector/U1986/ZN (NAND2_X1)                           0.04       2.24 r
+  collector/U1188/ZN (XNOR2_X1)                           0.06       2.29 r
+  collector/U1187/ZN (XNOR2_X1)                           0.06       2.35 r
+  collector/U32661/Z (XOR2_X1)                            0.07       2.43 r
+  collector/U1422/ZN (XNOR2_X1)                           0.06       2.49 r
+  collector/U1421/ZN (XNOR2_X1)                           0.06       2.55 r
+  collector/U1573/ZN (XNOR2_X1)                           0.07       2.62 r
+  collector/U1281/ZN (OR2_X1)                             0.05       2.67 r
+  collector/U1586/ZN (NAND2_X1)                           0.03       2.70 f
+  collector/U901/ZN (XNOR2_X1)                            0.05       2.75 f
+  collector/U900/ZN (XNOR2_X1)                            0.06       2.81 f
+  collector/U32648/Z (XOR2_X1)                            0.07       2.88 f
+  collector/U1607/ZN (XNOR2_X1)                           0.06       2.94 f
+  collector/U1458/ZN (OR2_X1)                             0.06       3.00 f
+  collector/U1638/ZN (NAND2_X1)                           0.03       3.03 r
+  collector/U737/ZN (XNOR2_X1)                            0.06       3.10 r
+  collector/U848/Z (XOR2_X1)                              0.07       3.17 r
+  collector/U847/ZN (XNOR2_X1)                            0.06       3.23 r
+  collector/U32632/Z (XOR2_X1)                            0.07       3.31 r
+  collector/U1344/ZN (XNOR2_X1)                           0.07       3.37 r
+  collector/U1343/ZN (XNOR2_X1)                           0.07       3.44 r
+  collector/U1006/ZN (XNOR2_X1)                           0.06       3.50 r
+  collector/U1005/ZN (XNOR2_X1)                           0.06       3.56 r
+  collector/U1509/ZN (XNOR2_X1)                           0.07       3.63 r
+  collector/U1761/ZN (NAND2_X1)                           0.04       3.67 f
+  collector/U1493/ZN (NAND2_X1)                           0.03       3.70 r
+  collector/U1107/ZN (XNOR2_X1)                           0.06       3.76 r
+  collector/U1106/ZN (XNOR2_X1)                           0.06       3.82 r
+  collector/U32613/Z (XOR2_X1)                            0.08       3.90 r
+  collector/U32610/Z (XOR2_X1)                            0.08       3.98 r
+  collector/U32607/Z (XOR2_X1)                            0.08       4.06 r
+  collector/U1475/Z (XOR2_X1)                             0.09       4.15 r
+  collector/U32604/ZN (AND2_X1)                           0.07       4.22 r
+  collector/U1358/ZN (INV_X1)                             0.03       4.24 f
+  collector/U1355/ZN (NAND2_X1)                           0.03       4.28 r
+  collector/U1357/ZN (NAND2_X1)                           0.03       4.31 f
+  collector/U713/ZN (XNOR2_X1)                            0.05       4.36 r
+  collector/U1869/ZN (XNOR2_X1)                           0.07       4.43 r
+  collector/U1350/ZN (XNOR2_X1)                           0.07       4.50 r
+  collector/U32517/ZN (AND2_X1)                           0.07       4.57 r
+  collector/U1378/Z (XOR2_X1)                             0.08       4.65 r
+  collector/U1377/ZN (XNOR2_X1)                           0.07       4.72 r
+  collector/U32499/ZN (AOI22_X1)                          0.04       4.75 f
+  collector/U2010/ZN (OAI22_X1)                           0.05       4.80 r
+  collector/U32316/ZN (AOI22_X1)                          0.05       4.85 f
+  collector/U1848/ZN (NOR2_X1)                            0.04       4.90 r
+  collector/U1073/ZN (NOR2_X1)                            0.03       4.92 f
+  collector/U32081/ZN (AOI221_X1)                         0.09       5.02 r
+  collector/U1777/ZN (AND2_X1)                            0.05       5.07 r
+  collector/U796/ZN (AND2_X1)                             0.05       5.11 r
+  collector/U32415/ZN (AOI22_X1)                          0.03       5.14 f
+  collector/U1533/ZN (NAND3_X1)                           0.03       5.17 r
+  collector/out_packed_reg_34_/D (DFF_X2)                 0.01       5.18 r
+  data arrival time                                                  5.18
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  collector/out_packed_reg_34_/CK (DFF_X2)                0.00       4.95 r
+  library setup time                                     -0.03       4.92
+  data required time                                                 4.92
+  --------------------------------------------------------------------------
+  data required time                                                 4.92
+  data arrival time                                                 -5.18
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: collector/level_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: collector/out_packed_reg_33_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spf_periphery      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  collector/level_reg_1__0_/CK (DFF_X1)                   0.00       0.00 r
+  collector/level_reg_1__0_/QN (DFF_X1)                   0.07       0.07 r
+  collector/U143/ZN (AND4_X2)                             0.07       0.13 r
+  collector/U1824/ZN (XNOR2_X1)                           0.06       0.19 r
+  collector/U2053/ZN (INV_X1)                             0.03       0.22 f
+  collector/U1940/ZN (NAND2_X1)                           0.03       0.25 r
+  collector/U1948/ZN (NAND2_X1)                           0.03       0.28 f
+  collector/U1063/ZN (AOI21_X1)                           0.06       0.34 r
+  collector/U2017/ZN (XNOR2_X1)                           0.06       0.40 r
+  collector/U1636/ZN (XNOR2_X1)                           0.06       0.46 r
+  collector/U1651/Z (XOR2_X1)                             0.07       0.54 r
+  collector/U1650/ZN (XNOR2_X1)                           0.07       0.61 r
+  collector/U1881/Z (XOR2_X1)                             0.09       0.70 r
+  collector/U32715/ZN (AND2_X1)                           0.06       0.77 r
+  collector/U1074/ZN (XNOR2_X1)                           0.07       0.84 r
+  collector/U1621/ZN (XNOR2_X1)                           0.07       0.91 r
+  collector/U866/Z (XOR2_X1)                              0.07       0.98 r
+  collector/U865/ZN (XNOR2_X1)                            0.06       1.04 r
+  collector/U1046/ZN (XNOR2_X1)                           0.06       1.10 r
+  collector/U1049/ZN (XNOR2_X1)                           0.07       1.17 r
+  collector/U681/ZN (NAND2_X1)                            0.03       1.20 f
+  collector/U1321/ZN (NAND2_X1)                           0.03       1.23 r
+  collector/U1371/ZN (XNOR2_X1)                           0.06       1.29 r
+  collector/U1052/Z (XOR2_X1)                             0.07       1.36 r
+  collector/U1051/ZN (XNOR2_X1)                           0.06       1.42 r
+  collector/U1197/Z (XOR2_X1)                             0.08       1.50 r
+  collector/U1663/Z (XOR2_X1)                             0.07       1.57 r
+  collector/U1827/ZN (XNOR2_X1)                           0.07       1.64 r
+  collector/U1974/ZN (NAND2_X1)                           0.04       1.68 f
+  collector/U1975/ZN (NAND2_X1)                           0.03       1.71 r
+  collector/U1128/ZN (XNOR2_X1)                           0.06       1.77 r
+  collector/U1127/ZN (XNOR2_X1)                           0.07       1.83 r
+  collector/U150/Z (BUF_X2)                               0.04       1.88 r
+  collector/U1612/Z (XOR2_X1)                             0.07       1.95 r
+  collector/U32676/ZN (AND2_X1)                           0.05       2.00 r
+  collector/U915/ZN (XNOR2_X1)                            0.07       2.06 r
+  collector/U32674/Z (XOR2_X1)                            0.09       2.15 r
+  collector/U1985/ZN (NAND2_X1)                           0.05       2.20 f
+  collector/U1986/ZN (NAND2_X1)                           0.04       2.24 r
+  collector/U1188/ZN (XNOR2_X1)                           0.06       2.29 r
+  collector/U1187/ZN (XNOR2_X1)                           0.06       2.35 r
+  collector/U32661/Z (XOR2_X1)                            0.07       2.43 r
+  collector/U1422/ZN (XNOR2_X1)                           0.06       2.49 r
+  collector/U1421/ZN (XNOR2_X1)                           0.06       2.55 r
+  collector/U1573/ZN (XNOR2_X1)                           0.07       2.62 r
+  collector/U1281/ZN (OR2_X1)                             0.05       2.67 r
+  collector/U1586/ZN (NAND2_X1)                           0.03       2.70 f
+  collector/U901/ZN (XNOR2_X1)                            0.05       2.75 f
+  collector/U900/ZN (XNOR2_X1)                            0.06       2.81 f
+  collector/U32648/Z (XOR2_X1)                            0.07       2.88 f
+  collector/U1607/ZN (XNOR2_X1)                           0.06       2.94 f
+  collector/U1458/ZN (OR2_X1)                             0.06       3.00 f
+  collector/U1638/ZN (NAND2_X1)                           0.03       3.03 r
+  collector/U737/ZN (XNOR2_X1)                            0.06       3.10 r
+  collector/U848/Z (XOR2_X1)                              0.07       3.17 r
+  collector/U847/ZN (XNOR2_X1)                            0.06       3.23 r
+  collector/U32632/Z (XOR2_X1)                            0.07       3.31 r
+  collector/U1344/ZN (XNOR2_X1)                           0.07       3.37 r
+  collector/U1343/ZN (XNOR2_X1)                           0.07       3.44 r
+  collector/U1006/ZN (XNOR2_X1)                           0.06       3.50 r
+  collector/U1005/ZN (XNOR2_X1)                           0.06       3.56 r
+  collector/U1509/ZN (XNOR2_X1)                           0.07       3.63 r
+  collector/U1761/ZN (NAND2_X1)                           0.04       3.67 f
+  collector/U1493/ZN (NAND2_X1)                           0.03       3.70 r
+  collector/U1107/ZN (XNOR2_X1)                           0.06       3.76 r
+  collector/U1106/ZN (XNOR2_X1)                           0.06       3.82 r
+  collector/U32613/Z (XOR2_X1)                            0.08       3.90 r
+  collector/U32610/Z (XOR2_X1)                            0.08       3.98 r
+  collector/U32607/Z (XOR2_X1)                            0.08       4.06 r
+  collector/U1475/Z (XOR2_X1)                             0.09       4.15 r
+  collector/U32604/ZN (AND2_X1)                           0.07       4.22 r
+  collector/U1358/ZN (INV_X1)                             0.03       4.24 f
+  collector/U1355/ZN (NAND2_X1)                           0.03       4.28 r
+  collector/U1357/ZN (NAND2_X1)                           0.03       4.31 f
+  collector/U713/ZN (XNOR2_X1)                            0.05       4.36 r
+  collector/U1869/ZN (XNOR2_X1)                           0.07       4.43 r
+  collector/U1350/ZN (XNOR2_X1)                           0.07       4.50 r
+  collector/U32517/ZN (AND2_X1)                           0.07       4.57 r
+  collector/U1378/Z (XOR2_X1)                             0.08       4.65 r
+  collector/U1377/ZN (XNOR2_X1)                           0.07       4.72 r
+  collector/U32499/ZN (AOI22_X1)                          0.04       4.75 f
+  collector/U2010/ZN (OAI22_X1)                           0.05       4.80 r
+  collector/U32316/ZN (AOI22_X1)                          0.05       4.85 f
+  collector/U1848/ZN (NOR2_X1)                            0.04       4.90 r
+  collector/U1073/ZN (NOR2_X1)                            0.03       4.92 f
+  collector/U32081/ZN (AOI221_X1)                         0.09       5.02 r
+  collector/U1777/ZN (AND2_X1)                            0.05       5.07 r
+  collector/U795/ZN (AND2_X1)                             0.05       5.11 r
+  collector/U32414/ZN (AOI22_X1)                          0.03       5.14 f
+  collector/U1539/ZN (NAND3_X1)                           0.03       5.17 r
+  collector/out_packed_reg_33_/D (DFF_X2)                 0.01       5.18 r
+  data arrival time                                                  5.18
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  collector/out_packed_reg_33_/CK (DFF_X2)                0.00       4.95 r
+  library setup time                                     -0.03       4.92
+  data required time                                                 4.92
+  --------------------------------------------------------------------------
+  data required time                                                 4.92
+  data arrival time                                                 -5.18
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: collector/level_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: collector/out_packed_reg_32_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spf_periphery      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  collector/level_reg_1__0_/CK (DFF_X1)                   0.00       0.00 r
+  collector/level_reg_1__0_/QN (DFF_X1)                   0.07       0.07 r
+  collector/U143/ZN (AND4_X2)                             0.07       0.13 r
+  collector/U1824/ZN (XNOR2_X1)                           0.06       0.19 r
+  collector/U2053/ZN (INV_X1)                             0.03       0.22 f
+  collector/U1940/ZN (NAND2_X1)                           0.03       0.25 r
+  collector/U1948/ZN (NAND2_X1)                           0.03       0.28 f
+  collector/U1063/ZN (AOI21_X1)                           0.06       0.34 r
+  collector/U2017/ZN (XNOR2_X1)                           0.06       0.40 r
+  collector/U1636/ZN (XNOR2_X1)                           0.06       0.46 r
+  collector/U1651/Z (XOR2_X1)                             0.07       0.54 r
+  collector/U1650/ZN (XNOR2_X1)                           0.07       0.61 r
+  collector/U1881/Z (XOR2_X1)                             0.09       0.70 r
+  collector/U32715/ZN (AND2_X1)                           0.06       0.77 r
+  collector/U1074/ZN (XNOR2_X1)                           0.07       0.84 r
+  collector/U1621/ZN (XNOR2_X1)                           0.07       0.91 r
+  collector/U866/Z (XOR2_X1)                              0.07       0.98 r
+  collector/U865/ZN (XNOR2_X1)                            0.06       1.04 r
+  collector/U1046/ZN (XNOR2_X1)                           0.06       1.10 r
+  collector/U1049/ZN (XNOR2_X1)                           0.07       1.17 r
+  collector/U681/ZN (NAND2_X1)                            0.03       1.20 f
+  collector/U1321/ZN (NAND2_X1)                           0.03       1.23 r
+  collector/U1371/ZN (XNOR2_X1)                           0.06       1.29 r
+  collector/U1052/Z (XOR2_X1)                             0.07       1.36 r
+  collector/U1051/ZN (XNOR2_X1)                           0.06       1.42 r
+  collector/U1197/Z (XOR2_X1)                             0.08       1.50 r
+  collector/U1663/Z (XOR2_X1)                             0.07       1.57 r
+  collector/U1827/ZN (XNOR2_X1)                           0.07       1.64 r
+  collector/U1974/ZN (NAND2_X1)                           0.04       1.68 f
+  collector/U1975/ZN (NAND2_X1)                           0.03       1.71 r
+  collector/U1128/ZN (XNOR2_X1)                           0.06       1.77 r
+  collector/U1127/ZN (XNOR2_X1)                           0.07       1.83 r
+  collector/U150/Z (BUF_X2)                               0.04       1.88 r
+  collector/U1612/Z (XOR2_X1)                             0.07       1.95 r
+  collector/U32676/ZN (AND2_X1)                           0.05       2.00 r
+  collector/U915/ZN (XNOR2_X1)                            0.07       2.06 r
+  collector/U32674/Z (XOR2_X1)                            0.09       2.15 r
+  collector/U1985/ZN (NAND2_X1)                           0.05       2.20 f
+  collector/U1986/ZN (NAND2_X1)                           0.04       2.24 r
+  collector/U1188/ZN (XNOR2_X1)                           0.06       2.29 r
+  collector/U1187/ZN (XNOR2_X1)                           0.06       2.35 r
+  collector/U32661/Z (XOR2_X1)                            0.07       2.43 r
+  collector/U1422/ZN (XNOR2_X1)                           0.06       2.49 r
+  collector/U1421/ZN (XNOR2_X1)                           0.06       2.55 r
+  collector/U1573/ZN (XNOR2_X1)                           0.07       2.62 r
+  collector/U1281/ZN (OR2_X1)                             0.05       2.67 r
+  collector/U1586/ZN (NAND2_X1)                           0.03       2.70 f
+  collector/U901/ZN (XNOR2_X1)                            0.05       2.75 f
+  collector/U900/ZN (XNOR2_X1)                            0.06       2.81 f
+  collector/U32648/Z (XOR2_X1)                            0.07       2.88 f
+  collector/U1607/ZN (XNOR2_X1)                           0.06       2.94 f
+  collector/U1458/ZN (OR2_X1)                             0.06       3.00 f
+  collector/U1638/ZN (NAND2_X1)                           0.03       3.03 r
+  collector/U737/ZN (XNOR2_X1)                            0.06       3.10 r
+  collector/U848/Z (XOR2_X1)                              0.07       3.17 r
+  collector/U847/ZN (XNOR2_X1)                            0.06       3.23 r
+  collector/U32632/Z (XOR2_X1)                            0.07       3.31 r
+  collector/U1344/ZN (XNOR2_X1)                           0.07       3.37 r
+  collector/U1343/ZN (XNOR2_X1)                           0.07       3.44 r
+  collector/U1006/ZN (XNOR2_X1)                           0.06       3.50 r
+  collector/U1005/ZN (XNOR2_X1)                           0.06       3.56 r
+  collector/U1509/ZN (XNOR2_X1)                           0.07       3.63 r
+  collector/U1761/ZN (NAND2_X1)                           0.04       3.67 f
+  collector/U1493/ZN (NAND2_X1)                           0.03       3.70 r
+  collector/U1107/ZN (XNOR2_X1)                           0.06       3.76 r
+  collector/U1106/ZN (XNOR2_X1)                           0.06       3.82 r
+  collector/U32613/Z (XOR2_X1)                            0.08       3.90 r
+  collector/U32610/Z (XOR2_X1)                            0.08       3.98 r
+  collector/U32607/Z (XOR2_X1)                            0.08       4.06 r
+  collector/U1475/Z (XOR2_X1)                             0.09       4.15 r
+  collector/U32604/ZN (AND2_X1)                           0.07       4.22 r
+  collector/U1358/ZN (INV_X1)                             0.03       4.24 f
+  collector/U1355/ZN (NAND2_X1)                           0.03       4.28 r
+  collector/U1357/ZN (NAND2_X1)                           0.03       4.31 f
+  collector/U713/ZN (XNOR2_X1)                            0.05       4.36 r
+  collector/U1869/ZN (XNOR2_X1)                           0.07       4.43 r
+  collector/U1350/ZN (XNOR2_X1)                           0.07       4.50 r
+  collector/U32517/ZN (AND2_X1)                           0.07       4.57 r
+  collector/U1378/Z (XOR2_X1)                             0.08       4.65 r
+  collector/U1377/ZN (XNOR2_X1)                           0.07       4.72 r
+  collector/U32499/ZN (AOI22_X1)                          0.04       4.75 f
+  collector/U2010/ZN (OAI22_X1)                           0.05       4.80 r
+  collector/U32316/ZN (AOI22_X1)                          0.05       4.85 f
+  collector/U1848/ZN (NOR2_X1)                            0.04       4.90 r
+  collector/U1073/ZN (NOR2_X1)                            0.03       4.92 f
+  collector/U32081/ZN (AOI221_X1)                         0.09       5.02 r
+  collector/U1777/ZN (AND2_X1)                            0.05       5.07 r
+  collector/U795/ZN (AND2_X1)                             0.05       5.11 r
+  collector/U32413/ZN (AOI22_X1)                          0.03       5.14 f
+  collector/U32232/ZN (NAND3_X1)                          0.03       5.17 r
+  collector/out_packed_reg_32_/D (DFF_X2)                 0.01       5.18 r
+  data arrival time                                                  5.18
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  collector/out_packed_reg_32_/CK (DFF_X2)                0.00       4.95 r
+  library setup time                                     -0.03       4.92
+  data required time                                                 4.92
+  --------------------------------------------------------------------------
+  data required time                                                 4.92
+  data arrival time                                                 -5.18
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: collector/level_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: collector/out_packed_reg_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spf_periphery      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  collector/level_reg_1__0_/CK (DFF_X1)                   0.00       0.00 r
+  collector/level_reg_1__0_/QN (DFF_X1)                   0.07       0.07 r
+  collector/U143/ZN (AND4_X2)                             0.07       0.13 r
+  collector/U1824/ZN (XNOR2_X1)                           0.06       0.19 r
+  collector/U2053/ZN (INV_X1)                             0.03       0.22 f
+  collector/U1940/ZN (NAND2_X1)                           0.03       0.25 r
+  collector/U1948/ZN (NAND2_X1)                           0.03       0.28 f
+  collector/U1063/ZN (AOI21_X1)                           0.06       0.34 r
+  collector/U2017/ZN (XNOR2_X1)                           0.06       0.40 r
+  collector/U1636/ZN (XNOR2_X1)                           0.06       0.46 r
+  collector/U1651/Z (XOR2_X1)                             0.07       0.54 r
+  collector/U1650/ZN (XNOR2_X1)                           0.07       0.61 r
+  collector/U1881/Z (XOR2_X1)                             0.09       0.70 r
+  collector/U32715/ZN (AND2_X1)                           0.06       0.77 r
+  collector/U1074/ZN (XNOR2_X1)                           0.07       0.84 r
+  collector/U1621/ZN (XNOR2_X1)                           0.07       0.91 r
+  collector/U866/Z (XOR2_X1)                              0.07       0.98 r
+  collector/U865/ZN (XNOR2_X1)                            0.06       1.04 r
+  collector/U1046/ZN (XNOR2_X1)                           0.06       1.10 r
+  collector/U1049/ZN (XNOR2_X1)                           0.07       1.17 r
+  collector/U681/ZN (NAND2_X1)                            0.03       1.20 f
+  collector/U1321/ZN (NAND2_X1)                           0.03       1.23 r
+  collector/U1371/ZN (XNOR2_X1)                           0.06       1.29 r
+  collector/U1052/Z (XOR2_X1)                             0.07       1.36 r
+  collector/U1051/ZN (XNOR2_X1)                           0.06       1.42 r
+  collector/U1197/Z (XOR2_X1)                             0.08       1.50 r
+  collector/U1663/Z (XOR2_X1)                             0.07       1.57 r
+  collector/U1827/ZN (XNOR2_X1)                           0.07       1.64 r
+  collector/U1974/ZN (NAND2_X1)                           0.04       1.68 f
+  collector/U1975/ZN (NAND2_X1)                           0.03       1.71 r
+  collector/U1128/ZN (XNOR2_X1)                           0.06       1.77 r
+  collector/U1127/ZN (XNOR2_X1)                           0.07       1.83 r
+  collector/U150/Z (BUF_X2)                               0.04       1.88 r
+  collector/U1612/Z (XOR2_X1)                             0.07       1.95 r
+  collector/U32676/ZN (AND2_X1)                           0.05       2.00 r
+  collector/U915/ZN (XNOR2_X1)                            0.07       2.06 r
+  collector/U32674/Z (XOR2_X1)                            0.09       2.15 r
+  collector/U1985/ZN (NAND2_X1)                           0.05       2.20 f
+  collector/U1986/ZN (NAND2_X1)                           0.04       2.24 r
+  collector/U1188/ZN (XNOR2_X1)                           0.06       2.29 r
+  collector/U1187/ZN (XNOR2_X1)                           0.06       2.35 r
+  collector/U32661/Z (XOR2_X1)                            0.07       2.43 r
+  collector/U1422/ZN (XNOR2_X1)                           0.06       2.49 r
+  collector/U1421/ZN (XNOR2_X1)                           0.06       2.55 r
+  collector/U1573/ZN (XNOR2_X1)                           0.07       2.62 r
+  collector/U1281/ZN (OR2_X1)                             0.05       2.67 r
+  collector/U1586/ZN (NAND2_X1)                           0.03       2.70 f
+  collector/U901/ZN (XNOR2_X1)                            0.05       2.75 f
+  collector/U900/ZN (XNOR2_X1)                            0.06       2.81 f
+  collector/U32648/Z (XOR2_X1)                            0.07       2.88 f
+  collector/U1607/ZN (XNOR2_X1)                           0.06       2.94 f
+  collector/U1458/ZN (OR2_X1)                             0.06       3.00 f
+  collector/U1638/ZN (NAND2_X1)                           0.03       3.03 r
+  collector/U737/ZN (XNOR2_X1)                            0.06       3.10 r
+  collector/U848/Z (XOR2_X1)                              0.07       3.17 r
+  collector/U847/ZN (XNOR2_X1)                            0.06       3.23 r
+  collector/U32632/Z (XOR2_X1)                            0.07       3.31 r
+  collector/U1344/ZN (XNOR2_X1)                           0.07       3.37 r
+  collector/U1343/ZN (XNOR2_X1)                           0.07       3.44 r
+  collector/U1006/ZN (XNOR2_X1)                           0.06       3.50 r
+  collector/U1005/ZN (XNOR2_X1)                           0.06       3.56 r
+  collector/U1509/ZN (XNOR2_X1)                           0.07       3.63 r
+  collector/U1761/ZN (NAND2_X1)                           0.04       3.67 f
+  collector/U1493/ZN (NAND2_X1)                           0.03       3.70 r
+  collector/U1107/ZN (XNOR2_X1)                           0.06       3.76 r
+  collector/U1106/ZN (XNOR2_X1)                           0.06       3.82 r
+  collector/U32613/Z (XOR2_X1)                            0.08       3.90 r
+  collector/U32610/Z (XOR2_X1)                            0.08       3.98 r
+  collector/U32607/Z (XOR2_X1)                            0.08       4.06 r
+  collector/U1475/Z (XOR2_X1)                             0.09       4.15 r
+  collector/U32604/ZN (AND2_X1)                           0.07       4.22 r
+  collector/U1358/ZN (INV_X1)                             0.03       4.24 f
+  collector/U1355/ZN (NAND2_X1)                           0.03       4.28 r
+  collector/U1357/ZN (NAND2_X1)                           0.03       4.31 f
+  collector/U713/ZN (XNOR2_X1)                            0.06       4.36 f
+  collector/U1869/ZN (XNOR2_X1)                           0.06       4.43 f
+  collector/U1350/ZN (XNOR2_X1)                           0.07       4.49 f
+  collector/U744/Z (BUF_X1)                               0.04       4.54 f
+  collector/U32221/ZN (AOI22_X1)                          0.05       4.59 r
+  collector/U4022/ZN (OAI22_X1)                           0.04       4.63 f
+  collector/U100/ZN (AOI22_X1)                            0.06       4.69 r
+  collector/U322/Z (BUF_X2)                               0.06       4.75 r
+  collector/U534/ZN (NAND2_X1)                            0.06       4.81 f
+  collector/U890/ZN (OAI22_X2)                            0.09       4.90 r
+  collector/U32166/ZN (NOR2_X1)                           0.04       4.94 f
+  collector/U535/ZN (NAND2_X1)                            0.04       4.98 r
+  collector/U2258/ZN (OAI21_X1)                           0.04       5.02 f
+  collector/U507/ZN (AND2_X1)                             0.04       5.06 f
+  collector/U4770/ZN (AOI22_X1)                           0.06       5.11 r
+  collector/U4768/ZN (OAI221_X1)                          0.05       5.16 f
+  collector/out_packed_reg_24_/D (DFF_X1)                 0.01       5.17 f
+  data arrival time                                                  5.17
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.05       4.95
+  collector/out_packed_reg_24_/CK (DFF_X1)                0.00       4.95 r
+  library setup time                                     -0.04       4.91
+  data required time                                                 4.91
+  --------------------------------------------------------------------------
+  data required time                                                 4.91
+  data arrival time                                                 -5.17
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+1

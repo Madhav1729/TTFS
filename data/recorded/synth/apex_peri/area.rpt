@@ -1,0 +1,300 @@
+ 
+****************************************
+Report : area
+Design : apex_periphery
+Version: U-2022.12
+Date   : Sun Nov  1 06:24:36 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+Number of ports:                         6509
+Number of nets:                         94392
+Number of cells:                        89755
+Number of combinational cells:          74235
+Number of sequential cells:             15248
+Number of macros/black boxes:               0
+Number of buf/inv:                       7567
+Number of references:                     290
+
+Combinational area:              98784.420780
+Buf/Inv area:                     4755.281966
+Noncombinational area:           68605.653556
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                167390.074336
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
+                                  Total        Total    national    national    boxes   Design
+--------------------------------  -----------  -------  ----------  ----------  ------  ---------------------------------------
+apex_periphery                    167390.0743    100.0  96503.2048  68052.3735  0.0000  apex_periphery
+add_480                               15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_15_DW01_inc_111
+add_480_G10                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_6_DW01_inc_102
+add_480_G11                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_5_DW01_inc_101
+add_480_G12                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_4_DW01_inc_100
+add_480_G13                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_3_DW01_inc_99
+add_480_G14                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_2_DW01_inc_98
+add_480_G15                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_1_DW01_inc_97
+add_480_G16                           15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_0_DW01_inc_96
+add_480_G2                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_14_DW01_inc_110
+add_480_G3                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_13_DW01_inc_109
+add_480_G4                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_12_DW01_inc_108
+add_480_G5                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_11_DW01_inc_107
+add_480_G6                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_10_DW01_inc_106
+add_480_G7                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_9_DW01_inc_105
+add_480_G8                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_8_DW01_inc_104
+add_480_G9                            15.4280      0.0     15.4280      0.0000  0.0000  apex_periphery_DW01_inc_7_DW01_inc_103
+clk_gate_a_addr_reg_0_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_0
+clk_gate_a_addr_reg_10_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_198
+clk_gate_a_addr_reg_11_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_197
+clk_gate_a_addr_reg_12_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_196
+clk_gate_a_addr_reg_13_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_195
+clk_gate_a_addr_reg_14_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_194
+clk_gate_a_addr_reg_15_                3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_193
+clk_gate_a_addr_reg_1_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_207
+clk_gate_a_addr_reg_2_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_206
+clk_gate_a_addr_reg_3_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_205
+clk_gate_a_addr_reg_4_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_204
+clk_gate_a_addr_reg_5_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_203
+clk_gate_a_addr_reg_6_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_202
+clk_gate_a_addr_reg_7_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_201
+clk_gate_a_addr_reg_8_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_200
+clk_gate_a_addr_reg_9_                 3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_199
+clk_gate_bank_wdata_reg_0_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_16
+clk_gate_bank_wdata_reg_10_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_6
+clk_gate_bank_wdata_reg_11_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_5
+clk_gate_bank_wdata_reg_12_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_4
+clk_gate_bank_wdata_reg_13_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_3
+clk_gate_bank_wdata_reg_14_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_2
+clk_gate_bank_wdata_reg_15_            3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_1
+clk_gate_bank_wdata_reg_1_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_15
+clk_gate_bank_wdata_reg_2_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_14
+clk_gate_bank_wdata_reg_3_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_13
+clk_gate_bank_wdata_reg_4_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_12
+clk_gate_bank_wdata_reg_5_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_11
+clk_gate_bank_wdata_reg_6_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_10
+clk_gate_bank_wdata_reg_7_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_9
+clk_gate_bank_wdata_reg_8_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_8
+clk_gate_bank_wdata_reg_9_             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_7
+clk_gate_rows_0__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_192
+clk_gate_rows_0__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_191
+clk_gate_rows_0__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_190
+clk_gate_rows_0__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_189
+clk_gate_rows_0__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_188
+clk_gate_rows_0__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_187
+clk_gate_rows_0__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_186
+clk_gate_rows_0__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_185
+clk_gate_rows_0__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_183
+clk_gate_rows_0__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_182
+clk_gate_rows_0__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_184
+clk_gate_rows_10__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_82
+clk_gate_rows_10__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_81
+clk_gate_rows_10__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_80
+clk_gate_rows_10__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_79
+clk_gate_rows_10__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_78
+clk_gate_rows_10__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_77
+clk_gate_rows_10__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_76
+clk_gate_rows_10__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_75
+clk_gate_rows_10__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_73
+clk_gate_rows_10__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_72
+clk_gate_rows_10__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_74
+clk_gate_rows_11__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_71
+clk_gate_rows_11__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_70
+clk_gate_rows_11__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_69
+clk_gate_rows_11__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_68
+clk_gate_rows_11__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_67
+clk_gate_rows_11__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_66
+clk_gate_rows_11__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_65
+clk_gate_rows_11__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_64
+clk_gate_rows_11__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_62
+clk_gate_rows_11__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_61
+clk_gate_rows_11__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_63
+clk_gate_rows_12__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_60
+clk_gate_rows_12__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_59
+clk_gate_rows_12__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_58
+clk_gate_rows_12__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_57
+clk_gate_rows_12__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_56
+clk_gate_rows_12__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_55
+clk_gate_rows_12__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_54
+clk_gate_rows_12__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_53
+clk_gate_rows_12__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_51
+clk_gate_rows_12__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_50
+clk_gate_rows_12__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_52
+clk_gate_rows_13__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_49
+clk_gate_rows_13__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_48
+clk_gate_rows_13__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_47
+clk_gate_rows_13__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_46
+clk_gate_rows_13__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_45
+clk_gate_rows_13__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_44
+clk_gate_rows_13__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_43
+clk_gate_rows_13__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_42
+clk_gate_rows_13__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_40
+clk_gate_rows_13__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_39
+clk_gate_rows_13__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_41
+clk_gate_rows_14__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_38
+clk_gate_rows_14__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_37
+clk_gate_rows_14__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_36
+clk_gate_rows_14__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_35
+clk_gate_rows_14__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_34
+clk_gate_rows_14__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_33
+clk_gate_rows_14__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_32
+clk_gate_rows_14__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_31
+clk_gate_rows_14__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_29
+clk_gate_rows_14__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_28
+clk_gate_rows_14__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_30
+clk_gate_rows_15__fifo_reg_0_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_27
+clk_gate_rows_15__fifo_reg_1_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_26
+clk_gate_rows_15__fifo_reg_2_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_25
+clk_gate_rows_15__fifo_reg_3_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_24
+clk_gate_rows_15__fifo_reg_4_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_23
+clk_gate_rows_15__fifo_reg_5_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_22
+clk_gate_rows_15__fifo_reg_6_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_21
+clk_gate_rows_15__fifo_reg_7_          3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_20
+clk_gate_rows_15__fstart_reg           3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_18
+clk_gate_rows_15__h_reg                3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_17
+clk_gate_rows_15__mask_reg             3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_19
+clk_gate_rows_1__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_181
+clk_gate_rows_1__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_180
+clk_gate_rows_1__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_179
+clk_gate_rows_1__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_178
+clk_gate_rows_1__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_177
+clk_gate_rows_1__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_176
+clk_gate_rows_1__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_175
+clk_gate_rows_1__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_174
+clk_gate_rows_1__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_172
+clk_gate_rows_1__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_171
+clk_gate_rows_1__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_173
+clk_gate_rows_2__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_170
+clk_gate_rows_2__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_169
+clk_gate_rows_2__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_168
+clk_gate_rows_2__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_167
+clk_gate_rows_2__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_166
+clk_gate_rows_2__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_165
+clk_gate_rows_2__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_164
+clk_gate_rows_2__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_163
+clk_gate_rows_2__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_161
+clk_gate_rows_2__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_160
+clk_gate_rows_2__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_162
+clk_gate_rows_3__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_159
+clk_gate_rows_3__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_158
+clk_gate_rows_3__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_157
+clk_gate_rows_3__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_156
+clk_gate_rows_3__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_155
+clk_gate_rows_3__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_154
+clk_gate_rows_3__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_153
+clk_gate_rows_3__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_152
+clk_gate_rows_3__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_150
+clk_gate_rows_3__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_149
+clk_gate_rows_3__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_151
+clk_gate_rows_4__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_148
+clk_gate_rows_4__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_147
+clk_gate_rows_4__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_146
+clk_gate_rows_4__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_145
+clk_gate_rows_4__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_144
+clk_gate_rows_4__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_143
+clk_gate_rows_4__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_142
+clk_gate_rows_4__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_141
+clk_gate_rows_4__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_139
+clk_gate_rows_4__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_138
+clk_gate_rows_4__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_140
+clk_gate_rows_5__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_137
+clk_gate_rows_5__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_136
+clk_gate_rows_5__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_135
+clk_gate_rows_5__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_134
+clk_gate_rows_5__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_133
+clk_gate_rows_5__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_132
+clk_gate_rows_5__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_131
+clk_gate_rows_5__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_130
+clk_gate_rows_5__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_128
+clk_gate_rows_5__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_127
+clk_gate_rows_5__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_129
+clk_gate_rows_6__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_126
+clk_gate_rows_6__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_125
+clk_gate_rows_6__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_124
+clk_gate_rows_6__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_123
+clk_gate_rows_6__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_122
+clk_gate_rows_6__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_121
+clk_gate_rows_6__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_120
+clk_gate_rows_6__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_119
+clk_gate_rows_6__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_117
+clk_gate_rows_6__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_116
+clk_gate_rows_6__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_118
+clk_gate_rows_7__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_115
+clk_gate_rows_7__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_114
+clk_gate_rows_7__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_113
+clk_gate_rows_7__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_112
+clk_gate_rows_7__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_111
+clk_gate_rows_7__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_110
+clk_gate_rows_7__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_109
+clk_gate_rows_7__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_108
+clk_gate_rows_7__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_106
+clk_gate_rows_7__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_105
+clk_gate_rows_7__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_107
+clk_gate_rows_8__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_104
+clk_gate_rows_8__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_103
+clk_gate_rows_8__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_102
+clk_gate_rows_8__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_101
+clk_gate_rows_8__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_100
+clk_gate_rows_8__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_99
+clk_gate_rows_8__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_98
+clk_gate_rows_8__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_97
+clk_gate_rows_8__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_95
+clk_gate_rows_8__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_94
+clk_gate_rows_8__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_96
+clk_gate_rows_9__fifo_reg_0_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_93
+clk_gate_rows_9__fifo_reg_1_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_92
+clk_gate_rows_9__fifo_reg_2_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_91
+clk_gate_rows_9__fifo_reg_3_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_90
+clk_gate_rows_9__fifo_reg_4_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_89
+clk_gate_rows_9__fifo_reg_5_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_88
+clk_gate_rows_9__fifo_reg_6_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_87
+clk_gate_rows_9__fifo_reg_7_           3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_86
+clk_gate_rows_9__fstart_reg            3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_84
+clk_gate_rows_9__h_reg                 3.7240      0.0      1.0640      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_83
+clk_gate_rows_9__mask_reg              3.9900      0.0      1.3300      2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_apex_periphery_85
+r6116                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_31_DW01_inc_127
+r6126                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_45_DW01_add_109
+r6141                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_30_DW01_inc_126
+r6151                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_42_DW01_add_106
+r6166                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_29_DW01_inc_125
+r6176                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_39_DW01_add_103
+r6191                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_28_DW01_inc_124
+r6201                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_36_DW01_add_100
+r6216                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_27_DW01_inc_123
+r6226                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_33_DW01_add_97
+r6241                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_26_DW01_inc_122
+r6251                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_30_DW01_add_94
+r6266                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_25_DW01_inc_121
+r6276                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_27_DW01_add_91
+r6291                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_24_DW01_inc_120
+r6301                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_24_DW01_add_88
+r6316                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_23_DW01_inc_119
+r6326                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_21_DW01_add_85
+r6341                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_22_DW01_inc_118
+r6351                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_18_DW01_add_82
+r6366                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_21_DW01_inc_117
+r6376                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_15_DW01_add_79
+r6391                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_20_DW01_inc_116
+r6401                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_12_DW01_add_76
+r6416                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_19_DW01_inc_115
+r6426                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_9_DW01_add_73
+r6441                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_18_DW01_inc_114
+r6451                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_6_DW01_add_70
+r6466                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_17_DW01_inc_113
+r6476                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_3_DW01_add_67
+r6491                                 23.4080      0.0     23.4080      0.0000  0.0000  apex_periphery_DW01_inc_16_DW01_inc_112
+r6501                                 86.9820      0.1     86.9820      0.0000  0.0000  apex_periphery_DW01_add_0_DW01_add_64
+--------------------------------  -----------  -------  ----------  ----------  ------  ---------------------------------------
+Total                                                   98784.4208  68605.6536  0.0000
+
+1

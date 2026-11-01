@@ -1,0 +1,164 @@
+ 
+****************************************
+Report : area
+Design : ttfs_iv
+Version: U-2022.12
+Date   : Sun Nov  1 06:26:01 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'ttfs_iv' contains 20 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+Number of ports:                        17287
+Number of nets:                         95621
+Number of cells:                        88248
+Number of combinational cells:          54359
+Number of sequential cells:             33768
+Number of macros/black boxes:               0
+Number of buf/inv:                       6000
+Number of references:                      73
+
+Combinational area:              65825.691025
+Buf/Inv area:                     4302.549931
+Noncombinational area:          152592.490501
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                218418.181527
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-    Black-
+                                  Total        Total    national    national     boxes   Design
+--------------------------------  -----------  -------  ----------  -----------  ------  --------------------------------------------------------
+ttfs_iv                           218418.1815    100.0   4523.0641    2507.8479  0.0000  ttfs_iv
+clk_gate_out_count_reg                 3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_3
+clk_gate_rbuf_reg                      3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_0
+clk_gate_rd_slot_reg_0_                3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_23
+clk_gate_rd_slot_reg_1_                3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_22
+clk_gate_rd_slot_reg_2_                3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_21
+clk_gate_rd_slot_reg_3_                3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_20
+clk_gate_shd_reg                       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_2
+clk_gate_sidx_reg_0_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_19
+clk_gate_sidx_reg_10_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_9
+clk_gate_sidx_reg_11_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_8
+clk_gate_sidx_reg_12_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_7
+clk_gate_sidx_reg_13_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_6
+clk_gate_sidx_reg_14_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_5
+clk_gate_sidx_reg_15_                  3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_4
+clk_gate_sidx_reg_1_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_18
+clk_gate_sidx_reg_2_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_17
+clk_gate_sidx_reg_3_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_16
+clk_gate_sidx_reg_4_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_15
+clk_gate_sidx_reg_5_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_14
+clk_gate_sidx_reg_6_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_13
+clk_gate_sidx_reg_7_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_12
+clk_gate_sidx_reg_8_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_11
+clk_gate_sidx_reg_9_                   3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_10
+clk_gate_srd_reg                       3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_iv_1
+compact                             4222.7500      1.9   4222.7500       0.0000  0.0000  ttfs_compact_LANES64
+events                              4314.7860      2.0   2941.6940    1229.9840  0.0000  ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4
+events/add_0_root_sub_0_root_sub_57     23.9400     0.0    23.9400       0.0000  0.0000  ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_DW01_add_4_DW01_add_145
+events/clk_gate_q_reg_0_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_0
+events/clk_gate_q_reg_10_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_22
+events/clk_gate_q_reg_11_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_21
+events/clk_gate_q_reg_12_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_20
+events/clk_gate_q_reg_13_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_19
+events/clk_gate_q_reg_14_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_18
+events/clk_gate_q_reg_15_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_17
+events/clk_gate_q_reg_16_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_16
+events/clk_gate_q_reg_17_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_15
+events/clk_gate_q_reg_18_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_14
+events/clk_gate_q_reg_19_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_13
+events/clk_gate_q_reg_1_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_31
+events/clk_gate_q_reg_20_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_12
+events/clk_gate_q_reg_21_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_11
+events/clk_gate_q_reg_22_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_10
+events/clk_gate_q_reg_23_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_9
+events/clk_gate_q_reg_24_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_8
+events/clk_gate_q_reg_25_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_7
+events/clk_gate_q_reg_26_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_6
+events/clk_gate_q_reg_27_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_5
+events/clk_gate_q_reg_28_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_4
+events/clk_gate_q_reg_29_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_3
+events/clk_gate_q_reg_2_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_30
+events/clk_gate_q_reg_30_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_2
+events/clk_gate_q_reg_31_              3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_1
+events/clk_gate_q_reg_3_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_29
+events/clk_gate_q_reg_4_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_28
+events/clk_gate_q_reg_5_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_27
+events/clk_gate_q_reg_6_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_26
+events/clk_gate_q_reg_7_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_25
+events/clk_gate_q_reg_8_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_24
+events/clk_gate_q_reg_9_               3.7240      0.0      1.0640       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_23
+membranes                          51765.7269     23.7  14705.5442   37044.2227  0.0000  ttfs_mem_banks_OB2_WIDTH2048
+membranes/clk_gate_rows_reg_0_         3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_mem_banks_OB2_WIDTH2048_0
+membranes/clk_gate_rows_reg_1_         3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_mem_banks_OB2_WIDTH2048_3
+membranes/clk_gate_rows_reg_2_         3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_mem_banks_OB2_WIDTH2048_2
+membranes/clk_gate_rows_reg_3_         3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_mem_banks_OB2_WIDTH2048_1
+thresholds                         84000.4039     38.5  14189.2384   69747.3255  0.0000  ttfs_thr_LANES64_ACC32_TW16_T15
+thresholds/clk_gate_down_reg           3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_0
+thresholds/clk_gate_rows_reg_0_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_15
+thresholds/clk_gate_rows_reg_10_       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_5
+thresholds/clk_gate_rows_reg_11_       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_4
+thresholds/clk_gate_rows_reg_12_       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_3
+thresholds/clk_gate_rows_reg_13_       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_2
+thresholds/clk_gate_rows_reg_14_       3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_1
+thresholds/clk_gate_rows_reg_1_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_14
+thresholds/clk_gate_rows_reg_2_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_13
+thresholds/clk_gate_rows_reg_3_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_12
+thresholds/clk_gate_rows_reg_4_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_11
+thresholds/clk_gate_rows_reg_5_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_10
+thresholds/clk_gate_rows_reg_6_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_9
+thresholds/clk_gate_rows_reg_7_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_8
+thresholds/clk_gate_rows_reg_8_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_7
+thresholds/clk_gate_rows_reg_9_        3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_thr_LANES64_ACC32_TW16_T15_6
+unpack                             16965.4800      7.8  16965.4800       0.0000  0.0000  ttfs_unpack_LANES64_W4
+weights                            50028.2147     22.9   8119.3842   41765.1905  0.0000  ttfs_wbanks_CH16_NB4_WIDTH256
+weights/clk_gate_bank_0__mem_reg_0_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_0
+weights/clk_gate_bank_0__mem_reg_1_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_35
+weights/clk_gate_bank_0__mem_reg_2_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_34
+weights/clk_gate_bank_0__mem_reg_3_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_33
+weights/clk_gate_bank_0__mem_reg_4_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_32
+weights/clk_gate_bank_0__mem_reg_5_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_31
+weights/clk_gate_bank_0__mem_reg_6_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_30
+weights/clk_gate_bank_0__mem_reg_7_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_29
+weights/clk_gate_bank_1__mem_reg_0_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_27
+weights/clk_gate_bank_1__mem_reg_1_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_26
+weights/clk_gate_bank_1__mem_reg_2_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_25
+weights/clk_gate_bank_1__mem_reg_3_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_24
+weights/clk_gate_bank_1__mem_reg_4_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_23
+weights/clk_gate_bank_1__mem_reg_5_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_22
+weights/clk_gate_bank_1__mem_reg_6_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_21
+weights/clk_gate_bank_1__mem_reg_7_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_20
+weights/clk_gate_bank_2__mem_reg_0_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_18
+weights/clk_gate_bank_2__mem_reg_1_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_17
+weights/clk_gate_bank_2__mem_reg_2_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_16
+weights/clk_gate_bank_2__mem_reg_3_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_15
+weights/clk_gate_bank_2__mem_reg_4_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_14
+weights/clk_gate_bank_2__mem_reg_5_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_13
+weights/clk_gate_bank_2__mem_reg_6_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_12
+weights/clk_gate_bank_2__mem_reg_7_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_11
+weights/clk_gate_bank_3__mem_reg_0_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_9
+weights/clk_gate_bank_3__mem_reg_1_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_8
+weights/clk_gate_bank_3__mem_reg_2_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_7
+weights/clk_gate_bank_3__mem_reg_3_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_6
+weights/clk_gate_bank_3__mem_reg_4_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_5
+weights/clk_gate_bank_3__mem_reg_5_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_4
+weights/clk_gate_bank_3__mem_reg_6_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_3
+weights/clk_gate_bank_3__mem_reg_7_      3.9900     0.0     1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_2
+weights/clk_gate_rdata_reg             3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_28
+weights/clk_gate_rdata_reg_0           3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_19
+weights/clk_gate_rdata_reg_1           3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_10
+weights/clk_gate_rdata_reg_2           3.9900      0.0      1.3300       2.6600  0.0000  SNPS_CLOCK_GATE_HIGH_ttfs_wbanks_CH16_NB4_WIDTH256_1
+--------------------------------  -----------  -------  ----------  -----------  ------  --------------------------------------------------------
+Total                                                   65825.6910  152592.4905  0.0000
+
+1
