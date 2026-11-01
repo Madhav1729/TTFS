@@ -1,0 +1,89 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : apex_periphery
+Version: U-2022.12
+Date   : Sun Nov  1 19:44:09 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+apex_periphery         5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+apex_periphery                          171.853 1.31e+03 3.25e+06 4.73e+03 100.0
+  r6116 (apex_periphery_DW01_inc_31_DW01_inc_127) 1.05e-02 1.48e-02  437.189    0.463   0.0
+  r6126 (apex_periphery_DW01_add_45_DW01_add_109) 4.12e-04 1.71e-03 1.51e+03    1.510   0.0
+  r6141 (apex_periphery_DW01_inc_30_DW01_inc_126) 1.28e-02 1.79e-02  455.393    0.486   0.0
+  r6151 (apex_periphery_DW01_add_42_DW01_add_106) 8.50e-04 2.90e-03 1.51e+03    1.516   0.0
+  r6166 (apex_periphery_DW01_inc_29_DW01_inc_125) 1.08e-02 1.52e-02  443.611    0.470   0.0
+  r6176 (apex_periphery_DW01_add_39_DW01_add_103) 5.96e-04 2.28e-03 1.51e+03    1.514   0.0
+  r6191 (apex_periphery_DW01_inc_28_DW01_inc_124) 7.80e-03 1.07e-02  435.716    0.454   0.0
+  r6201 (apex_periphery_DW01_add_36_DW01_add_100) 5.41e-04 1.82e-03 1.51e+03    1.515   0.0
+  r6216 (apex_periphery_DW01_inc_27_DW01_inc_123) 1.34e-02 1.89e-02  444.787    0.477   0.0
+  r6226 (apex_periphery_DW01_add_33_DW01_add_97) 6.35e-04 2.28e-03 1.51e+03    1.515   0.0
+  r6241 (apex_periphery_DW01_inc_26_DW01_inc_122) 1.35e-02 1.89e-02  444.704    0.477   0.0
+  r6251 (apex_periphery_DW01_add_30_DW01_add_94) 2.67e-04 1.16e-03 1.51e+03    1.512   0.0
+  r6266 (apex_periphery_DW01_inc_25_DW01_inc_121) 1.12e-02 1.57e-02  450.458    0.477   0.0
+  r6276 (apex_periphery_DW01_add_27_DW01_add_91) 7.27e-04 2.72e-03 1.51e+03    1.514   0.0
+  r6291 (apex_periphery_DW01_inc_24_DW01_inc_120) 1.30e-02 1.83e-02  448.199    0.480   0.0
+  r6301 (apex_periphery_DW01_add_24_DW01_add_88) 3.29e-04 1.38e-03 1.51e+03    1.512   0.0
+  r6316 (apex_periphery_DW01_inc_23_DW01_inc_119) 1.17e-02 1.65e-02  444.914    0.473   0.0
+  r6326 (apex_periphery_DW01_add_21_DW01_add_85) 5.74e-04 2.15e-03 1.51e+03    1.513   0.0
+  r6341 (apex_periphery_DW01_inc_22_DW01_inc_118) 1.05e-02 1.48e-02  438.910    0.464   0.0
+  r6351 (apex_periphery_DW01_add_18_DW01_add_82) 4.91e-04 1.80e-03 1.51e+03    1.514   0.0
+  r6366 (apex_periphery_DW01_inc_21_DW01_inc_117) 1.15e-02 1.62e-02  446.714    0.474   0.0
+  r6376 (apex_periphery_DW01_add_15_DW01_add_79) 2.95e-04 1.12e-03 1.51e+03    1.512   0.0
+  r6391 (apex_periphery_DW01_inc_20_DW01_inc_116) 1.01e-02 1.41e-02  444.887    0.469   0.0
+  r6401 (apex_periphery_DW01_add_12_DW01_add_76) 5.83e-04 2.24e-03 1.51e+03    1.515   0.0
+  r6416 (apex_periphery_DW01_inc_19_DW01_inc_115) 1.05e-02 1.47e-02  446.901    0.472   0.0
+  r6426 (apex_periphery_DW01_add_9_DW01_add_73) 4.28e-04 1.97e-03 1.51e+03    1.515   0.0
+  r6441 (apex_periphery_DW01_inc_18_DW01_inc_114) 9.78e-03 1.37e-02  437.467    0.461   0.0
+  r6451 (apex_periphery_DW01_add_6_DW01_add_70) 5.07e-04 1.93e-03 1.51e+03    1.515   0.0
+  r6466 (apex_periphery_DW01_inc_17_DW01_inc_113) 1.15e-02 1.62e-02  443.980    0.472   0.0
+  r6476 (apex_periphery_DW01_add_3_DW01_add_67) 7.77e-04 2.61e-03 1.51e+03    1.515   0.0
+  r6491 (apex_periphery_DW01_inc_16_DW01_inc_112) 1.09e-02 1.53e-02  441.957    0.468   0.0
+  r6501 (apex_periphery_DW01_add_0_DW01_add_64) 3.91e-04 1.57e-03 1.51e+03    1.514   0.0
+  add_480 (apex_periphery_DW01_inc_15_DW01_inc_111) 3.36e-03 9.92e-03  304.461    0.318   0.0
+  add_480_G2 (apex_periphery_DW01_inc_14_DW01_inc_110) 3.56e-03 1.02e-02  303.778    0.318   0.0
+  add_480_G3 (apex_periphery_DW01_inc_13_DW01_inc_109) 4.10e-03 1.15e-02  310.412    0.326   0.0
+  add_480_G4 (apex_periphery_DW01_inc_12_DW01_inc_108) 4.24e-03 1.18e-02  308.608    0.325   0.0
+  add_480_G5 (apex_periphery_DW01_inc_11_DW01_inc_107) 4.21e-03 1.16e-02  309.396    0.325   0.0
+  add_480_G6 (apex_periphery_DW01_inc_10_DW01_inc_106) 3.25e-03 9.66e-03  300.604    0.314   0.0
+  add_480_G7 (apex_periphery_DW01_inc_9_DW01_inc_105) 4.09e-03 1.17e-02  309.101    0.325   0.0
+  add_480_G8 (apex_periphery_DW01_inc_8_DW01_inc_104) 3.77e-03 1.07e-02  307.585    0.322   0.0
+  add_480_G9 (apex_periphery_DW01_inc_7_DW01_inc_103) 4.67e-03 1.29e-02  305.628    0.323   0.0
+  add_480_G10 (apex_periphery_DW01_inc_6_DW01_inc_102) 2.99e-03 9.07e-03  300.869    0.313   0.0
+  add_480_G11 (apex_periphery_DW01_inc_5_DW01_inc_101) 3.20e-03 9.32e-03  304.647    0.317   0.0
+  add_480_G12 (apex_periphery_DW01_inc_4_DW01_inc_100) 3.70e-03 1.04e-02  307.875    0.322   0.0
+  add_480_G13 (apex_periphery_DW01_inc_3_DW01_inc_99) 2.71e-03 8.31e-03  301.802    0.313   0.0
+  add_480_G14 (apex_periphery_DW01_inc_2_DW01_inc_98) 3.49e-03 9.85e-03  302.059    0.315   0.0
+  add_480_G15 (apex_periphery_DW01_inc_1_DW01_inc_97) 4.88e-03 1.35e-02  309.266    0.328   0.0
+  add_480_G16 (apex_periphery_DW01_inc_0_DW01_inc_96) 4.50e-03 1.25e-02  307.376    0.324   0.0
+1

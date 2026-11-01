@@ -1,0 +1,52 @@
+Information: Changed wire load model for 'ttfs_iv' from '5K_hvratio_1_1' to '5K_hvratio_1_1'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: There are 1 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Invalid switching activity annotation on constant net(s) is being ignored. (PWR-421)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ttfs_iv
+Version: U-2022.12
+Date   : Sun Nov  1 19:03:30 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ttfs_iv                5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ttfs_iv                                2.19e+03 2.52e+03 4.06e+06 8.77e+03 100.0
+  thresholds (ttfs_thr_LANES64_ACC32_TW16_T15)   49.109   34.790 1.49e+06 1.57e+03  17.9
+  compact (ttfs_compact_LANES64)       3.63e-02    0.124 1.06e+05  105.833   1.2
+  membranes (ttfs_mem_banks_OB2_WIDTH2048)   22.036   51.185 9.17e+05  990.266  11.3
+  weights (ttfs_wbanks_CH16_NB4_WIDTH256)  336.364  872.191 8.67e+05 2.08e+03  23.7
+  unpack (ttfs_unpack_LANES64_W4)       970.293  578.773 4.50e+05 2.00e+03  22.8
+  events (ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4)  243.333  315.787 8.58e+04  644.953   7.4
+    add_0_root_sub_0_root_sub_57 (ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_DW01_add_4_DW01_add_145)    1.270    4.582  424.612    6.277   0.1
+1

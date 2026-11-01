@@ -1,0 +1,44 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ttfs_iv_lane
+Version: U-2022.12
+Date   : Sun Nov  1 18:59:18 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ttfs_iv_lane           5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ttfs_iv_lane                             80.194   71.099 4.20e+04  193.313 100.0
+  r565 (ttfs_iv_lane_DW01_cmp6_0)         0.404    0.438 2.70e+03    3.546   1.8
+  add_71_S2 (ttfs_iv_lane_DW01_add_1_DW01_add_29)    0.491    1.398 2.50e+03    4.388   2.3
+  add_101 (ttfs_iv_lane_DW01_add_0_DW01_add_28)    0.702    2.706 1.16e+03    4.564   2.4
+1

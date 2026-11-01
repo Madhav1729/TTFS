@@ -1,0 +1,135 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : apex_tppe
+Version: U-2022.12
+Date   : Sun Nov  1 19:51:33 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+apex_tppe              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+apex_tppe                               449.968 1.19e+03 9.28e+05 2.57e+03 100.0
+  add_2_root_add_43_root_add_255_S4_I128_C269 (apex_tppe_DW01_add_191)    2.117    2.185 1.02e+03    5.324   0.2
+  sub_269 (apex_tppe_DW01_dec_3)          7.924    9.969 1.16e+04   29.530   1.1
+  add_352 (apex_tppe_DW01_add_98_DW01_add_129)    0.591    2.060  461.671    3.113   0.1
+  add_294 (apex_tppe_DW01_add_105_DW01_add_139)    1.005    0.990  343.745    2.338   0.1
+  add_0_root_add_43_root_add_255_S4_I128_C329 (apex_tppe_DW01_add_17_DW01_add_45)    0.540    1.358  412.784    2.312   0.1
+  sub_294 (apex_tppe_DW01_dec_1)          2.246    2.189  919.540    5.354   0.2
+  sub_373_S4 (apex_tppe_DW01_sub_14_DW01_sub_16)    0.204    0.914 1.28e+03    2.395   0.1
+  sub_373_S4_I2 (apex_tppe_DW01_sub_13_DW01_sub_15)    1.263    3.336 1.19e+03    5.786   0.2
+  sub_373_S4_I3 (apex_tppe_DW01_sub_12_DW01_sub_14)    1.460    3.747 1.18e+03    6.390   0.2
+  sub_373_S4_I4 (apex_tppe_DW01_sub_11_DW01_sub_13)    1.527    3.854 1.18e+03    6.559   0.3
+  sub_373_S4_I5 (apex_tppe_DW01_sub_10_DW01_sub_12)    1.560    3.925 1.18e+03    6.665   0.3
+  sub_373_S4_I6 (apex_tppe_DW01_sub_9_DW01_sub_11)    1.603    4.012 1.18e+03    6.793   0.3
+  sub_373_S4_I7 (apex_tppe_DW01_sub_8_DW01_sub_10)    1.609    4.027 1.18e+03    6.813   0.3
+  sub_373_S4_I8 (apex_tppe_DW01_sub_7_DW01_sub_9)    1.596    3.988 1.18e+03    6.762   0.3
+  sub_373_S4_I9 (apex_tppe_DW01_sub_6_DW01_sub_8)    1.610    4.010 1.18e+03    6.796   0.3
+  sub_373_S4_I10 (apex_tppe_DW01_sub_5_DW01_sub_7)    1.616    4.036 1.18e+03    6.827   0.3
+  sub_373_S4_I11 (apex_tppe_DW01_sub_4_DW01_sub_6)    1.622    4.046 1.18e+03    6.844   0.3
+  sub_373_S4_I12 (apex_tppe_DW01_sub_3_DW01_sub_5)    1.613    4.021 1.18e+03    6.810   0.3
+  sub_373_S4_I13 (apex_tppe_DW01_sub_2_DW01_sub_4)    1.623    4.049 1.18e+03    6.847   0.3
+  sub_373_S4_I14 (apex_tppe_DW01_sub_1_DW01_sub_3)    1.630    4.074 1.18e+03    6.880   0.3
+  sub_373_S4_I15 (apex_tppe_DW01_sub_0_DW01_sub_2)    1.635    4.087 1.18e+03    6.898   0.3
+  pasc (apex_pasc_T15_OW13_MW18_FB6_PC8)   54.566   85.302 1.90e+05  329.936  12.8
+    add_109 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_27_DW01_add_44)    0.166    0.180  867.934    1.214   0.0
+    sub_110_S3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_27_DW01_sub_45)    0.110    0.335 1.62e+03    2.064   0.1
+    add_109_I2 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_26_DW01_add_43)    0.298    0.324  945.776    1.568   0.1
+    sub_110_S3_I2 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_26_DW01_sub_44)    0.158    0.499 1.61e+03    2.270   0.1
+    add_109_I3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_25_DW01_add_42)    0.424    0.458  924.955    1.807   0.1
+    sub_110_S3_I3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_25_DW01_sub_43)    0.197    0.645 1.61e+03    2.454   0.1
+    add_109_I4 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_24_DW01_add_41)    0.573    0.619  921.081    2.113   0.1
+    sub_110_S3_I4 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_24_DW01_sub_42)    0.260    0.852 1.61e+03    2.722   0.1
+    add_109_I5 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_23_DW01_add_40)    0.725    0.792  902.506    2.419   0.1
+    sub_110_S3_I5 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_23_DW01_sub_41)    0.306    1.014 1.61e+03    2.932   0.1
+    add_109_I6 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_22_DW01_add_39)    0.779    0.803  793.459    2.375   0.1
+    sub_110_S3_I6 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_22_DW01_sub_40)    0.368    1.208 1.61e+03    3.186   0.1
+    add_109_I7 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_21_DW01_add_38)    0.849    0.877  799.623    2.526   0.1
+    sub_110_S3_I7 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_21_DW01_sub_39)    0.391    1.300 1.61e+03    3.299   0.1
+    add_109_I8 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_20_DW01_add_37)    0.944    0.971  790.947    2.706   0.1
+    sub_110_S3_I8 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_20_DW01_sub_38)    0.433    1.437 1.61e+03    3.480   0.1
+    add_109_I9 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_19_DW01_add_36)    0.853    0.738  696.950    2.289   0.1
+    sub_110_S3_I9 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_19_DW01_sub_37)    0.459    1.520 1.61e+03    3.588   0.1
+    add_109_I10 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_18_DW01_add_35)    0.869    0.752  696.106    2.316   0.1
+    sub_110_S3_I10 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_18_DW01_sub_36)    0.463    1.544 1.61e+03    3.615   0.1
+    add_109_I11 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_17_DW01_add_34)    0.880    0.761  695.635    2.336   0.1
+    sub_110_S3_I11 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_17_DW01_sub_35)    0.469    1.562 1.61e+03    3.639   0.1
+    add_109_I12 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_16_DW01_add_33)    0.891    0.771  695.443    2.358   0.1
+    sub_110_S3_I12 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_16_DW01_sub_34)    0.473    1.579 1.61e+03    3.660   0.1
+    add_109_I13 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_15_DW01_add_32)    0.899    0.777  695.205    2.371   0.1
+    sub_110_S3_I13 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_15_DW01_sub_33)    0.481    1.604 1.61e+03    3.692   0.1
+    add_109_I14 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_14_DW01_add_31)    0.911    0.788  694.861    2.394   0.1
+    sub_110_S3_I14 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_14_DW01_sub_32)    0.481    1.621 1.60e+03    3.706   0.1
+    add_109_I15 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_13_DW01_add_30)    0.918    0.794  693.876    2.406   0.1
+    sub_110_S3_I15 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_13_DW01_sub_31)    0.496    1.650 1.60e+03    3.749   0.1
+    gte_121 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_42) 8.68e-02 9.69e-02 1.49e+03    1.673   0.1
+    sub_121_S3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_12_DW01_sub_30) 9.61e-02    0.238 1.63e+03    1.969   0.1
+    add_122_S3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_12_DW01_add_29) 7.37e-02    0.218 1.27e+03    1.557   0.1
+    gte_121_I2 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_40)    0.160    0.175 1.47e+03    1.804   0.1
+    sub_121_S3_I2 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_11_DW01_sub_29)    0.104    0.242 1.61e+03    1.955   0.1
+    add_122_S3_I2 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_11_DW01_add_28) 8.29e-02    0.220 1.25e+03    1.548   0.1
+    gte_121_I3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_38)    0.175    0.206 1.47e+03    1.854   0.1
+    sub_121_S3_I3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_10_DW01_sub_28)    0.131    0.322 1.60e+03    2.050   0.1
+    add_122_S3_I3 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_10_DW01_add_27)    0.105    0.291 1.23e+03    1.624   0.1
+    gte_121_I4 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_36)    0.190    0.221 1.47e+03    1.876   0.1
+    sub_121_S3_I4 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_9_DW01_sub_27)    0.132    0.319 1.60e+03    2.047   0.1
+    add_122_S3_I4 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_9_DW01_add_26)    0.105    0.286 1.23e+03    1.623   0.1
+    gte_121_I5 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_34)    0.180    0.212 1.47e+03    1.863   0.1
+    sub_121_S3_I5 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_8_DW01_sub_26)    0.141    0.353 1.59e+03    2.088   0.1
+    add_122_S3_I5 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_8_DW01_add_25)    0.116    0.324 1.22e+03    1.664   0.1
+    gte_121_I6 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_32)    0.204    0.236 1.49e+03    1.927   0.1
+    sub_121_S3_I6 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_7_DW01_sub_25)    0.141    0.345 1.60e+03    2.082   0.1
+    add_122_S3_I6 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_7_DW01_add_24)    0.114    0.311 1.23e+03    1.657   0.1
+    gte_121_I7 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_30)    0.207    0.244 1.49e+03    1.941   0.1
+    sub_121_S3_I7 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_6_DW01_sub_24)    0.150    0.375 1.59e+03    2.116   0.1
+    add_122_S3_I7 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_6_DW01_add_23)    0.126    0.347 1.22e+03    1.697   0.1
+    gte_121_I8 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_28)    0.207    0.240 1.46e+03    1.906   0.1
+    sub_121_S3_I8 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_5_DW01_sub_23)    0.144    0.357 1.59e+03    2.091   0.1
+    add_122_S3_I8 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_5_DW01_add_22)    0.116    0.319 1.23e+03    1.661   0.1
+    gte_121_I9 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_26)    0.189    0.224 1.47e+03    1.881   0.1
+    sub_121_S3_I9 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_4_DW01_sub_22)    0.149    0.373 1.59e+03    2.111   0.1
+    add_122_S3_I9 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_4_DW01_add_21)    0.122    0.341 1.22e+03    1.683   0.1
+    gte_121_I10 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_24)    0.214    0.249 1.46e+03    1.921   0.1
+    sub_121_S3_I10 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_3_DW01_sub_21)    0.149    0.370 1.59e+03    2.107   0.1
+    add_122_S3_I10 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_3_DW01_add_20)    0.122    0.335 1.22e+03    1.682   0.1
+    gte_121_I11 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_22)    0.229    0.269 1.46e+03    1.960   0.1
+    sub_121_S3_I11 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_2_DW01_sub_20)    0.168    0.416 1.58e+03    2.167   0.1
+    add_122_S3_I11 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_2_DW01_add_19)    0.130    0.375 1.22e+03    1.722   0.1
+    gte_121_I12 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_20)    0.225    0.257 1.46e+03    1.941   0.1
+    sub_121_S3_I12 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_1_DW01_sub_19)    0.163    0.395 1.59e+03    2.143   0.1
+    add_122_S3_I12 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_1_DW01_add_18)    0.130    0.363 1.22e+03    1.717   0.1
+    gte_121_I13 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_18)    0.217    0.244 1.46e+03    1.921   0.1
+    sub_121_S3_I13 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_sub_0_DW01_sub_18)    0.167    0.412 1.58e+03    2.157   0.1
+    add_122_S3_I13 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW01_add_0_DW01_add_17)    0.136    0.385 1.21e+03    1.730   0.1
+    gte_121_I14 (apex_pasc_T15_OW13_MW18_FB6_PC8_DW_cmp_16)    0.228    0.255 1.46e+03    1.939   0.1
+  dbufa (apex_dbufa_T15_BLOCK128)       122.459  345.841 4.35e+05  903.501  35.2
+  dbufb (apex_dbufb_WB4_BLOCK128)        13.247   55.100 5.01e+04  118.494   4.6
+1

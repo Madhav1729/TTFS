@@ -1,0 +1,56 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : spf_unit
+Version: U-2022.12
+Date   : Sun Nov  1 19:27:51 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+spf_unit               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+spf_unit                                109.728  789.689 4.32e+05 1.33e+03 100.0
+  mult_210_S2 (spf_unit_DW_mult_tc_0)     1.977    2.474 1.58e+03    6.031   0.5
+  add_211_S2 (spf_unit_DW01_add_0)        1.479    4.201 1.93e+03    7.615   0.6
+  aread (spf_act_read_BLOCK128_A4)       10.926    5.900 1.48e+04   31.609   2.4
+  asum (spf_prefix_sum_BLOCK128_1)        0.327    0.799  931.900    2.058   0.2
+    add_0_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_1_DW01_add_0_DW01_add_4) 6.33e-02    0.329  345.836    0.738   0.1
+    add_1_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_1_DW01_add_1_DW01_add_5)    0.143    0.261  294.219    0.699   0.1
+    add_2_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_1_DW01_add_2_DW01_add_6)    0.121    0.209  291.845    0.621   0.0
+  wsum (spf_prefix_sum_BLOCK128_0)        0.301    0.735  930.913    1.966   0.1
+    add_0_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_0_DW01_add_0_DW01_add_1) 5.82e-02    0.302  345.450    0.706   0.1
+    add_1_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_0_DW01_add_1_DW01_add_2)    0.131    0.240  293.923    0.665   0.0
+    add_2_root_add_0_root_add_97_S4_I4 (spf_prefix_sum_BLOCK128_0_DW01_add_2_DW01_add_3)    0.111    0.193  291.540    0.596   0.0
+  apre (spf_prefix_groups_BLOCK128_1)     9.332    7.465 1.46e+04   31.388   2.4
+  wpre (spf_prefix_groups_BLOCK128_0)     7.410    4.804 1.44e+04   26.601   2.0
+  prio (spt_priority_BLOCK128)            3.000    3.991 9.46e+03   16.452   1.2
+  fbuf (spf_filter_buffer_BLOCK128_W4)   36.398  556.861 3.09e+05  901.775  67.7
+1

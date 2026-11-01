@@ -1,0 +1,59 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : eyeriss_pe
+Version: U-2022.12
+Date   : Sun Nov  1 19:45:13 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+eyeriss_pe             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+eyeriss_pe                              124.939  549.754 2.92e+05  967.056 100.0
+  add_0_root_add_0_root_add_157_2 (eyeriss_pe_DW01_add_6_DW01_add_9) 1.18e-02 1.09e-02  785.109    0.808   0.1
+  mult_157 (eyeriss_pe_DW_mult_uns_3)  4.84e-03 1.65e-03 2.15e+03    2.155   0.2
+  mult_235_2 (eyeriss_pe_DW_mult_uns_0) 5.59e-04 6.02e-04 1.62e+03    1.621   0.2
+  mult_235 (eyeriss_pe_DW_mult_uns_1)  1.74e-04 8.86e-05  964.824    0.965   0.1
+  mult_236 (eyeriss_pe_DW_mult_uns_5)  1.22e-03 1.23e-03 2.33e+03    2.337   0.2
+  mult_311_S2 (eyeriss_pe_DW_mult_tc_0) 6.78e-02    0.112 1.16e+03    1.339   0.1
+  add_207 (eyeriss_pe_DW01_add_5_DW01_add_7)    0.401    1.115 1.06e+03    2.575   0.3
+  r891 (eyeriss_pe_DW01_add_4_DW01_add_6) 5.12e-03 6.69e-03  788.210    0.800   0.1
+  add_239 (eyeriss_pe_DW01_inc_4_DW01_inc_12) 7.19e-02    0.358  331.347    0.761   0.1
+  add_254 (eyeriss_pe_DW01_inc_3_DW01_inc_11) 6.14e-03 2.03e-02  708.545    0.735   0.1
+  add_261 (eyeriss_pe_DW01_inc_2_DW01_inc_10)    0.492    1.597  335.994    2.424   0.3
+  add_281 (eyeriss_pe_DW01_inc_1_DW01_inc_9) 8.47e-04 3.95e-03  331.029    0.336   0.0
+  add_289 (eyeriss_pe_DW01_inc_0_DW01_inc_8) 4.05e-04 1.88e-03  337.211    0.339   0.0
+  fspad (eyr_fspad_W4_DEPTH224)          19.947  292.643 1.10e+05  422.390  43.7
+  fifo_po (eyr_fifo_WD80_D4)              1.485   31.005 3.23e+04   64.779   6.7
+  fifo_pi (eyr_fifo_WD80_D2)              1.329   10.961 1.71e+04   29.439   3.0
+  fifo_i (eyr_fifo_WD4_D2)                0.321    8.247 1.75e+03   10.314   1.1
+  fifo_f (eyr_fifo_WD16_D2)               1.259   10.455 4.13e+03   15.842   1.6
+1

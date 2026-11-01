@@ -1,0 +1,148 @@
+Warning: There are 31 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : spf_periphery
+Version: U-2022.12
+Date   : Sun Nov  1 19:49:14 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+spf_periphery          5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+spf_periphery                          1.67e+03 4.31e+03 5.51e+06 1.15e+04 100.0
+  collector (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4)  184.990 1.85e+03 3.87e+06 5.90e+03  51.3
+    r2888 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_63) 7.73e-02    0.103 5.08e+03    5.263   0.0
+    r2890 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_62) 5.50e-02 7.48e-02 5.09e+03    5.218   0.0
+    r2891 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_61) 7.09e-02 9.96e-02 5.11e+03    5.285   0.0
+    r2892 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_60) 6.84e-02 8.37e-02 5.01e+03    5.164   0.0
+    r2893 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_59) 6.31e-02 8.57e-02 5.07e+03    5.223   0.0
+    r2894 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_58) 6.26e-02 8.86e-02 5.12e+03    5.273   0.0
+    r2895 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_57) 5.97e-02 8.13e-02 5.09e+03    5.235   0.0
+    r2896 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_56) 9.86e-02    0.134 5.11e+03    5.341   0.0
+    r2897 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_55) 6.86e-02 9.40e-02 5.09e+03    5.249   0.0
+    r2898 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_54) 6.34e-02 8.65e-02 5.08e+03    5.235   0.0
+    r2899 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_53) 6.13e-02 8.32e-02 5.07e+03    5.217   0.0
+    r2900 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_52) 5.82e-02 7.96e-02 5.09e+03    5.229   0.0
+    r2901 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_51) 5.25e-02 7.10e-02 5.08e+03    5.203   0.0
+    r2902 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_50) 5.96e-02 8.09e-02 5.09e+03    5.229   0.0
+    r2903 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_49) 6.49e-02 8.45e-02 5.06e+03    5.207   0.0
+    r2904 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_48) 7.00e-02 8.61e-02 5.04e+03    5.193   0.0
+    r2905 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_47) 5.53e-02 7.57e-02 5.11e+03    5.239   0.0
+    r2906 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_46) 6.09e-02 8.30e-02 5.09e+03    5.234   0.0
+    r2907 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_45) 7.07e-02    0.100 5.12e+03    5.289   0.0
+    r2908 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_44) 4.63e-02 5.89e-02 5.05e+03    5.159   0.0
+    r2909 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_43) 5.41e-02 7.39e-02 5.09e+03    5.217   0.0
+    r2910 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_42) 4.62e-02 6.22e-02 5.08e+03    5.184   0.0
+    r2911 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_41) 6.42e-02 8.90e-02 5.12e+03    5.270   0.0
+    r2912 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_40) 7.61e-02    0.104 5.08e+03    5.257   0.0
+    r2913 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_39) 5.06e-02 6.81e-02 5.09e+03    5.207   0.0
+    r2914 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_38) 5.35e-02 7.27e-02 5.07e+03    5.201   0.0
+    r2915 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_37) 9.29e-02    0.127 5.11e+03    5.327   0.0
+    r2916 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_36) 5.10e-02 7.03e-02 5.09e+03    5.209   0.0
+    r2917 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_35) 5.09e-02 6.84e-02 5.08e+03    5.202   0.0
+    r2918 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_34) 6.38e-02 8.55e-02 5.07e+03    5.215   0.0
+    r2919 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_33) 6.56e-02 8.32e-02 5.04e+03    5.191   0.0
+    r2920 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_32)    0.125    0.158 5.07e+03    5.356   0.0
+    r2921 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_31) 4.83e-02 6.49e-02 5.06e+03    5.175   0.0
+    r2922 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_30) 5.60e-02 7.62e-02 5.09e+03    5.218   0.0
+    r2923 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_29) 2.36e-02 3.15e-02 5.09e+03    5.146   0.0
+    r2924 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_28)    0.122    0.151 5.05e+03    5.327   0.0
+    r2925 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_27) 3.72e-02 5.29e-02 5.12e+03    5.209   0.0
+    r2926 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_26) 4.58e-02 6.07e-02 5.07e+03    5.173   0.0
+    r2927 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_25) 4.90e-02 6.71e-02 5.09e+03    5.201   0.0
+    r2928 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_24) 5.84e-02 7.64e-02 5.06e+03    5.195   0.0
+    r2929 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_23) 6.48e-02 8.27e-02 5.06e+03    5.203   0.0
+    r2930 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_22) 5.20e-02 7.05e-02 5.08e+03    5.207   0.0
+    r2931 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_21) 5.25e-02 6.88e-02 5.05e+03    5.172   0.0
+    r2932 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_20) 6.62e-02 8.31e-02 5.04e+03    5.185   0.0
+    r2933 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_19) 5.02e-02 6.84e-02 5.09e+03    5.205   0.0
+    r2934 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_18) 7.77e-02 9.92e-02 5.06e+03    5.240   0.0
+    r2935 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_17) 5.91e-02 8.07e-02 5.08e+03    5.223   0.0
+    r2936 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_16)    0.239    0.304 5.08e+03    5.624   0.0
+    r2937 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_15) 6.14e-02 8.03e-02 5.05e+03    5.187   0.0
+    r2938 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_14) 4.72e-02 6.40e-02 5.08e+03    5.191   0.0
+    r2939 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_13)    0.118    0.148 5.08e+03    5.349   0.0
+    r2940 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_12) 5.84e-02 8.20e-02 5.12e+03    5.256   0.0
+    r2941 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_11) 8.21e-02    0.109 5.09e+03    5.281   0.0
+    r2942 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_10)    0.111    0.144 5.08e+03    5.333   0.0
+    r2943 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_9) 4.75e-02 6.44e-02 5.09e+03    5.200   0.0
+    r2944 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_8)    0.149    0.197 5.11e+03    5.452   0.0
+    r2945 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_7) 5.12e-02 6.72e-02 5.06e+03    5.180   0.0
+    r2946 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_6) 5.70e-02 7.76e-02 5.08e+03    5.211   0.0
+    r2947 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_5) 5.86e-02 8.16e-02 5.11e+03    5.253   0.0
+    r2948 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_4) 4.96e-02 6.33e-02 5.04e+03    5.154   0.0
+    r2949 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_3) 5.90e-02 7.47e-02 5.03e+03    5.166   0.0
+    r2950 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_2) 4.90e-02 6.78e-02 5.08e+03    5.194   0.0
+    r2951 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_1) 9.58e-02    0.134 5.11e+03    5.345   0.0
+    r2952 (spf_collector_UNITS32_NF64_ACC32_OB2_T15_A4_DW01_cmp6_0) 5.25e-02 7.14e-02 5.06e+03    5.186   0.0
+  homes_31__outsums (spf_sum_buffer_OB2_ACC32_1)    3.215   17.478 2.83e+04   49.013   0.4
+  homes_30__outsums (spf_sum_buffer_OB2_ACC32_2)    3.012   20.116 2.79e+04   51.009   0.4
+  homes_29__outsums (spf_sum_buffer_OB2_ACC32_3)    2.753   16.686 2.94e+04   48.846   0.4
+  homes_28__outsums (spf_sum_buffer_OB2_ACC32_4)    2.912   24.300 2.85e+04   55.698   0.5
+  homes_27__outsums (spf_sum_buffer_OB2_ACC32_5)    3.412   17.424 2.76e+04   48.390   0.4
+  homes_26__outsums (spf_sum_buffer_OB2_ACC32_6)    3.147   18.951 2.98e+04   51.914   0.5
+  homes_25__outsums (spf_sum_buffer_OB2_ACC32_7)    3.029   14.155 2.85e+04   45.639   0.4
+  homes_24__outsums (spf_sum_buffer_OB2_ACC32_8)    2.758   18.157 2.95e+04   50.416   0.4
+  homes_23__outsums (spf_sum_buffer_OB2_ACC32_9)    3.225   18.414 2.75e+04   49.166   0.4
+  homes_22__outsums (spf_sum_buffer_OB2_ACC32_10)    3.278   21.701 2.80e+04   52.960   0.5
+  homes_21__outsums (spf_sum_buffer_OB2_ACC32_11)    3.159   21.140 2.81e+04   52.402   0.5
+  homes_20__outsums (spf_sum_buffer_OB2_ACC32_12)    2.783   18.212 2.88e+04   49.797   0.4
+  homes_19__outsums (spf_sum_buffer_OB2_ACC32_13)    2.891   22.804 2.85e+04   54.190   0.5
+  homes_18__outsums (spf_sum_buffer_OB2_ACC32_14)    2.866   19.242 2.94e+04   51.495   0.4
+  homes_17__outsums (spf_sum_buffer_OB2_ACC32_15)    2.713   19.396 2.85e+04   50.644   0.4
+  homes_16__outsums (spf_sum_buffer_OB2_ACC32_16)    3.259   21.538 2.80e+04   52.827   0.5
+  homes_15__outsums (spf_sum_buffer_OB2_ACC32_17)    3.411   18.526 2.80e+04   49.895   0.4
+  homes_14__outsums (spf_sum_buffer_OB2_ACC32_18)    3.060   21.237 2.99e+04   54.216   0.5
+  homes_13__outsums (spf_sum_buffer_OB2_ACC32_19)    3.040   20.835 2.97e+04   53.557   0.5
+  homes_12__outsums (spf_sum_buffer_OB2_ACC32_20)    3.117   22.538 2.83e+04   53.976   0.5
+  homes_11__outsums (spf_sum_buffer_OB2_ACC32_21)    2.864   19.470 2.96e+04   51.943   0.5
+  homes_10__outsums (spf_sum_buffer_OB2_ACC32_22)    3.097   23.847 2.83e+04   55.256   0.5
+  homes_9__outsums (spf_sum_buffer_OB2_ACC32_23)    2.833   18.513 2.95e+04   50.811   0.4
+  homes_8__outsums (spf_sum_buffer_OB2_ACC32_24)    2.939   24.593 2.82e+04   55.769   0.5
+  homes_7__outsums (spf_sum_buffer_OB2_ACC32_25)    2.985   22.128 2.86e+04   53.687   0.5
+  homes_6__outsums (spf_sum_buffer_OB2_ACC32_26)    3.217   23.770 2.85e+04   55.470   0.5
+  homes_5__outsums (spf_sum_buffer_OB2_ACC32_27)    3.018   24.985 2.82e+04   56.249   0.5
+  homes_4__outsums (spf_sum_buffer_OB2_ACC32_28)    3.128   24.004 2.83e+04   55.444   0.5
+  homes_3__outsums (spf_sum_buffer_OB2_ACC32_29)    3.063   21.272 2.83e+04   52.590   0.5
+  homes_2__outsums (spf_sum_buffer_OB2_ACC32_30)    2.969   16.217 2.85e+04   47.736   0.4
+  homes_1__outsums (spf_sum_buffer_OB2_ACC32_31)    2.705   16.180 2.92e+04   48.085   0.4
+  homes_0__outsums (spf_sum_buffer_OB2_ACC32_0)    2.974   23.233 2.83e+04   54.508   0.5
+  net (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64) 1.39e+03 1.81e+03 7.27e+05 3.93e+03  34.2
+    add_321_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW01_add_0_DW01_add_62)    5.068   14.425 2.67e+03   22.160   0.2
+    mult_add_321_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW_mult_uns_0)    3.471    3.862  898.948    8.232   0.1
+    add_321_I2_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW01_add_1_DW01_add_63)    5.797   16.172 2.18e+03   24.153   0.2
+    mult_add_321_I2_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW_mult_uns_1)    3.857    4.291  918.262    9.067   0.1
+    add_321_I3_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW01_add_2_DW01_add_64)   72.130   19.181 2.37e+03   93.684   0.8
+    mult_add_321_I3_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW_mult_uns_2)    4.625    5.145  909.918   10.680   0.1
+    add_321_I4_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW01_add_3_DW01_add_65)    6.421   17.927 2.48e+03   26.832   0.2
+    mult_add_321_I4_aco (spf_network_UNITS32_ACC32_OB2_NPORT4_NF64_DW_mult_uns_3)    4.053    4.511  902.623    9.466   0.1
+1

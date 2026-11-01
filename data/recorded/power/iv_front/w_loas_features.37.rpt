@@ -1,0 +1,50 @@
+Warning: There are 1 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Invalid switching activity annotation on constant net(s) is being ignored. (PWR-421)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ttfs_iv
+Version: U-2022.12
+Date   : Sun Nov  1 19:37:40 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /scratch/CS6230_EE23B141/mb_ttfs/lib_nangate45/ng45_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ttfs_iv                5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ttfs_iv                                 616.042  811.455 4.05e+06 5.47e+03 100.0
+  thresholds (ttfs_thr_LANES64_ACC32_TW16_T15)   71.014  110.094 1.50e+06 1.68e+03  30.7
+  compact (ttfs_compact_LANES64)          0.156    0.462 1.06e+05  106.290   1.9
+  membranes (ttfs_mem_banks_OB2_WIDTH2048)   49.645  131.929 9.17e+05 1.10e+03  20.1
+  weights (ttfs_wbanks_CH16_NB4_WIDTH256)   44.952  195.880 8.56e+05 1.10e+03  20.0
+  unpack (ttfs_unpack_LANES64_W4)       389.252  175.371 4.43e+05 1.01e+03  18.4
+  events (ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4)   17.453   70.216 8.39e+04  171.560   3.1
+    add_0_root_sub_0_root_sub_57 (ttfs_evq_DEPTH32_WIDTH8_PUSH5_S4_DW01_add_4_DW01_add_145)    0.165    0.577  322.652    1.064   0.0
+1

@@ -1,0 +1,2 @@
+tech_um,cell,size_B,width_B,ok,read_nJ,write_nJ,read_pJ_per_bit,leak_mW,area_mm2,access_ns,cycle_ns
+0.045,itrs-lstp,128,1,1,0.000326442,0.00042584,0.040805249999999994,5.15066e-05,0.0006083095686,0.644484,0.442391
