@@ -22,7 +22,8 @@ spike-code comparison (bipolar, two-rail, offset unipolar, bit-serial, rate) at 
 | `data/lm/` | Otters activation profile and the real layer-5 BERT weights, 4-bit |
 | `data/recorded/` | simulations, synthesis and power reports behind `results/final.md` |
 | `data/baselines.json` | earlier Eyeriss and APEX estimates (shown with `*`) |
-| `results/` | everything the flow writes: `final.md`, `lm/w1/table.md`, `lm/w4/table.md` |
+| `results/` | everything the flow writes: `final.md`, `lm/w1/table.md`, `lm/w4/table.md`, `sweep/sweep.json` |
+| `report/` | course report (LaTeX), figure scripts and the draw.io architecture diagram |
 
 ## Setup
 
@@ -41,6 +42,7 @@ the Design Compiler reports in `data/recorded/`.
 make build                            # Verilator builds: TTFS / SparTen (both lanes, T = 15 and 8), APEX, Eyeriss
 make simulate                         # full layers + 32-pixel activity runs (SAIF), APEX, Eyeriss
 python -m flow check-gating           # gated lane keeps every cycle and add
+python -m flow sweep                  # weight-density sweep (needs export-problems for the extra densities)
 make table                            # results/final.md from data/recorded
 python -m flow lm --weights w1|w4     # BERT layer: spike codes and QNN baselines
 python conversion/verify_polarity.py  # polarity TTFS decodes every level exactly

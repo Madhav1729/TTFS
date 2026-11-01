@@ -1,0 +1,1003 @@
+{
+ "natural": {
+  "weight_density": 0.6316378239435394,
+  "sparten": {
+   "arithmetic": 15.533201620999996,
+   "other_logic": 295.4591678775452,
+   "local_sram": 103.759314690423,
+   "global_buffer": 59.13689385559999,
+   "cycles": 2540610,
+   "ops": 51605321,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 64161,
+     "cycles": 392285
+    },
+    "features.7": {
+     "ops": 5850295,
+     "w_beats": 39610,
+     "cycles": 224170
+    },
+    "features.10": {
+     "ops": 12669752,
+     "w_beats": 77546,
+     "cycles": 470772
+    },
+    "features.14": {
+     "ops": 4478090,
+     "w_beats": 39748,
+     "cycles": 179603
+    },
+    "features.17": {
+     "ops": 5429298,
+     "w_beats": 77362,
+     "cycles": 238100
+    },
+    "features.20": {
+     "ops": 4430810,
+     "w_beats": 74922,
+     "cycles": 206192
+    },
+    "features.24": {
+     "ops": 2836260,
+     "w_beats": 79075,
+     "cycles": 130165
+    },
+    "features.27": {
+     "ops": 2834540,
+     "w_beats": 147079,
+     "cycles": 163596
+    },
+    "features.30": {
+     "ops": 1774955,
+     "w_beats": 145504,
+     "cycles": 150800
+    },
+    "features.34": {
+     "ops": 558461,
+     "w_beats": 140601,
+     "cycles": 142317
+    },
+    "features.37": {
+     "ops": 228129,
+     "w_beats": 137884,
+     "cycles": 139176
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 100650,
+     "cycles": 103434
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 4.64447889,
+   "other_logic": 172.90261050878053,
+   "local_sram": 29.333119794552,
+   "global_buffer": 57.15066968969998,
+   "cycles": 1688745,
+   "ops": 51605321,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 54977,
+     "cycles": 231494
+    },
+    "features.7": {
+     "ops": 5850295,
+     "w_beats": 37378,
+     "cycles": 126792
+    },
+    "features.10": {
+     "ops": 12669752,
+     "w_beats": 75434,
+     "cycles": 247964
+    },
+    "features.14": {
+     "ops": 4478090,
+     "w_beats": 38880,
+     "cycles": 98468
+    },
+    "features.17": {
+     "ops": 5429298,
+     "w_beats": 75588,
+     "cycles": 122437
+    },
+    "features.20": {
+     "ops": 4430810,
+     "w_beats": 72986,
+     "cycles": 107251
+    },
+    "features.24": {
+     "ops": 2836260,
+     "w_beats": 77303,
+     "cycles": 85761
+    },
+    "features.27": {
+     "ops": 2834540,
+     "w_beats": 143351,
+     "cycles": 148846
+    },
+    "features.30": {
+     "ops": 1774955,
+     "w_beats": 141838,
+     "cycles": 146109
+    },
+    "features.34": {
+     "ops": 558461,
+     "w_beats": 137023,
+     "cycles": 138527
+    },
+    "features.37": {
+     "ops": 228129,
+     "w_beats": 134163,
+     "cycles": 135232
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 97116,
+     "cycles": 99864
+    }
+   }
+  }
+ },
+ "0.6": {
+  "weight_density": 0.5643506008945977,
+  "sparten": {
+   "arithmetic": 13.314012900999998,
+   "other_logic": 262.7455482799455,
+   "local_sram": 93.52267805034299,
+   "global_buffer": 54.7447650412,
+   "cycles": 2310046,
+   "ops": 44232601,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 64161,
+     "cycles": 392285
+    },
+    "features.7": {
+     "ops": 4797211,
+     "w_beats": 34754,
+     "cycles": 193760
+    },
+    "features.10": {
+     "ops": 10112674,
+     "w_beats": 66314,
+     "cycles": 395041
+    },
+    "features.14": {
+     "ops": 3599600,
+     "w_beats": 34444,
+     "cycles": 153997
+    },
+    "features.17": {
+     "ops": 4384688,
+     "w_beats": 67008,
+     "cycles": 209004
+    },
+    "features.20": {
+     "ops": 3753391,
+     "w_beats": 67008,
+     "cycles": 187414
+    },
+    "features.24": {
+     "ops": 2300370,
+     "w_beats": 68842,
+     "cycles": 114637
+    },
+    "features.27": {
+     "ops": 2463637,
+     "w_beats": 133870,
+     "cycles": 151178
+    },
+    "features.30": {
+     "ops": 1567782,
+     "w_beats": 133777,
+     "cycles": 139395
+    },
+    "features.34": {
+     "ops": 520128,
+     "w_beats": 133533,
+     "cycles": 135224
+    },
+    "features.37": {
+     "ops": 218389,
+     "w_beats": 133394,
+     "cycles": 134677
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 100650,
+     "cycles": 103434
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 3.9809340899999994,
+   "other_logic": 154.80805442349,
+   "local_sram": 29.323166675112,
+   "global_buffer": 52.66018254219999,
+   "cycles": 1566565,
+   "ops": 44232601,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 54977,
+     "cycles": 231494
+    },
+    "features.7": {
+     "ops": 4797211,
+     "w_beats": 32458,
+     "cycles": 113302
+    },
+    "features.10": {
+     "ops": 10112674,
+     "w_beats": 63962,
+     "cycles": 218783
+    },
+    "features.14": {
+     "ops": 3599600,
+     "w_beats": 33422,
+     "cycles": 87763
+    },
+    "features.17": {
+     "ops": 4384688,
+     "w_beats": 64916,
+     "cycles": 110153
+    },
+    "features.20": {
+     "ops": 3753391,
+     "w_beats": 64912,
+     "cycles": 99256
+    },
+    "features.24": {
+     "ops": 2300370,
+     "w_beats": 66842,
+     "cycles": 74736
+    },
+    "features.27": {
+     "ops": 2463637,
+     "w_beats": 129830,
+     "cycles": 135182
+    },
+    "features.30": {
+     "ops": 1567782,
+     "w_beats": 129824,
+     "cycles": 134020
+    },
+    "features.34": {
+     "ops": 520128,
+     "w_beats": 129829,
+     "cycles": 131300
+    },
+    "features.37": {
+     "ops": 218389,
+     "w_beats": 129646,
+     "cycles": 130712
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 97116,
+     "cycles": 99864
+    }
+   }
+  }
+ },
+ "0.5": {
+  "weight_density": 0.48064123253011,
+  "sparten": {
+   "arithmetic": 11.658996608,
+   "other_logic": 236.26405184487066,
+   "local_sram": 85.49343482063797,
+   "global_buffer": 49.93607144519999,
+   "cycles": 2109038,
+   "ops": 38734208,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 64161,
+     "cycles": 392285
+    },
+    "features.7": {
+     "ops": 4003531,
+     "w_beats": 31154,
+     "cycles": 169044
+    },
+    "features.10": {
+     "ops": 8484310,
+     "w_beats": 59306,
+     "cycles": 345951
+    },
+    "features.14": {
+     "ops": 3005470,
+     "w_beats": 30834,
+     "cycles": 135710
+    },
+    "features.17": {
+     "ops": 3666805,
+     "w_beats": 59740,
+     "cycles": 187561
+    },
+    "features.20": {
+     "ops": 3133982,
+     "w_beats": 59822,
+     "cycles": 169034
+    },
+    "features.24": {
+     "ops": 1922403,
+     "w_beats": 61594,
+     "cycles": 103015
+    },
+    "features.27": {
+     "ops": 2062078,
+     "w_beats": 119221,
+     "cycles": 137338
+    },
+    "features.30": {
+     "ops": 1312093,
+     "w_beats": 119128,
+     "cycles": 125247
+    },
+    "features.34": {
+     "ops": 442312,
+     "w_beats": 118812,
+     "cycles": 120400
+    },
+    "features.37": {
+     "ops": 186493,
+     "w_beats": 118762,
+     "cycles": 120019
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 100650,
+     "cycles": 103434
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 3.48607872,
+   "other_logic": 139.71310086188822,
+   "local_sram": 29.275607404547998,
+   "global_buffer": 47.78018327519999,
+   "cycles": 1447006,
+   "ops": 38734208,
+   "layers": {
+    "features.3": {
+     "ops": 9364177,
+     "w_beats": 54977,
+     "cycles": 231494
+    },
+    "features.7": {
+     "ops": 4003531,
+     "w_beats": 28770,
+     "cycles": 103559
+    },
+    "features.10": {
+     "ops": 8484310,
+     "w_beats": 56578,
+     "cycles": 200493
+    },
+    "features.14": {
+     "ops": 3005470,
+     "w_beats": 29738,
+     "cycles": 80450
+    },
+    "features.17": {
+     "ops": 3666805,
+     "w_beats": 57542,
+     "cycles": 101119
+    },
+    "features.20": {
+     "ops": 3133982,
+     "w_beats": 57544,
+     "cycles": 91304
+    },
+    "features.24": {
+     "ops": 1922403,
+     "w_beats": 59462,
+     "cycles": 66978
+    },
+    "features.27": {
+     "ops": 2062078,
+     "w_beats": 115078,
+     "cycles": 120251
+    },
+    "features.30": {
+     "ops": 1312093,
+     "w_beats": 115088,
+     "cycles": 119175
+    },
+    "features.34": {
+     "ops": 442312,
+     "w_beats": 115075,
+     "cycles": 116476
+    },
+    "features.37": {
+     "ops": 186493,
+     "w_beats": 114801,
+     "cycles": 115843
+    },
+    "features.40": {
+     "ops": 1150554,
+     "w_beats": 97116,
+     "cycles": 99864
+    }
+   }
+  }
+ },
+ "0.3": {
+  "weight_density": 0.30000001359736145,
+  "sparten": {
+   "arithmetic": 7.2583302540000005,
+   "other_logic": 165.77984958629102,
+   "local_sram": 64.630957393491,
+   "global_buffer": 38.75455774579999,
+   "cycles": 1573581,
+   "ops": 24114054,
+   "layers": {
+    "features.3": {
+     "ops": 6029161,
+     "w_beats": 49089,
+     "cycles": 281987
+    },
+    "features.7": {
+     "ops": 2422174,
+     "w_beats": 23386,
+     "cycles": 119718
+    },
+    "features.10": {
+     "ops": 5175924,
+     "w_beats": 44458,
+     "cycles": 239529
+    },
+    "features.14": {
+     "ops": 1819532,
+     "w_beats": 23310,
+     "cycles": 97177
+    },
+    "features.17": {
+     "ops": 2221692,
+     "w_beats": 44974,
+     "cycles": 141191
+    },
+    "features.20": {
+     "ops": 1896047,
+     "w_beats": 44986,
+     "cycles": 130025
+    },
+    "features.24": {
+     "ops": 1164467,
+     "w_beats": 46607,
+     "cycles": 77767
+    },
+    "features.27": {
+     "ops": 1258132,
+     "w_beats": 89675,
+     "cycles": 111618
+    },
+    "features.30": {
+     "ops": 803116,
+     "w_beats": 89469,
+     "cycles": 102493
+    },
+    "features.34": {
+     "ops": 286481,
+     "w_beats": 89116,
+     "cycles": 90527
+    },
+    "features.37": {
+     "ops": 122689,
+     "w_beats": 89023,
+     "cycles": 90254
+    },
+    "features.40": {
+     "ops": 914639,
+     "w_beats": 88834,
+     "cycles": 91295
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 2.1702648599999996,
+   "other_logic": 101.34971919487285,
+   "local_sram": 28.485347193192,
+   "global_buffer": 36.461447264799986,
+   "cycles": 1160622,
+   "ops": 24114054,
+   "layers": {
+    "features.3": {
+     "ops": 6029161,
+     "w_beats": 39617,
+     "cycles": 197175
+    },
+    "features.7": {
+     "ops": 2422174,
+     "w_beats": 21362,
+     "cycles": 84917
+    },
+    "features.10": {
+     "ops": 5175924,
+     "w_beats": 41762,
+     "cycles": 163210
+    },
+    "features.14": {
+     "ops": 1819532,
+     "w_beats": 22346,
+     "cycles": 66377
+    },
+    "features.17": {
+     "ops": 2221692,
+     "w_beats": 42776,
+     "cycles": 83298
+    },
+    "features.20": {
+     "ops": 1896047,
+     "w_beats": 42782,
+     "cycles": 76216
+    },
+    "features.24": {
+     "ops": 1164467,
+     "w_beats": 44690,
+     "cycles": 52666
+    },
+    "features.27": {
+     "ops": 1258132,
+     "w_beats": 85418,
+     "cycles": 90171
+    },
+    "features.30": {
+     "ops": 803116,
+     "w_beats": 85555,
+     "cycles": 89354
+    },
+    "features.34": {
+     "ops": 286481,
+     "w_beats": 84127,
+     "cycles": 85386
+    },
+    "features.37": {
+     "ops": 122689,
+     "w_beats": 83481,
+     "cycles": 84478
+    },
+    "features.40": {
+     "ops": 914639,
+     "w_beats": 84888,
+     "cycles": 87374
+    }
+   }
+  }
+ },
+ "0.1": {
+  "weight_density": 0.10000009518153022,
+  "sparten": {
+   "arithmetic": 2.584818537,
+   "other_logic": 89.12477119514871,
+   "local_sram": 42.415107674363,
+   "global_buffer": 21.669020333699997,
+   "cycles": 979821,
+   "ops": 8587437,
+   "layers": {
+    "features.3": {
+     "ops": 2401856,
+     "w_beats": 24001,
+     "cycles": 154580
+    },
+    "features.7": {
+     "ops": 808762,
+     "w_beats": 12034,
+     "cycles": 64592
+    },
+    "features.10": {
+     "ops": 1782786,
+     "w_beats": 23058,
+     "cycles": 121469
+    },
+    "features.14": {
+     "ops": 613602,
+     "w_beats": 12774,
+     "cycles": 57233
+    },
+    "features.17": {
+     "ops": 754184,
+     "w_beats": 23898,
+     "cycles": 97487
+    },
+    "features.20": {
+     "ops": 637351,
+     "w_beats": 23908,
+     "cycles": 95240
+    },
+    "features.24": {
+     "ops": 397023,
+     "w_beats": 25721,
+     "cycles": 53893
+    },
+    "features.27": {
+     "ops": 431238,
+     "w_beats": 48117,
+     "cycles": 95318
+    },
+    "features.30": {
+     "ops": 281232,
+     "w_beats": 48003,
+     "cycles": 91479
+    },
+    "features.34": {
+     "ops": 110058,
+     "w_beats": 48162,
+     "cycles": 49405
+    },
+    "features.37": {
+     "ops": 48891,
+     "w_beats": 48217,
+     "cycles": 49436
+    },
+    "features.40": {
+     "ops": 320454,
+     "w_beats": 48045,
+     "cycles": 49689
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 0.7728693299999998,
+   "other_logic": 56.076517095368786,
+   "local_sram": 23.596814377968002,
+   "global_buffer": 19.415265012999996,
+   "cycles": 775785,
+   "ops": 8587437,
+   "layers": {
+    "features.3": {
+     "ops": 2401856,
+     "w_beats": 18369,
+     "cycles": 141270
+    },
+    "features.7": {
+     "ops": 808762,
+     "w_beats": 10794,
+     "cycles": 62942
+    },
+    "features.10": {
+     "ops": 1782786,
+     "w_beats": 21106,
+     "cycles": 125568
+    },
+    "features.14": {
+     "ops": 613602,
+     "w_beats": 11966,
+     "cycles": 51561
+    },
+    "features.17": {
+     "ops": 754184,
+     "w_beats": 22134,
+     "cycles": 65504
+    },
+    "features.20": {
+     "ops": 637351,
+     "w_beats": 22318,
+     "cycles": 59571
+    },
+    "features.24": {
+     "ops": 397023,
+     "w_beats": 24037,
+     "cycles": 40684
+    },
+    "features.27": {
+     "ops": 431238,
+     "w_beats": 43602,
+     "cycles": 52903
+    },
+    "features.30": {
+     "ops": 281232,
+     "w_beats": 44376,
+     "cycles": 47905
+    },
+    "features.34": {
+     "ops": 110058,
+     "w_beats": 41161,
+     "cycles": 42263
+    },
+    "features.37": {
+     "ops": 48891,
+     "w_beats": 39896,
+     "cycles": 40828
+    },
+    "features.40": {
+     "ops": 320454,
+     "w_beats": 42868,
+     "cycles": 44786
+    }
+   }
+  }
+ },
+ "0.05": {
+  "weight_density": 0.05000001359736146,
+  "sparten": {
+   "arithmetic": 1.3394945479999993,
+   "other_logic": 69.03218863369446,
+   "local_sram": 36.546551818806996,
+   "global_buffer": 13.902200220299997,
+   "cycles": 826251,
+   "ops": 4450148,
+   "layers": {
+    "features.3": {
+     "ops": 1310833,
+     "w_beats": 14049,
+     "cycles": 120104
+    },
+    "features.7": {
+     "ops": 404059,
+     "w_beats": 7466,
+     "cycles": 53929
+    },
+    "features.10": {
+     "ops": 906925,
+     "w_beats": 13714,
+     "cycles": 98644
+    },
+    "features.14": {
+     "ops": 309392,
+     "w_beats": 8216,
+     "cycles": 49496
+    },
+    "features.17": {
+     "ops": 382048,
+     "w_beats": 14496,
+     "cycles": 91061
+    },
+    "features.20": {
+     "ops": 321131,
+     "w_beats": 14600,
+     "cycles": 89790
+    },
+    "features.24": {
+     "ops": 201170,
+     "w_beats": 16355,
+     "cycles": 50311
+    },
+    "features.27": {
+     "ops": 219890,
+     "w_beats": 29029,
+     "cycles": 90526
+    },
+    "features.30": {
+     "ops": 147014,
+     "w_beats": 28873,
+     "cycles": 87324
+    },
+    "features.34": {
+     "ops": 59752,
+     "w_beats": 28687,
+     "cycles": 31549
+    },
+    "features.37": {
+     "ops": 27586,
+     "w_beats": 28650,
+     "cycles": 31371
+    },
+    "features.40": {
+     "ops": 160348,
+     "w_beats": 28698,
+     "cycles": 32146
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 0.40051331999999995,
+   "other_logic": 43.73223212112139,
+   "local_sram": 20.449439949252,
+   "global_buffer": 12.802007790099998,
+   "cycles": 667429,
+   "ops": 4450148,
+   "layers": {
+    "features.3": {
+     "ops": 1310833,
+     "w_beats": 11457,
+     "cycles": 117221
+    },
+    "features.7": {
+     "ops": 404059,
+     "w_beats": 6642,
+     "cycles": 54386
+    },
+    "features.10": {
+     "ops": 906925,
+     "w_beats": 12458,
+     "cycles": 111304
+    },
+    "features.14": {
+     "ops": 309392,
+     "w_beats": 7676,
+     "cycles": 46290
+    },
+    "features.17": {
+     "ops": 382048,
+     "w_beats": 13460,
+     "cycles": 59563
+    },
+    "features.20": {
+     "ops": 321131,
+     "w_beats": 13472,
+     "cycles": 54670
+    },
+    "features.24": {
+     "ops": 201170,
+     "w_beats": 15389,
+     "cycles": 37226
+    },
+    "features.27": {
+     "ops": 219890,
+     "w_beats": 26812,
+     "cycles": 47934
+    },
+    "features.30": {
+     "ops": 147014,
+     "w_beats": 26776,
+     "cycles": 42159
+    },
+    "features.34": {
+     "ops": 59752,
+     "w_beats": 26086,
+     "cycles": 31108
+    },
+    "features.37": {
+     "ops": 27586,
+     "w_beats": 25167,
+     "cycles": 27559
+    },
+    "features.40": {
+     "ops": 160348,
+     "w_beats": 26755,
+     "cycles": 38009
+    }
+   }
+  }
+ },
+ "loas": {
+  "weight_density": 0.01758750717940685,
+  "sparten": {
+   "arithmetic": 2.8776102669999992,
+   "other_logic": 91.06461363193648,
+   "local_sram": 42.716340355853994,
+   "global_buffer": 11.781256637799999,
+   "cycles": 977114,
+   "ops": 9560167,
+   "layers": {
+    "features.3": {
+     "ops": 3945490,
+     "w_beats": 35777,
+     "cycles": 214846
+    },
+    "features.7": {
+     "ops": 1420581,
+     "w_beats": 17370,
+     "cycles": 85969
+    },
+    "features.10": {
+     "ops": 2232665,
+     "w_beats": 27034,
+     "cycles": 138837
+    },
+    "features.14": {
+     "ops": 770915,
+     "w_beats": 14686,
+     "cycles": 62205
+    },
+    "features.17": {
+     "ops": 560883,
+     "w_beats": 19352,
+     "cycles": 93995
+    },
+    "features.20": {
+     "ops": 410146,
+     "w_beats": 17412,
+     "cycles": 91278
+    },
+    "features.24": {
+     "ops": 132610,
+     "w_beats": 12663,
+     "cycles": 48875
+    },
+    "features.27": {
+     "ops": 38674,
+     "w_beats": 11022,
+     "cycles": 84722
+    },
+    "features.30": {
+     "ops": 35277,
+     "w_beats": 12137,
+     "cycles": 84357
+    },
+    "features.34": {
+     "ops": 4706,
+     "w_beats": 8519,
+     "cycles": 24144
+    },
+    "features.37": {
+     "ops": 1241,
+     "w_beats": 7758,
+     "cycles": 23746
+    },
+    "features.40": {
+     "ops": 6979,
+     "w_beats": 8087,
+     "cycles": 24140
+    }
+   }
+  },
+  "ttfs": {
+   "arithmetic": 0.86041503,
+   "other_logic": 52.16121249123782,
+   "local_sram": 21.542328804276,
+   "global_buffer": 11.1531410538,
+   "cycles": 678839,
+   "ops": 9560167,
+   "layers": {
+    "features.3": {
+     "ops": 3945490,
+     "w_beats": 27201,
+     "cycles": 173538
+    },
+    "features.7": {
+     "ops": 1420581,
+     "w_beats": 15866,
+     "cycles": 71694
+    },
+    "features.10": {
+     "ops": 2232665,
+     "w_beats": 24930,
+     "cycles": 131072
+    },
+    "features.14": {
+     "ops": 770915,
+     "w_beats": 13880,
+     "cycles": 53677
+    },
+    "features.17": {
+     "ops": 560883,
+     "w_beats": 17774,
+     "cycles": 62885
+    },
+    "features.20": {
+     "ops": 410146,
+     "w_beats": 16046,
+     "cycles": 56432
+    },
+    "features.24": {
+     "ops": 132610,
+     "w_beats": 12175,
+     "cycles": 34468
+    },
+    "features.27": {
+     "ops": 38674,
+     "w_beats": 11658,
+     "cycles": 35262
+    },
+    "features.30": {
+     "ops": 35277,
+     "w_beats": 12556,
+     "cycles": 28449
+    },
+    "features.34": {
+     "ops": 4706,
+     "w_beats": 9739,
+     "cycles": 10705
+    },
+    "features.37": {
+     "ops": 1241,
+     "w_beats": 9187,
+     "cycles": 9927
+    },
+    "features.40": {
+     "ops": 6979,
+     "w_beats": 9413,
+     "cycles": 10730
+    }
+   }
+  }
+ }
+}

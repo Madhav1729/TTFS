@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
-from . import build, checks, config, dcjobs, export, lm, report, simulate
+from . import build, checks, config, dcjobs, export, lm, report, simulate, sweep
 
 POWER_PIECES = list(dcjobs.PIECES)
 
@@ -92,6 +92,15 @@ def cmd_compare(a):
     print(f"{len(rerun)} rows compared, {len(diffs)} differences (relative tolerance {a.tolerance})")
 
 
+def cmd_sweep(a):
+    stats = sweep.load() if a.reuse else sweep.simulate(a.jobs)
+    for d, r in sweep.breakdown(stats).items():
+        e = {k: sum(v for p, v in r[k].items() if p in ("arithmetic", "other_logic", "local_sram", "global_buffer"))
+             for k in ("sparten", "ttfs")}
+        print(f"{d:8s} density {r['weight_density']:.3f}  SparTen {e['sparten']:6.1f} uJ  TTFS {e['ttfs']:6.1f} uJ"
+              f"  gain {e['sparten'] / e['ttfs']:.2f}x")
+
+
 def main():
     ap = argparse.ArgumentParser(prog="python -m flow")
     sub = ap.add_subparsers(required=True)
@@ -149,6 +158,11 @@ def main():
     p.add_argument("--source", default="results", choices=["results", "resynth"])
     p.add_argument("--tolerance", type=float, default=1e-6)
     p.set_defaults(func=cmd_compare)
+
+    p = sub.add_parser("sweep", help="weight-density sweep, TTFS vs SparTen, from fitted power models")
+    p.add_argument("--jobs", type=int, default=8)
+    p.add_argument("--reuse", action="store_true", help="reuse existing simulations")
+    p.set_defaults(func=cmd_sweep)
 
     a = ap.parse_args()
     a.func(a)
